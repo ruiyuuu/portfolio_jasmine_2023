@@ -1,0 +1,43 @@
+@import '_color.scss';
+
+nav.navbar{
+    background: transparent;
+    z-index: 1;
+    .collapse{
+        ul{
+            gap: 48px;
+            li{
+                .nav-link{
+                    color: $g-300;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    padding-right:0;
+                    padding-left:0;
+                    opacity: 0.7;
+                    &:hover{
+                        color: $main;
+                        opacity: 1;
+                    }
+                }
+                .nav-link.active{
+                    color: $main;
+                }
+            }
+        }
+    }
+}
+
+nav.default{
+    .collapse{
+        ul{
+            li{
+                .nav-link{
+                    color: $g-900;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

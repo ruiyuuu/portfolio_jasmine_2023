@@ -8,49 +8,125 @@
     <link rel="shortcut icon" href="./a3zxu-85196-001.ico">
     <link rel="bookmark" href="./a3zxu-85196-001.ico">
     <base target="_self">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- css -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <!-- header -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item d-lg-none">
+              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#">工作專案</a>
+              <ul class="d-lg-none">
+                UI / UX
+                <li>
+                  <a class="nav-link" href="#">
+                      <p>跨部門協作能力</p>
+                      <p>仁仁團購平台</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">
+                    <p>跨部門協作能力</p>
+                    <p>仁仁團購平台</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">
+                    <p>跨部門協作能力</p>
+                    <p>仁仁團購平台</p>
+                  </a>
+                </li>
+                Code
+                <li>
+                  <a class="nav-link" href="#">
+                    <p>跨部門協作能力</p>
+                    <p>仁仁團購平台</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">
+                    <p>跨部門協作能力</p>
+                    <p>仁仁團購平台</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">個人介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">簡歷</a>
+            </li>
+            <button class="primary">點擊複製信箱，與我聯繫</button>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+
+    <div class="cards">
+      <button class="design_btn">
+        <div class="face">
+          <div class="left-eye"></div>
+          <div class="nose"></div>
+          <div class="right-eye"></div>
+          <div class="mouse"></div>
+        </div>
+        <div>
+          UI / UX
+        </div>
+      </button>
+      <button class="code_btn">
+        <div class="face">
+          <div class="left-eye"></div>
+          <div class="nose"></div>
+          <div class="right-eye"></div>
+        </div>
+        <div>
+          &lt;/<span>code</span>&gt;
+        </div>
+      </button>
+    </div>
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const buttonA = document.querySelector('.design_btn');
+      const buttonB = document.querySelector('.code_btn');
+
+      buttonB.addEventListener('mouseover', () => {
+        buttonA.style.opacity = '0.5';
+      });
+
+      buttonB.addEventListener('mouseout', () => {
+        buttonA.style.opacity = '1';
+      });
+
+      buttonA.addEventListener('mouseover', () => {
+        buttonB.style.opacity = '0.5';
+      });
+
+      buttonA.addEventListener('mouseout', () => {
+        buttonB.style.opacity = '1';
+      });
+
+    </script>
 </body>
 </html>

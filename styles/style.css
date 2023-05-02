@@ -10817,4 +10817,353 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+div.cards {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+div.cards button.design_btn {
+  background-color: #FFFFFF;
+  border: 0;
+  width: 50vw;
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-family: "Maven Pro", "Noto Sans TC", sans-serif;
+  color: #333333;
+  display: flex;
+  gap: 64px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.cards button.design_btn div.face {
+  width: 387px;
+  height: 302px;
+  position: relative;
+}
+div.cards button.design_btn div.face div.left-eye {
+  position: absolute;
+  top: 3px;
+  left: 56px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/d-left-eye.png);
+  background-repeat: no-repeat;
+  margin-top: 16px;
+}
+div.cards button.design_btn div.face div.nose {
+  position: absolute;
+  top: 1px;
+  left: 136px;
+  width: 177px;
+  height: 230px;
+  background-image: url(../images/d-nose.png);
+  background-repeat: no-repeat;
+  margin-right: 72px;
+}
+div.cards button.design_btn div.face div.right-eye {
+  position: absolute;
+  top: 3px;
+  right: 24px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/d-right-eye.png);
+  background-repeat: no-repeat;
+  margin-top: 16px;
+}
+div.cards button.design_btn div.face div.mouse {
+  position: absolute;
+  bottom: 3px;
+  left: 24px;
+  width: 153px;
+  height: 115px;
+  background-image: url(../images/d-mouse-hover.png);
+  background-repeat: no-repeat;
+  margin-top: 16px;
+  opacity: 0;
+}
+div.cards button.design_btn:hover {
+  transition: all 0.3s ease;
+  color: #FF512F;
+  cursor: url("../images/d-cursor.png"), pointer;
+}
+div.cards button.design_btn:hover div.face div.left-eye {
+  background-image: url(../images/d-left-eye-hover.png);
+}
+div.cards button.design_btn:hover div.face div.nose {
+  background-image: url(../images/d-nose-hover.png);
+}
+div.cards button.design_btn:hover div.face div.right-eye {
+  background-image: url(../images/d-right-eye-hover.png);
+}
+div.cards button.design_btn:hover div.face div.mouse {
+  opacity: 1;
+}
+div.cards button.code_btn {
+  background-color: #23272E;
+  border: 0;
+  width: 50vw;
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-family: "Maven Pro", "Noto Sans TC", sans-serif;
+  color: #A0A9B7;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.cards button.code_btn div.face {
+  width: 387px;
+  height: 302px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+div.cards button.code_btn div.face div.left-eye {
+  position: absolute;
+  top: 3px;
+  left: 56px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/c-left-eye.png);
+  margin-top: 16px;
+}
+div.cards button.code_btn div.face div.nose {
+  position: absolute;
+  top: 1px;
+  left: 136px;
+  width: 127px;
+  height: 208px;
+  background-image: url(../images/c-nose.png);
+  margin-right: 72px;
+}
+div.cards button.code_btn div.face div.right-eye {
+  position: absolute;
+  top: 3px;
+  right: 24px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../images/c-right-eye.png);
+  margin-top: 16px;
+}
+div.cards button.code_btn div span {
+  color: #E1606B;
+}
+div.cards button.code_btn:hover {
+  background-image: url(../images/code-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: url("../images/c-cursor.png"), pointer;
+}
+div.cards button.code_btn:hover div.face {
+  opacity: 0;
+}
+
+button.primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 8px;
+  gap: 8px;
+  width: 234px;
+  height: 40px;
+  background: #FF512F;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.08em;
+  border-radius: 20px;
+  border: 0;
+}
+
+button.secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 12px;
+  gap: 8px;
+  background: #333333;
+  border-radius: 24px;
+  color: #999999;
+  border: 0;
+}
+
+button.tertiary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 16px;
+  width: 267px;
+  height: 32px;
+  background: #EFEFEF;
+  border-radius: 8px;
+  border: 0;
+}
+
+h1, .h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  /* or 43px */
+  letter-spacing: 0.06em;
+}
+
+h2, .h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.16em;
+}
+
+h3, .h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+}
+
+h4, .h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+p.content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+p.highlight {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+small.content, .content.small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+small.highlight, .highlight.small {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+nav.navbar {
+  background: transparent;
+  z-index: 1;
+}
+nav.navbar .collapse ul {
+  gap: 48px;
+}
+nav.navbar .collapse ul li .nav-link {
+  color: #E5E5E5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  padding-right: 0;
+  padding-left: 0;
+  opacity: 0.7;
+}
+nav.navbar .collapse ul li .nav-link:hover {
+  color: #FF512F;
+  opacity: 1;
+}
+nav.navbar .collapse ul li .nav-link.active {
+  color: #FF512F;
+}
+
+nav.default .collapse ul li .nav-link {
+  color: #111111;
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", "Noto Sans TC", sans-serif;
+}
+
+body .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 78px;
+  margin-bottom: 108px;
+}
+body .title h1, body .title .h1 {
+  color: #111111;
+}
+body .title p.content {
+  color: #333333;
+}
+body .introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 136px;
+}
+body .introduce .basic-info {
+  display: flex;
+  flex-direction: column;
+}
+body .introduce .basic-info img {
+  width: 152px;
+  height: 152px;
+  margin-bottom: 40px;
+}
+body .introduce .basic-info .my-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+body .introduce .basic-info .my-info h2, body .introduce .basic-info .my-info .h2 {
+  color: #111111;
+}
+body .introduce .basic-info .my-info div {
+  display: flex;
+  gap: 24px;
+}
+body .introduce .basic-info .my-info div .item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+body .introduce .basic-info .my-info div .item h3, body .introduce .basic-info .my-info div .item .h3 {
+  color: #FF512F;
+}
+body .introduce .basic-info .my-info div .item small.content, body .introduce .basic-info .my-info div .item .content.small {
+  color: #666666;
+}
+body .introduce .basic-info .my-info .contact {
+  flex-direction: column;
+  gap: 8px;
+}
+body .introduce .basic-info .my-info .contact button.tertiary .content {
+  gap: 4px;
+  align-items: center;
+}
+body .introduce .text p.content {
+  color: #333333;
 }/*# sourceMappingURL=style.css.map */

@@ -1,1 +1,84 @@
 @import 'scss/bootstrap.scss';
+@import '_button.scss';
+@import '_color.scss';
+@import '_font.scss';
+@import '_nav.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', 'Noto Sans TC', sans-serif;
+}
+
+body{
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $g-900;
+        }
+        p.content{
+            color: $g-800;
+        }
+        margin-top: 78px;
+        margin-bottom: 108px;
+    }
+
+    .introduce{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 136px;
+        .basic-info{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 152px;
+                height: 152px;
+                margin-bottom: 40px;
+            }
+            .my-info{
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                h2{
+                    color: $g-900;
+                }
+                div{
+                    display: flex;
+                    gap: 24px;
+                    .item{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                        h3{
+                            color: $main;
+                        }
+                        small.content{
+                            color: $g-700;
+                        }
+                    }
+                }
+                .contact{
+                    flex-direction: column;
+                    gap: 8px;
+                    button.tertiary{
+                        .content{
+                            gap: 4px;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        .text{
+            p.content{
+                color: $g-800;
+            }
+        }
+    }
+}
