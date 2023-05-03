@@ -30,6 +30,11 @@ nav.navbar{
 }
 
 nav.default{
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
     .collapse{
         ul{
             li{
@@ -37,6 +42,9 @@ nav.default{
                     color: $g-900;
                     opacity: 1;
                 }
+            }
+            li.nav-item:hover .dropdown-menu { 
+                display: block;
             }
         }
     }

@@ -5,9 +5,8 @@ h1{
     font-weight: 700;
     font-size: 36px;
     line-height: 120%;
-    /* or 43px */
-
     letter-spacing: 0.06em;
+    margin-bottom: 0;
 }
 
 h2{
@@ -15,6 +14,7 @@ h2{
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0.16em;
+    margin-bottom: 0;
 }
 
 h3{
@@ -22,6 +22,7 @@ h3{
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.06em;
+    margin-bottom: 0;
 }
 
 h4{
@@ -29,19 +30,22 @@ h4{
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
 }
 p.content{
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 160%;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
 }
 
 p.highlight{
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 160%;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
 }
 
 small.content{
@@ -49,6 +53,7 @@ small.content{
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
 }
 
 small.highlight{
@@ -56,4 +61,5 @@ small.highlight{
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
 }

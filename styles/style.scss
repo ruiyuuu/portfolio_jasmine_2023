@@ -3,6 +3,10 @@
 @import '_color.scss';
 @import '_font.scss';
 @import '_nav.scss';
+@import '_footer.scss';
+@import '_cards.scss';
+@import '_grid';
+@import '_dropdown-menu.scss';
 
 
 *{
@@ -24,8 +28,8 @@ body{
         p.content{
             color: $g-800;
         }
-        margin-top: 78px;
-        margin-bottom: 108px;
+        margin-top: 128px;
+        margin-bottom: 64px;
     }
 
     .introduce{
@@ -47,6 +51,8 @@ body{
                 gap: 32px;
                 h2{
                     color: $g-900;
+                    text-align: left;
+                    margin-bottom: 0;
                 }
                 div{
                     display: flex;
@@ -80,5 +86,156 @@ body{
                 color: $g-800;
             }
         }
+    }
+    .skill{
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 122px;
+        margin-bottom: 210px;
+        .figma{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/figma-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/figma.png);
+                scale: 1.2;
+            }
+        }
+        .ai{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/ai-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/ai.png);
+                scale: 1.2;
+            }
+        }
+        .ps{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/ps-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/ps.png);
+                scale: 1.2;
+            }
+        }
+        .h5{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/h5-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/h5.png);
+                scale: 1.2;
+            }
+        }
+        .sass{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/sass-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/sass.png);
+                scale: 1.2;
+            }
+        }
+        .bs{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/bs-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/bs.png);
+                scale: 1.2;
+            }
+        }
+        .js{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/js-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/js.png);
+                scale: 1.2;
+            }
+        }
+        .git{
+            width: 48px;
+            height: 48px;
+            background-image: url(../images/git-default.png);
+            transition: all 0.3s ease;
+            &:hover{
+                background-image: url(../images/git.png);
+                scale: 1.2;
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 72px;
+    }
+    .experience{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        position: relative;
+        .line{
+            position: absolute;
+            top: 40px;
+        }
+        small.content{
+            color: $g-800;
+            width: 996px;
+        }
+        .company{
+            display: flex;
+            gap: 136px;
+            h3{
+                color: $g-800;
+                width: 350px;
+            }
+            img{
+                width: 24px;
+                height: 24px;
+            }
+            .work{
+                width: 350px;
+                .job{
+                    margin-bottom: 24px;
+                    h3{
+                        color: $main;
+                        margin-bottom: 8px;
+                    }
+                    p.content{
+                        color: $g-700;
+                        span{
+                            color: $g-900;
+                            font-weight: 900;
+                        }
+                    }
+                    ol{
+                        padding-left: 1.5rem;
+                        li{
+                            span{
+                                color: $g-900;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .word{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 160px 0;
     }
 }

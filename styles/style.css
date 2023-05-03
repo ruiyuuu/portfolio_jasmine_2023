@@ -10835,7 +10835,7 @@ div.cards button.design_btn {
   font-family: "Maven Pro", "Noto Sans TC", sans-serif;
   color: #333333;
   display: flex;
-  gap: 64px;
+  gap: 16px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -10914,7 +10914,7 @@ div.cards button.code_btn {
   font-family: "Maven Pro", "Noto Sans TC", sans-serif;
   color: #A0A9B7;
   display: flex;
-  gap: 80px;
+  gap: 16px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -11014,8 +11014,8 @@ h1, .h1 {
   font-weight: 700;
   font-size: 36px;
   line-height: 120%;
-  /* or 43px */
   letter-spacing: 0.06em;
+  margin-bottom: 0;
 }
 
 h2, .h2 {
@@ -11023,6 +11023,7 @@ h2, .h2 {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.16em;
+  margin-bottom: 0;
 }
 
 h3, .h3 {
@@ -11030,6 +11031,7 @@ h3, .h3 {
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.06em;
+  margin-bottom: 0;
 }
 
 h4, .h4 {
@@ -11037,20 +11039,23 @@ h4, .h4 {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 p.content {
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160%;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 p.highlight {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 160%;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 small.content, .content.small {
@@ -11058,6 +11063,7 @@ small.content, .content.small {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 small.highlight, .highlight.small {
@@ -11065,6 +11071,7 @@ small.highlight, .highlight.small {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.02em;
+  margin-bottom: 0;
 }
 
 nav.navbar {
@@ -11092,9 +11099,73 @@ nav.navbar .collapse ul li .nav-link.active {
   color: #FF512F;
 }
 
+nav.default {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 100%;
+}
 nav.default .collapse ul li .nav-link {
   color: #111111;
   opacity: 1;
+}
+nav.default .collapse ul li.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+footer {
+  background-color: #111111;
+  background-image: url(../images/footer-bg.png);
+  background-position: top 90% left 90%;
+  background-repeat: no-repeat;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+footer .link {
+  display: flex;
+  gap: 24px;
+}
+footer small.content, footer .content.small {
+  color: #666666;
+}
+
+.projects {
+  margin-bottom: 120px;
+}
+.projects .card {
+  padding: 0px 12px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects .card .cover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.projects .card .cover img {
+  transition: all 0.8s ease;
+}
+.projects .card .card-body {
+  padding: 16px 0 32px 0;
+}
+.projects .card .card-body h5, .projects .card .card-body .h5 {
+  color: #111111;
+}
+.projects .card .card-body p.content {
+  color: #666666;
+}
+.projects .card:hover {
+  color: #FF512F;
+}
+.projects .card:hover img {
+  transform: scale(1.2);
 }
 
 * {
@@ -11109,8 +11180,8 @@ body .title {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 78px;
-  margin-bottom: 108px;
+  margin-top: 128px;
+  margin-bottom: 64px;
 }
 body .title h1, body .title .h1 {
   color: #111111;
@@ -11140,6 +11211,8 @@ body .introduce .basic-info .my-info {
 }
 body .introduce .basic-info .my-info h2, body .introduce .basic-info .my-info .h2 {
   color: #111111;
+  text-align: left;
+  margin-bottom: 0;
 }
 body .introduce .basic-info .my-info div {
   display: flex;
@@ -11166,4 +11239,153 @@ body .introduce .basic-info .my-info .contact button.tertiary .content {
 }
 body .introduce .text p.content {
   color: #333333;
+}
+body .skill {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 122px;
+  margin-bottom: 210px;
+}
+body .skill .figma {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/figma-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .figma:hover {
+  background-image: url(../images/figma.png);
+  scale: 1.2;
+}
+body .skill .ai {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/ai-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .ai:hover {
+  background-image: url(../images/ai.png);
+  scale: 1.2;
+}
+body .skill .ps {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/ps-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .ps:hover {
+  background-image: url(../images/ps.png);
+  scale: 1.2;
+}
+body .skill .h5 {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/h5-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .h5:hover {
+  background-image: url(../images/h5.png);
+  scale: 1.2;
+}
+body .skill .sass {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/sass-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .sass:hover {
+  background-image: url(../images/sass.png);
+  scale: 1.2;
+}
+body .skill .bs {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/bs-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .bs:hover {
+  background-image: url(../images/bs.png);
+  scale: 1.2;
+}
+body .skill .js {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/js-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .js:hover {
+  background-image: url(../images/js.png);
+  scale: 1.2;
+}
+body .skill .git {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/git-default.png);
+  transition: all 0.3s ease;
+}
+body .skill .git:hover {
+  background-image: url(../images/git.png);
+  scale: 1.2;
+}
+body h2, body .h2 {
+  text-align: center;
+  margin-bottom: 72px;
+}
+body .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+body .experience .line {
+  position: absolute;
+  top: 40px;
+}
+body .experience small.content, body .experience .content.small {
+  color: #333333;
+  width: 996px;
+}
+body .experience .company {
+  display: flex;
+  gap: 136px;
+}
+body .experience .company h3, body .experience .company .h3 {
+  color: #333333;
+  width: 350px;
+}
+body .experience .company img {
+  width: 24px;
+  height: 24px;
+}
+body .experience .company .work {
+  width: 350px;
+}
+body .experience .company .work .job {
+  margin-bottom: 24px;
+}
+body .experience .company .work .job h3, body .experience .company .work .job .h3 {
+  color: #FF512F;
+  margin-bottom: 8px;
+}
+body .experience .company .work .job p.content {
+  color: #666666;
+}
+body .experience .company .work .job p.content span {
+  color: #111111;
+  font-weight: 900;
+}
+body .experience .company .work .job ol {
+  padding-left: 1.5rem;
+}
+body .experience .company .work .job ol li span {
+  color: #111111;
+  font-weight: 900;
+}
+body .word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 160px 0;
 }/*# sourceMappingURL=style.css.map */

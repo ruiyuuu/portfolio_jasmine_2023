@@ -1,0 +1,21 @@
+@import '_color.scss';
+
+footer{
+    background-color: $g-900;
+    background-image: url(../images/footer-bg.png);
+    background-position: top 90% left 90%;
+    background-repeat: no-repeat;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    .link{
+        display: flex;
+        gap: 24px;
+    }
+    small.content{
+        color: $g-700;
+    }
+}
