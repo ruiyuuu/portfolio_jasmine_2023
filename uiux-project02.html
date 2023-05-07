@@ -205,17 +205,86 @@
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">市場現況痛點</h2>
                         <div class="d-flex flex-column px-4 justify-content-between">
-                            <div class="p02-pain-item d-flex col-lg-12">
-                                <div class="p02-pai-description d-flex flex-column">
+                            <div class="p02-pain-item d-flex col-lg-12 align-items-center">
+                                <div class="p02-pain-description d-flex flex-column">
                                     <h1>01</h1>
                                     <div class="goals d-flex flex-column">
-                                        <h3>目標：方便選品上架</h3>
+                                        <h3>不易讀</h3>
                                         <p class="regular">
-                                            普適性越高，越容易打開市場，利用客戶在其他購物平台有建立習慣的選購商品方式，符合使用者的心智模型，可以降低學習成本
+                                            畫面擁擠，未進行資訊分類，<br>
+                                            認知負擔過大，必須吸收過多的資訊
                                         </p>
                                     </div>
                                 </div>
-                                <img class="p02" src="./images/p02-pain-01.png" alt="pain-01">
+                                <div class="p02-3">
+                                    <img class="p02" src="./images/p02-pain-01.png" alt="pain-01">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column px-4 justify-content-between">
+                            <div class="p02-pain-item d-flex col-lg-12 align-items-center">
+                                <img class="p02" src="./images/p02-pain-02.png" alt="pain-02">
+                                <div class="p02-pain-description d-flex flex-column">
+                                    <h1>02</h1>
+                                    <div class="goals d-flex flex-column">
+                                        <h3>選單節點過多</h3>
+                                        <p class="regular">
+                                            導致決策時間長，<br>
+                                            資訊不易查找
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column px-4 justify-content-between">
+                            <div class="p02-pain-item d-flex col-lg-12 align-items-center justify-content-center">
+                                <div class="p02-pain-description d-flex flex-column">
+                                    <h1>03</h1>
+                                    <div class="goals d-flex flex-column">
+                                        <h3>跨螢幕體驗不友善</h3>
+                                        <p class="regular">
+                                            部分頁面未響應式設計 (RWD)，<br>
+                                            點擊感應區塊過小
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex p02-3 gap-4">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <img class="p02" src="./images/p02-pain-03-1.png" alt="pain-03-1">
+                                        <small>
+                                            常見問題示意
+                                        </small>
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <img class="p02" src="./images/p02-pain-03-2.png" alt="pain-03-2">
+                                        <small>
+                                            常見問題示意
+                                        </small>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column px-4 justify-content-between">
+                            <div class="p02-pain-item d-flex col-lg-12 align-items-center">
+                                .<div class="d-flex p02-3 gap-4">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <img class="p02" src="./images/p02-pain-04.png" alt="pain-04">
+                                        <small>
+                                            首頁示意
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="p02-pain-description d-flex flex-column">
+                                    <h1>04</h1>
+                                    <div class="goals d-flex flex-column">
+                                        <h3>資訊架構不明確</h3>
+                                        <p class="regular">
+                                            網站資訊架構不明確，<br>
+                                            使用者無法快速進行分流
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,313 +296,47 @@
         <div class="container section">
             <div class="row">
                 <div class="col-12">
-                    <div class="info d-flex flex-column">
-                        <h2 class="text-start mb-0">用戶模型分析與使用者定位</h2>
-                        <ul class="nav nav-pills d-flex bg-w switch" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link d-flex active align-items-center" id="pills-master-persona-tab" data-bs-toggle="pill" data-bs-target="#pills-master-persona" type="button" role="tab" aria-controls="pills-master-persona" aria-selected="true">團主分析</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link d-flex align-items-center" id="pills-member-persona-tab" data-bs-toggle="pill" data-bs-target="#pills-member-persona" type="button" role="tab" aria-controls="pills-member-persona" aria-selected="false">團員分析</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-master-persona" role="tabpanel" aria-labelledby="pills-master-persona-tab" tabindex="0">
-                                <div class="d-flex px-4 justify-content-between">
-                                    <div class="persona-item d-flex flex-column col-lg-4">
-                                        <h3>明宏</h3>
-                                        <div class="flex">
-                                            <ul class="persona-list d-flex flex-column">
-                                                <li>
-                                                    <p class="regular">特色</p>
-                                                    <p class="regular">熱心團爸</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">年齡</p>
-                                                    <p class="regular">55 歲</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">性別</p>
-                                                    <p class="regular">男</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">職業</p>
-                                                    <p class="regular">家庭主夫</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">收入</p>
-                                                    <p class="regular">平均收入</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">家庭</p>
-                                                    <p class="regular">已婚，2 個小孩</p>
-                                                </li>
-                                            </ul>
-                                            <p class="regular">
-                                                時常參與社區團體活動，並願意幫助大家完成任何需要做的事情，關心大家的福利跟需求，且願意花時間提供這些支援
-                                            </p>
-                                            <div class="avatar-bg">
-                                            </div>
-                                            <figure>
-                                                <img src="./images/gif/p01-master-01.gif" alt="master-01">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="persona-item d-flex flex-column col-lg-4">
-                                        <h3>淑華</h3>
-                                        <div class="flex">
-                                            <ul class="persona-list d-flex flex-column">
-                                                <li>
-                                                    <p class="regular">特色</p>
-                                                    <p class="regular">積極團媽</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">年齡</p>
-                                                    <p class="regular">39 歲</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">性別</p>
-                                                    <p class="regular">女</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">職業</p>
-                                                    <p class="regular">自由工作者</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">收入</p>
-                                                    <p class="regular">未知</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">家庭</p>
-                                                    <p class="regular">已婚，1 個小孩</p>
-                                                </li>
-                                            </ul>
-                                            <p class="regular">
-                                                善於利用手機和電腦尋找優惠信息，擅長組織跟策劃活動，有豐富的經驗可以提供良好的建議，致力創造一個積極向上的氣氛，跟團員分享購物快樂
-                                            </p>
-                                            <div class="avatar-bg">
-                                            </div>
-                                            <figure>
-                                                <img src="./images/gif/p01-master-02.gif" alt="master-02">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="persona-item d-flex flex-column col-lg-4">
-                                        <h3>美玲</h3>
-                                        <div class="flex">
-                                            <ul class="persona-list d-flex flex-column">
-                                                <li>
-                                                    <p class="regular">特色</p>
-                                                    <p class="regular">關心團員的團媽</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">年齡</p>
-                                                    <p class="regular">42 歲</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">性別</p>
-                                                    <p class="regular">女</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">職業</p>
-                                                    <p class="regular">服飾店老闆</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">收入</p>
-                                                    <p class="regular">平均收入</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">家庭</p>
-                                                    <p class="regular">已婚，1 個小孩</p>
-                                                </li>
-                                            </ul>
-                                            <p class="regular">
-                                                關心團員的經濟和消費狀況，尋找更好的購物方案，善於傾聽團員的需求及建議，與他們交流討論提供建議，讓團員在他的幫助下一起成長
-                                            </p>
-                                        </div>
-                                        <div class="avatar-bg">
-                                        </div>
-                                        <figure>
-                                            <img src="./images/gif/p01-master-03.gif" alt="master-03">
-                                        </figure>
-                                    </div>
-                                </div>
-                                <div class="arrow col-lg-12 d-flex justify-content-center">
-                                    <svg width="24" height="115" viewBox="0 0 24 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L12 113" stroke="#FF512F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M19 107L12 114L5 107" stroke="#FF512F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </div>
-                                <div class="user-target d-flex justify-content-between">
-                                    <div class="target d-flex flex-column">
-                                        <h3>具有團隊精神</h3>
-                                        <p class="regular">
-                                            對團購網站或社群媒體有強烈參與度，願意參與團購活動或組織自己的團購小團體
-                                        </p>
-                                    </div>
-                                    <div class="target d-flex flex-column">
-                                        <h3>熱愛尋找優惠折扣</h3>
-                                        <p class="regular">
-                                            優先考慮群體的利益和需求，喜歡跟團員討論方案，並提供相關的協助和支援
-                                        </p>
-                                    </div>
-                                    <div class="target d-flex flex-column">
-                                        <h3>喜歡分享資訊</h3>
-                                        <p class="regular">
-                                            喜歡與團員交流並分享產品資訊、評價和購物經驗，增進彼此的了解和信任
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="info d-flex justify-content-between">
+                        <div class="analysis d-flex flex-column justify-content-between">
+                            <div class="analysis-title d-flex flex-column gap-4">
+                                <h2 class="text-start mb-0">同業競品分析</h2>
+                                <p class="regular">
+                                    以臺銀角度，玉山、中信為競爭對手，這些網站在 UIUX 中具備：
+                                </p>
                             </div>
-                            <div class="tab-pane fade" id="pills-member-persona" role="tabpanel" aria-labelledby="pills-member-persona-tab" tabindex="0">
-                                <div class="d-flex px-4 justify-content-between">
-                                    <div class="persona-item d-flex flex-column col-lg-4">
-                                        <h3>美珍</h3>
-                                        <div class="flex">
-                                            <ul class="persona-list d-flex flex-column">
-                                                <li>
-                                                    <p class="regular">特色</p>
-                                                    <p class="regular">團購達人</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">年齡</p>
-                                                    <p class="regular">49 歲</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">性別</p>
-                                                    <p class="regular">女</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">職業</p>
-                                                    <p class="regular">上班族</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">收入</p>
-                                                    <p class="regular">平均收入</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">家庭</p>
-                                                    <p class="regular">已婚，2 個小孩</p>
-                                                </li>
-                                            </ul>
-                                            <p class="regular">
-                                                雖然我跟先生都有上班，但還是要精打細算，不太了解手機怎麼操作，喜歡從各種管道收集促銷訊息進行比價，上班時也會跟同事討論分享優惠消息
-                                            </p>
-                                            <div class="avatar-bg">
-                                            </div>
-                                            <figure>
-                                                <img src="./images/gif/p01-member-01.gif" alt="member-01">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="persona-item d-flex flex-column col-lg-4">
-                                        <h3>宗翰</h3>
-                                        <div class="flex">
-                                            <ul class="persona-list d-flex flex-column">
-                                                <li>
-                                                    <p class="regular">特色</p>
-                                                    <p class="regular">省錢達人</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">年齡</p>
-                                                    <p class="regular">29 歲</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">性別</p>
-                                                    <p class="regular">男</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">職業</p>
-                                                    <p class="regular">研究生</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">收入</p>
-                                                    <p class="regular">低收入</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">家庭</p>
-                                                    <p class="regular">獨居</p>
-                                                </li>
-                                            </ul>
-                                            <p class="regular">
-                                                喜歡尋找優惠折扣，由於還是學生收入有限，因此非常節省，會上網參考其他用戶的商品評價以確保品質，購物時會理性評估價格跟價值是否符合期待
-                                            </p>
-                                            <div class="avatar-bg">
-                                            </div>
-                                            <figure>
-                                                <img src="./images/gif/p01-member-02.gif" alt="member-02">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="persona-item d-flex flex-column col-lg-4">
-                                        <h3>麗花</h3>
-                                        <div class="flex">
-                                            <ul class="persona-list d-flex flex-column">
-                                                <li>
-                                                    <p class="regular">特色</p>
-                                                    <p class="regular">懶人團購</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">年齡</p>
-                                                    <p class="regular">32 歲</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">性別</p>
-                                                    <p class="regular">女</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">職業</p>
-                                                    <p class="regular">上班族</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">收入</p>
-                                                    <p class="regular">中等收入</p>
-                                                </li>
-                                                <li>
-                                                    <p class="regular">家庭</p>
-                                                    <p class="regular">已婚，1 個小孩</p>
-                                                </li>
-                                            </ul>
-                                            <p class="regular">
-                                                平日忙於工作與小孩，時間寶貴注重效率，因此會花錢買時間，例如美食外送或網路購物，會選擇信譽良好的團購平台交易，確保可以快速方便的購買商品
-                                            </p>
-                                            <div class="avatar-bg">
-                                            </div>
-                                            <figure>
-                                                <img src="./images/gif/p01-member-03.gif" alt="member-03">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="arrow col-lg-12 d-flex justify-content-center">
-                                    <svg width="24" height="115" viewBox="0 0 24 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 1L12 113" stroke="#FF512F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M19 107L12 114L5 107" stroke="#FF512F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                </div>
-                                <div class="user-target d-flex justify-content-between">
-                                    <div class="target d-flex flex-column">
-                                        <h3>數位新手</h3>
-                                        <p class="regular">
-                                            樂於分享自己的購物經驗，由於數位化程度較低，面對複雜的介面會並擔心操作失誤
-                                        </p>
-                                    </div>
-                                    <div class="target d-flex flex-column">
-                                        <h3>價格敏感族群</h3>
-                                        <p class="regular">
-                                            通常有家庭或者有經濟壓力的消費者，使用團購平台尋找優惠，以節省開支
-                                        </p>
-                                    </div>
-                                    <div class="target d-flex flex-column">
-                                        <h3>忙碌的上班族</h3>
-                                        <p class="regular">
-                                            注重效率，空閒時間被碎片化，尋找省時省力省錢的消費平台，確保自己有良好的生活品質
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="analysis-content d-flex flex-column align-items-center">
+                                <ul class="d-flex flex-column gap-2">
+                                    <li>好的跨螢體驗，應用響應式網站設計</li>
+                                    <li>資訊架構明確，快速將用戶導流至目的地</li>
+                                    <li>舒適的閱讀體驗，沒有過度的視覺噪音</li>
+                                    <li>常用功能區塊符合 7 ± 2 法則，降低使用者決策時間</li>
+                                    <li>點擊範圍明確且清楚</li>
+                                </ul>
+                                <img src="./images/p02-bot.png" alt="bot">
+                            </div>
+                        </div>
+                        <div class="competitor d-flex flex-column me-4 gap-4">
+                            <div class="d-flex align-items-center gap-4">
+                                <p class="regular">
+                                    玉山
+                                </p>
+                                <img src="./images/p02-esun.png" alt="esun">
+                            </div>
+                            <div class="d-flex align-items-center gap-4">
+                                <p class="regular">
+                                    中信
+                                </p>
+                                <img src="./images/p02-ctbc.png" alt="ctbc">
+                            </div>
+                            <div class="d-flex align-items-center gap-4">
+                                <p class="regular">
+                                    合庫
+                                </p>
+                                <img src="./images/p02-tbc.png" alt="tbc">
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -543,31 +346,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="info d-flex flex-column">
-                        <div class="d-flex justify-content-between">
-                            <div class="flow-content d-flex flex-column col-lg-4">
-                                <h2 class="text-start mb-0">用戶流程</h2>
-                                <ul class="nav nav-pills d-flex bg-b switch" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link d-flex active align-items-center" id="pills-master-flow-tab" data-bs-toggle="pill" data-bs-target="#pills-master-flow" type="button" role="tab" aria-controls="pills-master-flow" aria-selected="true">團主分析</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                    <button class="nav-link d-flex align-items-center" id="pills-member-flow-tab" data-bs-toggle="pill" data-bs-target="#pills-member-flow" type="button" role="tab" aria-controls="pills-member-flow" aria-selected="false">團員分析</button>
-                                    </li>
-                                </ul>
-                                <p class="regular">
-                                    總結用戶痛點及需求後，梳理團購前台資訊架構，定義所有節點及詳細流程
-                                </p>
-                            </div>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active flow-pic" id="pills-master-flow" role="tabpanel" aria-labelledby="pills-master-flow-tab" tabindex="0">
-                                    <img class="master-flow" src="./images/master-flow.png" alt="master-flow">
-                                </div>
-                                <div class="tab-pane fade flow-pic" id="pills-member-flow" role="tabpanel" aria-labelledby="pills-member-flow-tab" tabindex="0">
-                                    <img class="member-flow" src="./images/member-flow.png" alt="member-flow">
-                                </div>
-                            </div>
-                        </div>
-                        
+                        <h2 class="text-start mb-0">設計目標</h2>
+                        <img src="./images/p02-target.png" alt="target">
                     </div>
                 </div>
             </div>
@@ -578,169 +358,66 @@
             <div class="row">
                 <div class="col-12">
                     <div class="info d-flex flex-column">
-                        <h2 class="text-start mb-0">設計文件標註</h2>
-                        <div class="d-flex justify-content-between note">
-                            <div class="d-flex flex-column col-lg-4 align-items-center">
-                                <p class="regular">
-                                    在與前端協作時，由於時間緊迫，設計和開發時程可能是同步進行的。為了確保所有專案成員的消息同步，會在文件中清楚標記設計稿目前的狀態。
-                                </p>
-                                <img class="note-01" src="./images/p01-note-01.png" alt="note-01">
-                            </div>
-                            <div class="d-flex flex-column col-lg-7">
-                                <p class="regular">
-                                    在與前端協作時，由於時間緊迫，設計和開發時程可能是同步進行的。為了確保所有專案成員的消息同步，會在文件中清楚標記設計稿目前的狀態。
-                                </p>
-                                <div class="note-02">
-                                    <img class="note-02-1" src="./images/p01-note-02-1.png" alt="note-02-1">
-                                    <img class="note-02-2" src="./images/p01-note-02-2.png" alt="note-02-2">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-w">
-        <div class="container section">
-            <div class="row">
-                <div class="col-12">
-                    <div class="info d-flex flex-column">
-                        <h2 class="text-start mb-0">設計目標及策略</h2>
-                        <ul class="nav nav-pills d-flex bg-w switch" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link d-flex active align-items-center" id="pills-master-strategy-tab" data-bs-toggle="pill" data-bs-target="#pills-master-strategy" type="button" role="tab" aria-controls="pills-master-strategy" aria-selected="true">團主分析</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link d-flex align-items-center" id="pills-member-strategy-tab" data-bs-toggle="pill" data-bs-target="#pills-member-strategy" type="button" role="tab" aria-controls="pills-member-strategy" aria-selected="false">團員分析</button>
-                            </li>
-                        </ul>
+                        <h2 class="text-start mb-0">設計策略</h2>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-master-strategy" role="tabpanel" aria-labelledby="pills-master-strategy-tab" tabindex="0">
-                                <div class="d-flex flex-column px-4 justify-content-between">
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：方便選品上架</h3>
-                                                <h3>策略：降低學習曲線</h3>
-                                            </div>
-                                            <p class="regular">
-                                                普適性越高，越容易打開市場，利用客戶在其他購物平台有建立習慣的選購商品方式，符合使用者的心智模型，可以降低學習成本
-                                            </p>
+                            <div class="d-flex flex-column px-4 justify-content-between">
+                                <div class="strategy-item d-flex col-lg-12">
+                                    <div class="strategy-description d-flex flex-column">
+                                        <div class="goals d-flex flex-column">
+                                            <h3>符合 3 次點擊法則</h3>
                                         </div>
-                                        <img src="./images/p01-strategy-01.png" alt="strategy-01">
+                                        <p class="regular">
+                                            用戶在初次進入網站時，如果用戶通過三次點擊依然沒有找到自己想要的內容，用戶將會失望並離開
+                                        </p>
                                     </div>
-                                    <div class="strategy-item d-flex col-lg-12">
+                                    <img class="border border-0 rounded-0" src="./images/p02-strategy-01.png" alt="strategy-01">
+                                </div>
+                                <div class="strategy-item d-flex col-lg-12">
+                                    <div class="p02-02 d-flex gap-4">
+                                        <img class="p02-02-1" src="./images/p02-strategy-02-1.png" alt="strategy-02-1">
+                                        <img class="p02-02-2" src="./images/p02-strategy-02-2.png" alt="strategy-02-2">
+                                    </div>
+                                    <div class="strategy-description d-flex flex-column">
+                                        <div class="goals d-flex flex-column">
+                                            <h3>席克定律</h3>
+                                        </div>
+                                        <p class="regular">
+                                            選擇區塊皆符合 7 ± 2 法則，避免用戶拉長決策的時間
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="strategy-item d-flex col-lg-12">
+                                    <div class="strategy-description d-flex flex-column">
+                                        <div class="goals d-flex flex-column">
+                                            <h3>雅各布定律</h3>
+                                        </div>
+                                        <p class="regular">
+                                            使用者將大部分時間停留在他人產品，表示他們希望使用這種操作方式及使用模式
+                                        </p>
+                                    </div>
+                                    <div class="p02-03 d-flex flex-column gap-4 align-items-center">
+                                        <img class="p02-03-1" src="./images/p02-strategy-03-1.png" alt="strategy-03-1">
                                         <div class="d-flex gap-4">
-                                            <img src="./images/p01-strategy-02-1.png" alt="strategy-02-1">
-                                            <img src="./images/p01-strategy-02-2.png" alt="strategy-02-2">
-                                            <img src="./images/p01-strategy-02-3.png" alt="strategy-02-3">
-                                        </div>
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：快速建立最小可行性產品</h3>
-                                                <h3>策略：一致性、標準化及模組化設計元件</h3>
-                                            </div>
-                                            <p class="regular">
-                                                讓設計元件具備可替換特性及通用性，可降低使用者學習成本，避免使用者全站累積下來的各式混淆，提高工程師開發效率，方便長期維護產品
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：減少選品的不安感</h3>
-                                                <h3>策略：強化產品資訊</h3>
-                                            </div>
-                                            <p class="regular">
-                                                提供完整詳盡的產品資訊，包括產品描述、規格、圖片等，更加了解產品特點及品質，提高選品意願
-                                            </p>
-                                        </div>
-                                        <div class="d-flex gap-4">
-                                            <img src="./images/p01-strategy-03-1.png" alt="strategy-03-1">
-                                            <img src="./images/p01-strategy-03-2.png" alt="strategy-03-2">
-                                        </div>
-                                    </div>
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="d-flex gap-4 share-mobile">
-                                            <img class="share-mobile" src="./images/p01-strategy-04-1.png" alt="strategy-04-1">
-                                            <img class="share" src="./images/p01-strategy-04-2.png" alt="strategy-04-2">
-                                        </div>
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：在既有的社交群組曝光自己的團購連結</h3>
-                                                <h3>策略：提供一鍵分享功能及分享素材</h3>
-                                            </div>
-                                            <p class="regular">
-                                                在系統中提供醒目的「快速分享」連結按鈕，讓他們可以快速的分享到社群媒體，並有圖片輔助吸引更多人加入團購
-                                            </p>
+                                            <img class="p02-03-2" src="./images/p02-strategy-03-2.png" alt="strategy-03-2">
+                                            <img class="p02-03-3" src="./images/p02-strategy-03-3.png" alt="strategy-03-2">
+                                            <img class="p02-03-4" src="./images/p02-strategy-03-4.png" alt="strategy-03-2">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-member-strategy" role="tabpanel" aria-labelledby="pills-member-strategy-tab" tabindex="0">
-                                <div class="d-flex flex-column px-4 justify-content-between">
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：增加用戶數</h3>
-                                                <h3>策略：簡化註冊及下單流程</h3>
-                                            </div>
-                                            <p class="regular">
-                                                注重時間效率及數位化較低的消費者，簡化流程及提供簡潔明瞭的訂單信息，以快速方便完成訂單
-                                            </p>
-                                        </div>
-                                        <div class="d-flex gap-4">
-                                            <img src="./images/p01-strategy-05-1.png" alt="strategy-05-1">
-                                            <img src="./images/p01-strategy-05-2.png" alt="strategy-05-2">
-                                        </div>
+                                <div class="strategy-item d-flex col-lg-12">
+                                    <div class="p02-04 d-flex gap-4">
+                                        <img class="p02-04-1" src="./images/p02-strategy-04-1.png" alt="strategy-04-1">
+                                        <img class="p02-04-2" src="./images/p02-strategy-04-2.png" alt="strategy-04-2">
                                     </div>
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="d-flex gap-4">
-                                            <img src="./images/p01-strategy-06.png" alt="strategy-06">
+                                    <div class="strategy-description d-flex flex-column">
+                                        <div class="goals d-flex flex-column">
+                                            <h3>運用 AIDA 模型</h3>
                                         </div>
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：提高下單率</h3>
-                                                <h3>策略：協助推廣團主團購平台</h3>
-                                            </div>
-                                            <p class="regular">
-                                                除了提供平台讓團主自由運用，我們也提供團購總覽功能，協助團主更有效地推廣團購活動，從而提高下單率。
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：快速建立 MVP，再持續進行滾動式優化調整</h3>
-                                                <h3>策略：一致性、標準化及模組化設計元件</h3>
-                                            </div>
-                                            <p class="regular">
-                                                讓設計元件具備可替換特性及通用性，可降低使用者學習成本，避免使用者全站累積下來的各式混淆，提高工程師開發效率，方便長期維護產品
-                                            </p>
-                                        </div>
-                                        <div class="d-flex gap-4">
-                                            <img src="./images/p01-strategy-07-1.png" alt="strategy-07-1">
-                                            <img src="./images/p01-strategy-07-2.png" alt="strategy-07-2">
-                                        </div>
-                                    </div>
-                                    <div class="strategy-item d-flex col-lg-12">
-                                        <div class="d-flex gap-4">
-                                            <img src="./images/p01-strategy-08.png" alt="strategy-08">
-                                        </div>
-                                        <div class="strategy-description d-flex flex-column">
-                                            <div class="goals d-flex flex-column">
-                                                <h3>目標：提供團員與團主溝通管道</h3>
-                                                <h3>策略：運用在現有資源、時程及目的綜合考量下，以提供文字備註欄位進行</h3>
-                                            </div>
-                                            <p class="regular">
-                                                減少團員與團主進行線下產品討論，跳離團購平台，在畫面中設置備註區塊方便雙方針對產品進行溝通
-                                            </p>
-                                        </div>
+                                        <p class="regular">
+                                            運用情境，讓使用者從注意 (Awarness)，到產生興趣 (Interest)，到產生慾望 (Desire) 感知目前的個人需求，進而激發消費動機
+                                        </p>
                                     </div>
                                 </div>
-                                
-                                
                             </div>
                         </div>
                     </div>
@@ -749,179 +426,93 @@
         </div>
     </div>
     <div class="bg-w">
-        <div class="container section ">
+        <div class="section">
             <div class="row">
                 <div class="col-12">
                     <div class="info d-flex flex-column">
-                        <h2 class="text-start mb-0">專案總結</h2>
-                        <ul class="nav nav-pills d-flex bg-w switch" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link d-flex active align-items-center" id="pills-master-display-tab" data-bs-toggle="pill" data-bs-target="#pills-master-display" type="button" role="tab" aria-controls="pills-master-display" aria-selected="true">團主分析</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link d-flex align-items-center" id="pills-member-display-tab" data-bs-toggle="pill" data-bs-target="#pills-member-display" type="button" role="tab" aria-controls="pills-member-display" aria-selected="false">團員分析</button>
-                            </li>
-                        </ul>
+                        <h2 class="text-start container mb-0">專案總結</h2>
+                        <div class="container-fluid ui-kit">
+                            <img src="./images/p02-display-01.png" alt="display-01">
+                        </div>
+                        <div class="container">
+                            <div class="d-flex flex-column px-4 gap-4">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <h4>首頁</h4>
+                                        <img class="demo mb-0 border border-0 rounded-0" src="./images/p02-display-02.png" alt="display-02">
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <h4>自訂常用服務</h4>
+                                        <img class="demo mb-0 border border-0 rounded-0" src="./images/p02-display-03.png" alt="display-03">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <h4>服務據點</h4>
+                                        <img class="demo border border-0 rounded-0" src="./images/p02-display-04.png" alt="display-04">
+                                    </div>
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <h4>常見問題</h4>
+                                        <img class="demo border border-0 rounded-0" src="./images/p02-display-05.png" alt="display-05">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="tab-content" id="pills-tabContent">
-        
-        <div class="tab-pane fade show active" id="pills-master-display" role="tabpanel" aria-labelledby="pills-master-display-tab" tabindex="0">
-            <div class="container-fluid ui-kit">
-                <img src="./images/p01-master-display-01.png" alt="display-01">
+    <div class="d-flex align-items-center justify-content-center gap-4">
+        <img src="./images/p02-display-06.png" alt="">
+        <button class="primary">
+            前往台灣銀行
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 3H21V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 14L21 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </button>
+    </div>
+
+    <div class="p02">
+        <div class="container d-flex flex-column review">
+            <h2 class="text-start">專案復盤</h2>
+            <div class="topic d-flex flex-column gap-3">
+                <p class="highlight">
+                    如何優化網站選單的使用體驗？
+                </p>
+                <p class="regular">
+                    因為全站是由多個部門共同維護，若要進行大規模的架構梳理，會消耗龐大的溝通成本。因此，在原有資訊架構的基礎上，我們專注於優化網站選單的使用體驗，使其更加直觀、易用。例如，我們通過簡化選單項目、使用下拉式菜單等方式，讓使用者能夠更快速地找到所需的資訊，並且減少使用者的煩惱。
+                </p>
             </div>
-            <div class="container">
-                <div class="demo d-flex justify-content-between">
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>商品頁</h4>
-                        <img class="demo" src="./images/p01-master-display-02.png" alt="display-02">
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>叫貨單</h4>
-                        <img class="demo" src="./images/p01-master-display-03.png" alt="display-03">
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>出貨單</h4>
-                        <img class="demo" src="./images/p01-master-display-04.png" alt="display-04">
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>帳戶</h4>
-                        <img class="demo" src="./images/p01-master-display-05.png" alt="display-05">
-                    </div>
-                </div>
-                
-                <div class="d-flex align-items-center justify-content-center gap-4">
-                    <img src="./images/p01-master-display-06.png" alt="">
-                    <button class="primary">
-                        前往團購後台
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 3H21V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 14L21 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="p01">
-                <div class="container d-flex flex-column review">
-                    <h2 class="text-start">專案復盤</h2>
-                    <div class="topic d-flex flex-column gap-3">
-                        <p class="highlight">
-                            如何創造一個能賺錢、符合客戶需求且能被接受的產品？
-                        </p>
-                        <p class="regular">
-                            在開發產品時，我們常常聽到「最小可行性產品」的概念，但是我們可能會忽略了「可行性」這個重要的元素。我們的目標應該是創造一個能賺錢、符合客戶需求且能被接受的產品，而不是只是一個「最小可行性產品」。我們必須盡快進入目標市場，快速迭代，不斷優化修正，以符合客戶的需求。因為商機在產生時需要快速執行，並在市場中進行實測，否則產品的時機可能已經錯過。在執行這個專案時，我們持續靈活調整步調與合作模式，以應付任何突如其來的變化，以創造出最完美的產品。
-                        </p>
-                    </div>
-                    <div class="topic d-flex flex-column gap-3">
-                        <p class="highlight">
-                            如何應對客戶新需求的增加？
-                        </p>
-                        <p class="regular">
-                            在產品開發過程中，客戶新需求的增加是一個不可避免的問題。為了應對這種情況，我們必須不斷地溝通協調，評估需求的可行性，並將設計樣式標準化，以確保增加的流程能夠提升使用者體驗。同時，讓工程師專注於專案邏輯，加速開發。這需要一個協調良好、靈活的開發團隊，以應對不斷增加的新需求，讓產品更好地滿足客戶的需求。
-                        </p>
-                    </div>
-                    <div class="topic d-flex flex-column gap-3">
-                        <p class="highlight">
-                            優化後台管理系統，提供手機版操作與 APP 編譯
-                        </p>
-                        <p class="regular">
-                            原本的後台管理系統只有電腦版操作，但得到使用者反饋後，我們意識到需要提供手機版操作，因此計畫改為 RWD 並且使用 Ionic 編譯成 APP。在優化的過程中，我們注意到資訊過於繁雜可能會影響使用體驗，因此在使用者能負擔的資訊結構範圍內進行了輕量調整頁面資訊的工作。同時，在不過度拆解結構的前提下，我們保證了頁面元素的標準化，讓工程師可以專注於邏輯開發，降低重工風險。我們希望這次的優化能夠讓使用者得到更好的體驗，提高產品的價值。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tab-pane fade" id="pills-member-display" role="tabpanel" aria-labelledby="pills-member-display-tab" tabindex="0">
-            <div class="container-fluid ui-kit">
-                <img src="./images/p01-member-display-01.png" alt="display-01">
-            </div>
-            <div class="container">
-                <div class="demo d-flex justify-content-between">
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>首頁</h4>
-                        <img class="demo" src="./images/p01-member-display-02.png" alt="display-02">
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>下單成功</h4>
-                        <img class="demo" src="./images/p01-member-display-03.png" alt="display-03">
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>下單記錄</h4>
-                        <img class="demo" src="./images/p01-member-display-04.png" alt="display-04">
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <h4>我的帳戶</h4>
-                        <img class="demo" src="./images/p01-member-display-05.png" alt="display-05">
-                    </div>
-                </div>
-                
-                <div class="d-flex align-items-center justify-content-center gap-4">
-                    <img src="./images/p01-member-display-06.png" alt="display-06">
-                    <button class="primary">
-                        前往團購後台
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 3H21V9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10 14L21 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="p02">
-                <div class="container d-flex flex-column review">
-                    <h2 class="text-start">專案復盤</h2>
-                    <div class="topic d-flex flex-column gap-3">
-                        <p class="highlight">
-                            最後悔的決定！產品圖要用什麼比例進行設計？
-                        </p>
-                        <p class="regular">
-                            在產品開發前期，我們以手機為主進行設計，因考量使用者可能會用手機拍照上傳商品照片。然而參考多數購物平台的1:1設計讓開發團隊陷入兩難，因為不是每個人都會將照片裁切成方形後上傳，尤其是數位化程度較低的使用者。最終，我們採用手機拍照比例9:16進行設計以符合大多數用戶的使用習慣。<br>
-                            考慮到產品的使用者族群，我們希望產品照片能夠呈現大、清晰，並專注於一個產品。因此，我們以9:16的長方形方式呈現照片，每屏只顯示一個產品。但在產品內頁，為了能在有限的版面上放置更多文字，我們把圖片改為正方形，這導致有些用戶上傳的圖片被裁切，無法完整顯示，且前後台尺寸不一致，上架時產生困惑。<br>
-                            後來，為了讓使用者快速掃視產品，我們想要改成左右兩欄的樣式，但長方形兩欄的產品圖看不到產品重點，因此我們決定將產品尺寸統一為1:1，以解決問題。我們循序漸進地進行優化調整，降低既有用戶受到影響的範圍，同時提高新用戶的操作體驗，以增加產品的吸引力。
-                        </p>
-                    </div>
-                    <div class="topic d-flex flex-column gap-3">
-                        <p class="highlight">
-                            如何應對客戶新需求的增加？
-                        </p>
-                        <p class="regular">
-                            在產品開發過程中，客戶新需求的增加是一個不可避免的問題。為了應對這種情況，我們必須不斷地溝通協調，評估需求的可行性，並將設計樣式標準化，以確保增加的流程能夠提升使用者體驗。同時，讓工程師專注於專案邏輯，加速開發。這需要一個協調良好、靈活的開發團隊，以應對不斷增加的新需求，讓產品更好地滿足客戶的需求。
-                        </p>
-                    </div>
-                    <div class="topic d-flex flex-column gap-3">
-                        <p class="highlight">
-                            優化後台管理系統，提供手機版操作與 APP 編譯
-                        </p>
-                        <p class="regular">
-                            原本的後台管理系統只有電腦版操作，但得到使用者反饋後，我們意識到需要提供手機版操作，因此計畫改為 RWD 並且使用 Ionic 編譯成 APP。在優化的過程中，我們注意到資訊過於繁雜可能會影響使用體驗，因此在使用者能負擔的資訊結構範圍內進行了輕量調整頁面資訊的工作。同時，在不過度拆解結構的前提下，我們保證了頁面元素的標準化，讓工程師可以專注於邏輯開發，降低重工風險。我們希望這次的優化能夠讓使用者得到更好的體驗，提高產品的價值。
-                        </p>
-                    </div>
-                </div>
+            <div class="topic d-flex flex-column gap-3">
+                <p class="highlight">
+                    網站具備多語系和無障礙兩種特性
+                </p>
+                <p class="regular">
+                    設計多語系網站時，需要特別考慮到英文所使用的字數和排版的差異。另外，無障礙性的設計也是一個重要的考量因素，例如符合視障人士對比度需求、提供鍵盤操作的支援，避免過度複雜操作等，以確保網站對於不同人群都具有良好的使用體驗。
+                </p>
             </div>
         </div>
     </div>
     <div class="other-project d-flex">
-        <button class="previous d-flex flex-column align-items-center justify-content-center">
+        <button class="previous d-flex flex-column align-items-center justify-content-center" onclick="location.href='uiux-project01.html'">
             <div class="d-flex flex-column align-items-left justify-content-center gap-2">
                 <div class="previous-title d-flex flex-row align-items-center justify-content-start gap-4">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M31.6668 20H8.3335" stroke="#999999" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M20.0002 31.6663L8.3335 19.9997L20.0002 8.33301" stroke="#999999" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <h4>國泰人壽團險</h4>
+                        <h4>仁仁團購平台</h4>
                 </div>
-                <h1>優化資訊架構</h1>
+                <h1>跨部門協作能力</h1>
             </div>
         </button>
-        <button class="next d-flex flex-column align-items-center justify-content-center">
+        <button class="next d-flex flex-column align-items-center justify-content-center" onclick="location.href='uiux-project03.html'">
             <div class="d-flex flex-column align-items-left justify-content-center gap-2">
                 <div class="next-title d-flex flex-row align-items-center justify-content-end gap-4">
-                    <h4>台灣銀行官網</h4>
+                    <h4>國泰人壽團險</h4>
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.33301 20H31.6663" stroke="#999999" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M20 8.33301L31.6667 19.9997L20 31.6663" stroke="#999999" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"/>

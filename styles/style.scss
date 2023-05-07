@@ -335,9 +335,33 @@ body{
                 }
             }
             .p02-pain-item{
-                img.p02{
-                    opacity: 0.9;
+                padding: 48px 0;
+                gap: 88px;
+                .p02-pain-description{
+                    gap: 40px;
+                    h1{
+                        color: $g-300;
+                    }
+                    .goals{
+                        gap: 16px;
+                        h3{
+                            color: $main;
+                        }
+                        p.regular{
+                            color: $g-400;
+                        }
+                    }
                 }
+                .p02-3{
+                    small{
+                        color: $g-400;
+                    }
+                    img.p02{
+                        opacity: 0.96;
+                        border-radius: 16px;
+                    }
+                }
+                
             }
             .persona-item{
                 width: 344px;
@@ -453,6 +477,40 @@ body{
                     }
                 }
             }
+            .analysis{
+                .analysis-title{
+                    h2{
+                        color: $g-900;
+                    }
+                    p.regular{
+                        color: $g-700;
+                    }
+                }
+                .analysis-content{
+                    list-style-image: url(../images/icon-check.png);
+                    gap: 80px;
+                    ul{
+                        li{
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 120%;
+                            letter-spacing: 0.06em;
+                            color: $g-800;
+                        }
+                    }
+                    img{
+                        filter: $default-shadow;
+                    }
+                }
+            }
+            .competitor{
+                p.regular{
+                    color: $g-700;
+                }
+                img{
+                    filter: $default-shadow;
+                }
+            }
         }
         .flow-content{
             gap: 56px;
@@ -506,6 +564,73 @@ body{
                     filter: $dark-shadow;
                 }
             }
+            .p02-02{
+                position: relative;
+                img.p02-02-1{
+
+                }
+                img.p02-02-2{
+                    position: absolute;
+                    top: -12px;
+                    left: -83px;
+                    height: 110px;
+                    border: 0;
+                    filter: $dark-shadow;
+                }
+            }
+            .p02-03{
+                img.p02-03-1{
+                    width: 434px;
+                    height: auto;
+                    border: 0;
+                    border-radius: 0;
+                }
+                img.p02-03-2,.p02-03-3,.p02-03-4{
+                    height: 127px;
+                    border: 0;
+                    border-radius: 0;
+                }
+            }
+            .p02-04{
+                position: relative;
+                img.p02-04-1{
+                }
+                img.p02-04-2{
+                    width: 334px;
+                    height: 233px;
+                    border: 0;
+                    border-radius: 0;
+                    position: absolute;
+                    right: -24px;
+                    bottom: 80px;
+                }
+            }
+        }
+        .layout{
+            .layout-01{
+                height: 20%;
+                border-left: 2px solid $g-400;
+                padding-left: 24px;
+                justify-content: center;
+                h3{
+                    color: $main;
+                }
+                p.highlight{
+                    color: $g-400;
+                }
+            }
+            .layout-02{
+                height: 80%;
+                border-left: 2px solid $g-400;
+                padding-left: 24px;
+                justify-content: center;
+                h3{
+                    color: $main;
+                }
+                p.highlight{
+                    color: $g-400;
+                }
+            }
         }
     }
     .ui-kit{
@@ -538,6 +663,23 @@ body{
     .p01-member{
         padding: 88px 0 104px;
         background-image: url(../images/p01-member-review.png);
+        .review{
+            gap: 72px;
+            h2{
+                color: $main;
+                margin-bottom: 0;
+            }
+            p.highlight{
+                color: $g-200;
+            }
+            p.regular{
+                color: $g-500;
+            }
+        }
+    }
+    .p02{
+        padding: 88px 0 104px;
+        background-image: url(../images/p02-review.png);
         .review{
             gap: 72px;
             h2{
