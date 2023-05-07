@@ -11110,9 +11110,6 @@ nav.default .collapse ul li .nav-link {
   color: #111111;
   opacity: 1;
 }
-nav.default .collapse ul li.nav-item:hover .dropdown-menu {
-  display: block;
-}
 
 footer {
   background-color: #111111;
@@ -11166,6 +11163,49 @@ footer small.content, footer .content.small {
 }
 .projects .card:hover img {
   transform: scale(1.2);
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1128px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.dropdown-mega .dropdown-menu {
+  width: 100%;
+  color: #FF512F;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  border: 0;
+  margin-top: 0;
+  border-radius: 0;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.dropdown-mega .dropdown-menu .mega-title {
+  margin-bottom: 8px;
+}
+.dropdown-mega .dropdown-menu a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.08em;
+  color: #333333;
+  text-decoration: none;
+}
+.dropdown-mega .dropdown-menu .project {
+  margin-bottom: 40px;
+}
+.dropdown-mega .dropdown-menu .project li a {
+  background-color: #EFEFEF;
+  border-radius: 8px;
+  padding: 24px 16px;
+}
+.dropdown-mega .dropdown-menu[data-bs-popper] {
+  margin-top: 0;
 }
 
 * {
@@ -11388,4 +11428,316 @@ body .word {
   align-items: center;
   justify-content: center;
   margin: 160px 0;
+}
+body .bg-w {
+  background-color: #FFFFFF;
+}
+body .bg-b {
+  background-color: #111111;
+}
+body .bg-b h2, body .bg-b .h2 {
+  color: #EFEFEF;
+}
+body .section {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+body .section .project-description {
+  gap: 32px;
+}
+body .section .description h4, body .section .description .h4 {
+  margin-bottom: 4px;
+}
+body .section .basic-info {
+  margin-top: 88px;
+}
+body .section .basic-info .item {
+  padding-bottom: 40px;
+  gap: 48px;
+}
+body .section .basic-info .item img {
+  width: 40px;
+  height: 40px;
+}
+body .section .basic-info .item .info-content {
+  gap: 20px;
+}
+body .section .basic-info .item .info-content .info-block h4, body .section .basic-info .item .info-content .info-block .h4 {
+  margin-bottom: 4px;
+}
+body .section .info {
+  gap: 56px;
+}
+body .section .info ul.bg-b {
+  background-color: #333333;
+}
+body .section .info ul.bg-b li button.nav-link {
+  background-color: transparent;
+  color: #CCCCCC;
+}
+body .section .info ul.bg-b li button.nav-link.active {
+  background-color: #111111;
+  color: #FF512F;
+}
+body .section .info ul.bg-w {
+  background-color: #EFEFEF;
+}
+body .section .info ul.bg-w li button.nav-link {
+  background-color: transparent;
+  color: #666666;
+}
+body .section .info ul.bg-w li button.nav-link.active {
+  background-color: #FFFFFF;
+  color: #FF512F;
+}
+body .section .info ul.switch {
+  width: 228px;
+  height: 48px;
+  border-radius: 24px;
+}
+body .section .info ul.switch li button.nav-link {
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  border-radius: 28px;
+  height: 48px;
+}
+body .section .info ul.switch li button.nav-link.active {
+  border: 1px solid #FF512F;
+  box-shadow: 0px 0px 36px rgba(255, 81, 47, 0.2);
+  padding: 8px 24px;
+  border-radius: 28px;
+  height: 48px;
+}
+body .section .info .pain-item {
+  padding: 48px 0 96px;
+  gap: 32px;
+}
+body .section .info .pain-item p.highlight {
+  color: #CCCCCC;
+}
+body .section .info .p02-pain-item img.p02 {
+  opacity: 0.9;
+}
+body .section .info .persona-item {
+  width: 344px;
+  height: 472px;
+  background-color: #EFEFEF;
+  border-radius: 48px;
+  padding: 64px 32px 40px 32px;
+  gap: 40px;
+  position: relative;
+  margin-top: 80px;
+}
+body .section .info .persona-item .avatar-bg {
+  width: 110px;
+  height: 110px;
+  background-color: #FF512F;
+  position: absolute;
+  top: -29px;
+  right: 28px;
+  border-radius: 50%;
+}
+body .section .info .persona-item figure {
+  margin: 0;
+}
+body .section .info .persona-item figure img {
+  width: 157px;
+  height: 157px;
+  position: absolute;
+  top: -65px;
+  right: 32px;
+}
+body .section .info .persona-item h3, body .section .info .persona-item .h3 {
+  color: #111111;
+}
+body .section .info .persona-item ul.persona-list {
+  padding-left: 1.2rem;
+  gap: 8px;
+}
+body .section .info .persona-item ul.persona-list li {
+  list-style-image: url(../images/icon-check.png);
+}
+body .section .info .persona-item ul.persona-list li p {
+  display: inline;
+  color: #666666;
+}
+body .section .info .persona-item ul.persona-list li p:first-child {
+  color: #111111;
+}
+body .section .info .persona-item ul.persona-list li p:nth-child(1) {
+  padding-left: 8px;
+}
+body .section .info .persona-item ul.persona-list li p:nth-child(2) {
+  padding-left: 16px;
+}
+body .section .info .persona-item p.regular {
+  width: 280px;
+  list-style-image: none;
+  list-style-type: none;
+  padding-left: -32px;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+body .section .info .arrow {
+  margin: 80px 0;
+}
+body .section .info .user-target {
+  margin-bottom: 40px;
+}
+body .section .info .user-target .target {
+  gap: 32px;
+  width: 336px;
+  height: 336px;
+  border: 1px solid #FF512F;
+  border-radius: 50%;
+  justify-content: center;
+  padding: 104px 48px;
+  background-image: url(../images/target-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+body .section .info .user-target .target h3, body .section .info .user-target .target .h3 {
+  color: #FF512F;
+  text-align: center;
+}
+body .section .info .user-target .target p {
+  color: #666666;
+  text-align: center;
+}
+body .section .info .note img.note-01 {
+  margin-top: 120px;
+  width: 328px;
+  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
+}
+body .section .info .note .note-02 {
+  margin-top: 64px;
+  position: relative;
+  height: 456px;
+}
+body .section .info .note .note-02 img.note-02-1 {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
+}
+body .section .info .note .note-02 img.note-02-2 {
+  position: absolute;
+  top: 200px;
+  left: 24px;
+  filter: drop-shadow(0px 99px 40px rgba(0, 0, 0, 0.02)) drop-shadow(0px 56px 34px rgba(0, 0, 0, 0.08)) drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.14)) drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.16));
+}
+body .section .flow-content {
+  gap: 56px;
+}
+body .section .flow-content p.regular {
+  color: #CCCCCC;
+}
+body .section .flow-pic {
+  margin-right: 134px;
+}
+body .section .flow-pic img.master-flow {
+  width: 521px;
+}
+body .section .flow-pic img.member-flow {
+  width: 474px;
+}
+body .section .strategy-item {
+  height: 552px;
+  margin: 48px;
+  gap: 88px;
+}
+body .section .strategy-item .strategy-description {
+  justify-content: center;
+  gap: 32px;
+}
+body .section .strategy-item .strategy-description .goals {
+  gap: 12px;
+}
+body .section .strategy-item .strategy-description .goals h3, body .section .strategy-item .strategy-description .goals .h3 {
+  color: #FF512F;
+}
+body .section .strategy-item .strategy-description .goals h3:nth-child(2), body .section .strategy-item .strategy-description .goals .h3:nth-child(2) {
+  color: #333333;
+}
+body .section .strategy-item .strategy-description p.regular {
+  color: #666666;
+}
+body .section .strategy-item img {
+  height: 456px;
+  border: 2px solid #666666;
+  border-radius: 24px;
+  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
+}
+body .section .strategy-item .share-mobile {
+  position: relative;
+}
+body .section .strategy-item .share-mobile img.share {
+  position: absolute;
+  top: 149px;
+  left: -31.5px;
+  height: 89px;
+  border: 0;
+  filter: drop-shadow(0px 99px 40px rgba(0, 0, 0, 0.02)) drop-shadow(0px 56px 34px rgba(0, 0, 0, 0.08)) drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.14)) drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.16));
+}
+body .ui-kit {
+  height: 640px;
+  margin-bottom: 200px;
+}
+body img.demo {
+  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
+  border: 2px solid #666666;
+  border-radius: 24px;
+  margin-bottom: 180px;
+}
+body .p01 {
+  padding: 88px 0 104px;
+  background-image: url(../images/p01-master-review.png);
+}
+body .p01 .review {
+  gap: 72px;
+}
+body .p01 .review h2, body .p01 .review .h2 {
+  color: #FF512F;
+  margin-bottom: 0;
+}
+body .p01 .review p.highlight {
+  color: #EFEFEF;
+}
+body .p01 .review p.regular {
+  color: #B2B2B2;
+}
+body .p01-member {
+  padding: 88px 0 104px;
+  background-image: url(../images/p01-member-review.png);
+}
+body .p01-member .review {
+  gap: 72px;
+}
+body .p01-member .review h2, body .p01-member .review .h2 {
+  color: #FF512F;
+  margin-bottom: 0;
+}
+body .p01-member .review p.highlight {
+  color: #EFEFEF;
+}
+body .p01-member .review p.regular {
+  color: #B2B2B2;
+}
+body .other-project button.previous, body .other-project .next {
+  width: 50%;
+  height: 230px;
+  border: 0;
+  background-color: #111111;
+  border-bottom: 1px solid #666666;
+}
+body .other-project button.previous .previous-title h4, body .other-project button.previous .previous-title .h4, body .other-project button.previous .next-title h4, body .other-project button.previous .next-title .h4, body .other-project .next .previous-title h4, body .other-project .next .previous-title .h4, body .other-project .next .next-title h4, body .other-project .next .next-title .h4 {
+  color: #999999;
+  font-weight: normal;
+}
+body .other-project button.previous h1, body .other-project button.previous .h1, body .other-project .next h1, body .other-project .next .h1 {
+  color: #E5E5E5;
 }/*# sourceMappingURL=style.css.map */

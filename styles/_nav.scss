@@ -1,4 +1,4 @@
-@import '_color.scss';
+@import '_variables.scss';
 
 nav.navbar{
     background: transparent;
@@ -42,9 +42,6 @@ nav.default{
                     color: $g-900;
                     opacity: 1;
                 }
-            }
-            li.nav-item:hover .dropdown-menu { 
-                display: block;
             }
         }
     }
