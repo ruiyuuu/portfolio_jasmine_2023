@@ -1,7 +1,6 @@
 @import '_variables.scss';
 
 div.cards{
-    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -69,7 +68,7 @@ div.cards{
             }
         }
 
-        &:hover{
+        &:hover,&:active{
             transition: all 0.3s ease;
             color: $main;
             cursor: url('../images/d-cursor.png'),pointer;
@@ -118,6 +117,7 @@ div.cards{
                 width: 55px;
                 height: 55px;
                 background-image: url(../images/c-left-eye.png);
+                background-repeat: no-repeat;
                 margin-top: 16px;
             }
             div.nose{
@@ -127,6 +127,7 @@ div.cards{
                 width: 127px;
                 height: 208px;
                 background-image: url(../images/c-nose.png);
+                background-repeat: no-repeat;
                 margin-right: 72px;
             }
             div.right-eye{
@@ -136,6 +137,7 @@ div.cards{
                 width: 55px;
                 height: 55px;
                 background-image: url(../images/c-right-eye.png);
+                background-repeat: no-repeat;
                 margin-top: 16px;
             }
         }
@@ -145,14 +147,19 @@ div.cards{
             }
         }
 
-        &:hover{
+        &:hover,&:active{
             background-image: url(../images/code-bg.png);
             background-position:center;
             background-repeat: no-repeat;
             cursor: url('../images/c-cursor.png'),pointer;
 
             div.face{
-                opacity: 0;
+                div.left-eye,div.nose,div.right-eye{
+                    opacity: 0;
+                }
+                background-image: url(../images/code-face.png);
+                background-repeat: no-repeat;
+                background-position: top 16px left 24px;
             }
         }
     }
@@ -181,7 +188,11 @@ button.secondary{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 12px 12px;
+    padding: 8px;
+    min-width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
     background: $g-800;
     border-radius: 24px;
@@ -199,4 +210,98 @@ button.tertiary{
     background: $g-200;
     border-radius: 8px;
     border: 0;
+}
+
+@media (max-width:992px) {
+    div.cards{
+        button.design_btn{
+            width: 100vw;
+            height: 50vh;
+            div.face{
+                width: 193.5px;
+                height: 151px;
+                margin-top: 5%;
+                div.left-eye{
+                    background-image: url(../images/d-left-eye-m.png);
+                    top: 4px;
+                    left: 32px;
+                    width: 27px;
+                    height: 27px;
+                }
+                div.nose{
+                    background-image: url(../images/d-nose-m.png);
+                    top:17px;
+                    left: 67px;
+                    width: 87px;
+                    height: 115px;
+                }
+                div.right-eye{
+                    background-image: url(../images/d-right-eye-m.png);
+                    top:4px;
+                    right: 10px;
+                    width: 27px;
+                    height: 27px;
+                }
+                div.mouse{
+                    background-image: url(../images/d-mouse-hover-m.png);
+                    width: 71px;
+                    height: 51px;
+                    bottom:3px;
+                    left: 14px;
+                    margin-top: 0;
+                }
+            }
+            &:hover,&:active{
+                div.face{
+                    div.left-eye{
+                        background-image: url(../images/d-left-eye-hover-m.png);
+                    }
+                    div.nose{
+                        background-image: url(../images/d-nose-hover-m.png);
+                    }
+                    div.right-eye{
+                        background-image: url(../images/d-right-eye-hover-m.png);
+                    }
+                }
+            }
+        }
+        button.code_btn{
+            width: 100vw;
+            height: 50vh;
+            div.face{
+                width: 193.5px;
+                height: 151px;
+                margin-top: 5%;
+                div.left-eye{
+                    background-image: url(../images/c-left-eye-m.png);
+                    top: 4px;
+                    left: 32px;
+                    width: 27px;
+                    height: 27px;
+                }
+                div.nose{
+                    background-image: url(../images/c-nose-m.png);
+                    top:17px;
+                    left: 67px;
+                    width: 87px;
+                    height: 115px;
+                }
+                div.right-eye{
+                    background-image: url(../images/c-right-eye-m.png);
+                    top:4px;
+                    right: 10px;
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+            &:hover,&:active{
+                background-image: url(../images/code-bg-m.png);
+                background-position: left;
+                div.face{
+                    background-image: url(../images/code-face-m.png);
+                    background-position:top left;
+                }
+            }
+        }
+    }
 }

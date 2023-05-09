@@ -14,8 +14,16 @@ footer{
     .link{
         display: flex;
         gap: 24px;
+        .media{
+            gap: 24px;
+        }
     }
     small.content{
         color: $g-700;
+    }
+}
+@media (max-width:992px) {
+    footer{
+        background-image: url(../images/footer-bg-m.png);
     }
 }

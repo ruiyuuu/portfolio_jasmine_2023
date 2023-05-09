@@ -46,3 +46,69 @@ nav.default{
         }
     }
 }
+@media (max-width:992px) {
+    nav.navbar{
+        background: $white;
+        .collapse{
+            ul{
+                gap: 0;
+                li{
+                    margin-left: 72px;
+                    .nav-link{
+                        height: 56px;
+                        padding-left: 8px;
+                        color: $g-900;
+                        font-weight: 500;
+                    }
+                    .nav-link{
+                        p.medium{
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $g-900;
+                        }
+                        p{
+                            color: $g-800;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                li.home{
+                    list-style-image: url(../images/home.png);
+                    list-style-position: top 20px;
+                }
+                li.project{
+                    list-style-image: url(../images/project.png);
+                    ul.project{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 150%;
+                        letter-spacing: 0.02em;
+                        color: $g-900;
+                        li.project-item{
+                            margin-left: 0;
+                            list-style-image: none;
+                            list-style-type: none;
+                            border-bottom: 1px solid $g-300;
+                            a.project-item{
+                                height: 64px;
+                            }
+                            a.nav-link{
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+                li.about{
+                    list-style-image: url(../images/about.png);
+                }
+                li.cv{
+                    list-style-image: url(../images/cv.png);
+                }
+                .line{
+                    border-top: 1px solid $g-300;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

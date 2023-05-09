@@ -27,51 +27,54 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item d-lg-none">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            <li class="nav-item d-lg-none home">
+              <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">首頁</a>
             </li>
-            <li class="nav-item d-lg-none">
-              <a class="nav-link" href="#">工作專案</a>
-              <ul class="d-lg-none">
+            <hr class="my-0 line d-lg-none">
+            <li class="nav-item d-lg-none project">
+              <a class="nav-link d-flex align-items-center" href="#">工作專案</a>
+              <ul class="d-lg-none project">
                 UI / UX
-                <li>
-                  <a class="nav-link" href="#">
-                      <p>跨部門協作能力</p>
-                      <p>仁仁團購平台</p>
+                <li class="project-item">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                      <p class="medium mb-0">跨部門協作能力</p>
+                      <p class="mb-0">仁仁團購平台</p>
                   </a>
                 </li>
-                <li>
-                  <a class="nav-link" href="#">
-                    <p>跨部門協作能力</p>
-                    <p>仁仁團購平台</p>
+                <li class="project-item">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                    <p class="medium mb-0">操作體驗升級</p>
+                    <p class="mb-0">臺灣銀行官網改版</p>
                   </a>
                 </li>
-                <li>
-                  <a class="nav-link" href="#">
-                    <p>跨部門協作能力</p>
-                    <p>仁仁團購平台</p>
+                <li class="project-item border border-0 mb-2">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                    <p class="medium mb-0">優化資訊架構</p>
+                    <p class="mb-0">國泰人壽團險</p>
                   </a>
                 </li>
                 Code
-                <li>
-                  <a class="nav-link" href="#">
-                    <p>跨部門協作能力</p>
-                    <p>仁仁團購平台</p>
+                <li class="project-item">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                    <p class="medium mb-0">設計 + 切版</p>
+                    <p class="mb-0">安達人壽 KYC 問卷</p>
                   </a>
                 </li>
-                <li>
-                  <a class="nav-link" href="#">
-                    <p>跨部門協作能力</p>
-                    <p>仁仁團購平台</p>
+                <li class="project-item border border-0 mb-2">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                    <p class="medium mb-0">設計 + 切版</p>
+                    <p class="mb-0">作品集</p>
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">個人介紹</a>
+            <hr class="my-0 line d-lg-none">
+            <li class="nav-item about">
+              <a class="nav-link d-flex align-items-center" href="about.html">個人介紹</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">簡歷</a>
+            <hr class="my-0 line d-lg-none">
+            <li class="nav-item cv">
+              <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
             <button class="primary">點擊複製信箱，與我聯繫</button>
           </ul>
@@ -80,7 +83,7 @@
     </nav>
 
 
-    <div class="cards">
+    <div class="cards d-flex flex-column flex-lg-row">
       <button class="design_btn" onclick="location.href='uiux.html'">
         <div class="face">
           <div class="left-eye"></div>

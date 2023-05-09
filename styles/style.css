@@ -10819,7 +10819,6 @@ textarea.form-control-lg {
   }
 }
 div.cards {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -10886,21 +10885,21 @@ div.cards button.design_btn div.face div.mouse {
   margin-top: 16px;
   opacity: 0;
 }
-div.cards button.design_btn:hover {
+div.cards button.design_btn:hover, div.cards button.design_btn:active {
   transition: all 0.3s ease;
   color: #FF512F;
   cursor: url("../images/d-cursor.png"), pointer;
 }
-div.cards button.design_btn:hover div.face div.left-eye {
+div.cards button.design_btn:hover div.face div.left-eye, div.cards button.design_btn:active div.face div.left-eye {
   background-image: url(../images/d-left-eye-hover.png);
 }
-div.cards button.design_btn:hover div.face div.nose {
+div.cards button.design_btn:hover div.face div.nose, div.cards button.design_btn:active div.face div.nose {
   background-image: url(../images/d-nose-hover.png);
 }
-div.cards button.design_btn:hover div.face div.right-eye {
+div.cards button.design_btn:hover div.face div.right-eye, div.cards button.design_btn:active div.face div.right-eye {
   background-image: url(../images/d-right-eye-hover.png);
 }
-div.cards button.design_btn:hover div.face div.mouse {
+div.cards button.design_btn:hover div.face div.mouse, div.cards button.design_btn:active div.face div.mouse {
   opacity: 1;
 }
 div.cards button.code_btn {
@@ -10932,6 +10931,7 @@ div.cards button.code_btn div.face div.left-eye {
   width: 55px;
   height: 55px;
   background-image: url(../images/c-left-eye.png);
+  background-repeat: no-repeat;
   margin-top: 16px;
 }
 div.cards button.code_btn div.face div.nose {
@@ -10941,6 +10941,7 @@ div.cards button.code_btn div.face div.nose {
   width: 127px;
   height: 208px;
   background-image: url(../images/c-nose.png);
+  background-repeat: no-repeat;
   margin-right: 72px;
 }
 div.cards button.code_btn div.face div.right-eye {
@@ -10950,18 +10951,24 @@ div.cards button.code_btn div.face div.right-eye {
   width: 55px;
   height: 55px;
   background-image: url(../images/c-right-eye.png);
+  background-repeat: no-repeat;
   margin-top: 16px;
 }
 div.cards button.code_btn div span {
   color: #E1606B;
 }
-div.cards button.code_btn:hover {
+div.cards button.code_btn:hover, div.cards button.code_btn:active {
   background-image: url(../images/code-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: url("../images/c-cursor.png"), pointer;
 }
-div.cards button.code_btn:hover div.face {
+div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
+  background-image: url(../images/code-face.png);
+  background-repeat: no-repeat;
+  background-position: top 16px left 24px;
+}
+div.cards button.code_btn:hover div.face div.left-eye, div.cards button.code_btn:hover div.face div.nose, div.cards button.code_btn:hover div.face div.right-eye, div.cards button.code_btn:active div.face div.left-eye, div.cards button.code_btn:active div.face div.nose, div.cards button.code_btn:active div.face div.right-eye {
   opacity: 0;
 }
 
@@ -10989,7 +10996,11 @@ button.secondary {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 12px 12px;
+  padding: 8px;
+  min-width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
   background: #333333;
   border-radius: 24px;
@@ -11010,6 +11021,93 @@ button.tertiary {
   border: 0;
 }
 
+@media (max-width: 992px) {
+  div.cards button.design_btn {
+    width: 100vw;
+    height: 50vh;
+  }
+  div.cards button.design_btn div.face {
+    width: 193.5px;
+    height: 151px;
+    margin-top: 5%;
+  }
+  div.cards button.design_btn div.face div.left-eye {
+    background-image: url(../images/d-left-eye-m.png);
+    top: 4px;
+    left: 32px;
+    width: 27px;
+    height: 27px;
+  }
+  div.cards button.design_btn div.face div.nose {
+    background-image: url(../images/d-nose-m.png);
+    top: 17px;
+    left: 67px;
+    width: 87px;
+    height: 115px;
+  }
+  div.cards button.design_btn div.face div.right-eye {
+    background-image: url(../images/d-right-eye-m.png);
+    top: 4px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+  }
+  div.cards button.design_btn div.face div.mouse {
+    background-image: url(../images/d-mouse-hover-m.png);
+    width: 71px;
+    height: 51px;
+    bottom: 3px;
+    left: 14px;
+    margin-top: 0;
+  }
+  div.cards button.design_btn:hover div.face div.left-eye, div.cards button.design_btn:active div.face div.left-eye {
+    background-image: url(../images/d-left-eye-hover-m.png);
+  }
+  div.cards button.design_btn:hover div.face div.nose, div.cards button.design_btn:active div.face div.nose {
+    background-image: url(../images/d-nose-hover-m.png);
+  }
+  div.cards button.design_btn:hover div.face div.right-eye, div.cards button.design_btn:active div.face div.right-eye {
+    background-image: url(../images/d-right-eye-hover-m.png);
+  }
+  div.cards button.code_btn {
+    width: 100vw;
+    height: 50vh;
+  }
+  div.cards button.code_btn div.face {
+    width: 193.5px;
+    height: 151px;
+    margin-top: 5%;
+  }
+  div.cards button.code_btn div.face div.left-eye {
+    background-image: url(../images/c-left-eye-m.png);
+    top: 4px;
+    left: 32px;
+    width: 27px;
+    height: 27px;
+  }
+  div.cards button.code_btn div.face div.nose {
+    background-image: url(../images/c-nose-m.png);
+    top: 17px;
+    left: 67px;
+    width: 87px;
+    height: 115px;
+  }
+  div.cards button.code_btn div.face div.right-eye {
+    background-image: url(../images/c-right-eye-m.png);
+    top: 4px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+  }
+  div.cards button.code_btn:hover, div.cards button.code_btn:active {
+    background-image: url(../images/code-bg-m.png);
+    background-position: left;
+  }
+  div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
+    background-image: url(../images/code-face-m.png);
+    background-position: top left;
+  }
+}
 h1, .h1 {
   font-weight: 700;
   font-size: 36px;
@@ -11074,6 +11172,37 @@ small.highlight, .highlight.small {
   margin-bottom: 0;
 }
 
+@media (max-width: 992px) {
+  h1, .h1 {
+    font-size: 28px;
+  }
+  h2, .h2 {
+    font-size: 22px;
+  }
+  h3, .h3 {
+    font-size: 16px;
+  }
+  h4, .h4 {
+    font-size: 14px;
+  }
+  p.content {
+    font-size: 14px;
+  }
+  p.highlight {
+    font-size: 14px;
+  }
+  small.content, .content.small {
+    font-size: 14px;
+  }
+  small.highlight, .highlight.small {
+    font-size: 14px;
+  }
+}
+@media (max-width: 325px) {
+  h1, .h1 {
+    font-size: 26px;
+  }
+}
 nav.navbar {
   background: transparent;
   z-index: 1;
@@ -11111,6 +11240,68 @@ nav.default .collapse ul li .nav-link {
   opacity: 1;
 }
 
+@media (max-width: 992px) {
+  nav.navbar {
+    background: #FFFFFF;
+  }
+  nav.navbar .collapse ul {
+    gap: 0;
+  }
+  nav.navbar .collapse ul li {
+    margin-left: 72px;
+  }
+  nav.navbar .collapse ul li .nav-link {
+    height: 56px;
+    padding-left: 8px;
+    color: #111111;
+    font-weight: 500;
+  }
+  nav.navbar .collapse ul li .nav-link p.medium {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111111;
+  }
+  nav.navbar .collapse ul li .nav-link p {
+    color: #333333;
+    font-weight: 400;
+  }
+  nav.navbar .collapse ul li.home {
+    list-style-image: url(../images/home.png);
+    list-style-position: top 20px;
+  }
+  nav.navbar .collapse ul li.project {
+    list-style-image: url(../images/project.png);
+  }
+  nav.navbar .collapse ul li.project ul.project {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #111111;
+  }
+  nav.navbar .collapse ul li.project ul.project li.project-item {
+    margin-left: 0;
+    list-style-image: none;
+    list-style-type: none;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  nav.navbar .collapse ul li.project ul.project li.project-item a.project-item {
+    height: 64px;
+  }
+  nav.navbar .collapse ul li.project ul.project li.project-item a.nav-link {
+    padding: 0;
+  }
+  nav.navbar .collapse ul li.about {
+    list-style-image: url(../images/about.png);
+  }
+  nav.navbar .collapse ul li.cv {
+    list-style-image: url(../images/cv.png);
+  }
+  nav.navbar .collapse ul .line {
+    border-top: 1px solid #E5E5E5;
+    opacity: 1;
+  }
+}
 footer {
   background-color: #111111;
   background-image: url(../images/footer-bg.png);
@@ -11127,10 +11318,18 @@ footer .link {
   display: flex;
   gap: 24px;
 }
+footer .link .media {
+  gap: 24px;
+}
 footer small.content, footer .content.small {
   color: #666666;
 }
 
+@media (max-width: 992px) {
+  footer {
+    background-image: url(../images/footer-bg-m.png);
+  }
+}
 .projects {
   margin-bottom: 120px;
 }
@@ -11165,11 +11364,15 @@ footer small.content, footer .content.small {
   transform: scale(1.2);
 }
 
+@media (max-width: 992px) {
+  .projects {
+    margin-bottom: 64px;
+    flex-direction: column;
+  }
+}
 @media (min-width: 992px) {
   .container {
     max-width: 1128px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .dropdown-mega .dropdown-menu {
@@ -11384,11 +11587,10 @@ body .experience .line {
 }
 body .experience small.content, body .experience .content.small {
   color: #333333;
-  width: 996px;
 }
 body .experience .company {
   display: flex;
-  gap: 136px;
+  gap: 126px;
 }
 body .experience .company h3, body .experience .company .h3 {
   color: #333333;
@@ -11437,6 +11639,9 @@ body .bg-b {
 }
 body .bg-b h2, body .bg-b .h2 {
   color: #EFEFEF;
+}
+body img.uiux-project {
+  margin-top: 56px;
 }
 body .section {
   padding-top: 72px;
@@ -11864,4 +12069,90 @@ body .other-project button.previous .previous-title h4, body .other-project butt
 }
 body .other-project button.previous h1, body .other-project button.previous .h1, body .other-project .next h1, body .other-project .next .h1 {
   color: #E5E5E5;
+}
+
+@media (max-width: 992px) {
+  body .title {
+    margin-top: 96px;
+  }
+  body .introduce {
+    flex-direction: column;
+  }
+  body .introduce .basic-info {
+    align-items: center;
+  }
+  body .introduce .basic-info .my-info {
+    align-items: center;
+    gap: 16px;
+  }
+  body .introduce .basic-info .my-info h2, body .introduce .basic-info .my-info .h2 {
+    text-align: center;
+  }
+  body .introduce .basic-info .my-info div {
+    align-items: center;
+  }
+  body .skill {
+    gap: 16px;
+    margin-top: 72px;
+    margin-bottom: 64px;
+  }
+  body .skill .figma {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/figma-default-m.png);
+  }
+  body .skill .ai {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/ai-default-m.png);
+  }
+  body .skill .ps {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/ps-default-m.png);
+  }
+  body .skill .h5 {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/h5-default-m.png);
+  }
+  body .skill .sass {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/sass-default-m.png);
+  }
+  body .skill .bs {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/bs-default-m.png);
+  }
+  body .skill .js {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/js-default-m.png);
+  }
+  body .skill .git {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/git-default-m.png);
+  }
+  body .experience .company h3, body .experience .company .h3 {
+    width: auto;
+  }
+  body .experience-mobile {
+    position: relative;
+  }
+  body .experience-mobile .line {
+    position: absolute;
+    top: 12px;
+    left: 23.5px;
+  }
+  body .experience-mobile img {
+    width: 24px;
+    height: 24px;
+  }
+  body .experience-mobile h3.experience-title, body .experience-mobile .experience-title.h3 {
+    color: #FF512F;
+    margin-bottom: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */

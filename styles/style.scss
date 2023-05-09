@@ -191,11 +191,10 @@ body{
         }
         small.content{
             color: $g-800;
-            width: 996px;
         }
         .company{
             display: flex;
-            gap: 136px;
+            gap: 126px;
             h3{
                 color: $g-800;
                 width: 350px;
@@ -248,6 +247,9 @@ body{
         h2{
             color: $g-200;
         }
+    }
+    img.uiux-project{
+        margin-top: 56px;
     }
     .section{
         padding-top: 72px;
@@ -566,9 +568,6 @@ body{
             }
             .p02-02{
                 position: relative;
-                img.p02-02-1{
-
-                }
                 img.p02-02-2{
                     position: absolute;
                     top: -12px;
@@ -593,8 +592,6 @@ body{
             }
             .p02-04{
                 position: relative;
-                img.p02-04-1{
-                }
                 img.p02-04-2{
                     width: 334px;
                     height: 233px;
@@ -709,6 +706,102 @@ body{
             }
             h1{
                 color: $g-300;
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    body{
+        .title{
+            margin-top: 96px;
+        }
+        .introduce{
+            flex-direction: column;
+            .basic-info{
+                align-items: center;
+                .my-info{
+                    align-items: center;
+                    gap: 16px;
+                    h2{
+                        text-align: center;
+                    }
+                    div{
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .skill{
+            gap: 16px;
+            margin-top: 72px;
+            margin-bottom: 64px;
+            .figma{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/figma-default-m.png);
+            }
+            .ai{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/ai-default-m.png);
+            }
+            .ps{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/ps-default-m.png);
+            }
+            .h5{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/h5-default-m.png);
+            }
+            .sass{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/sass-default-m.png);
+            }
+            .bs{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/bs-default-m.png);
+            }
+            .js{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/js-default-m.png);
+            }
+            .git{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/git-default-m.png);
+            }
+        }
+        .experience{
+            .company{
+                h3{
+                    width: auto;
+                }
+            }
+        }
+        .experience-mobile{
+            position: relative;
+            .line{
+                position: absolute;
+                top: 12px;
+                left: 23.5px;
+            }
+            img{
+                width: 24px;
+                height: 24px;
+            }
+            h3.experience-title{
+                color: $main;
+                margin-bottom: 8px;
+            }
+        }
+        .info{
+            .strategy-item{
+                
             }
         }
     }
