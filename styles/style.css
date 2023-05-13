@@ -11736,7 +11736,7 @@ body .section .info .p02-pain-item .p02-pain-description .goals {
 body .section .info .p02-pain-item .p02-pain-description .goals h3, body .section .info .p02-pain-item .p02-pain-description .goals .h3 {
   color: #FF512F;
 }
-body .section .info .p02-pain-item .p02-pain-description .goals p.regular {
+body .section .info .p02-pain-item .p02-pain-description .goals p.content {
   color: #CCCCCC;
 }
 body .section .info .p02-pain-item .p02-3 small, body .section .info .p02-pain-item .p02-3 .small {
@@ -11798,7 +11798,7 @@ body .section .info .persona-item ul.persona-list li p:nth-child(1) {
 body .section .info .persona-item ul.persona-list li p:nth-child(2) {
   padding-left: 16px;
 }
-body .section .info .persona-item p.regular {
+body .section .info .persona-item p.content {
   width: 280px;
   list-style-image: none;
   list-style-type: none;
@@ -11861,7 +11861,7 @@ body .section .info .note .note-02 img.note-02-2 {
 body .section .info .analysis .analysis-title h2, body .section .info .analysis .analysis-title .h2 {
   color: #111111;
 }
-body .section .info .analysis .analysis-title p.regular {
+body .section .info .analysis .analysis-title p.content {
   color: #666666;
 }
 body .section .info .analysis .analysis-content {
@@ -11878,7 +11878,7 @@ body .section .info .analysis .analysis-content ul li {
 body .section .info .analysis .analysis-content img {
   filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
 }
-body .section .info .competitor p.regular {
+body .section .info .competitor p.content {
   color: #666666;
 }
 body .section .info .competitor img {
@@ -11887,7 +11887,7 @@ body .section .info .competitor img {
 body .section .flow-content {
   gap: 56px;
 }
-body .section .flow-content p.regular {
+body .section .flow-content p.content {
   color: #CCCCCC;
 }
 body .section .flow-pic {
@@ -11907,6 +11907,7 @@ body .section .strategy-item {
 body .section .strategy-item .strategy-description {
   justify-content: center;
   gap: 32px;
+  min-width: 245px;
 }
 body .section .strategy-item .strategy-description .goals {
   gap: 12px;
@@ -11917,7 +11918,7 @@ body .section .strategy-item .strategy-description .goals h3, body .section .str
 body .section .strategy-item .strategy-description .goals h3:nth-child(2), body .section .strategy-item .strategy-description .goals .h3:nth-child(2) {
   color: #333333;
 }
-body .section .strategy-item .strategy-description p.regular {
+body .section .strategy-item .strategy-description p.content {
   color: #666666;
 }
 body .section .strategy-item img {
@@ -11996,8 +11997,9 @@ body .section .layout .layout-02 p.highlight {
   color: #CCCCCC;
 }
 body .ui-kit {
-  height: 640px;
   margin-bottom: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body img.demo {
   filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
@@ -12019,7 +12021,7 @@ body .p01 .review h2, body .p01 .review .h2 {
 body .p01 .review p.highlight {
   color: #EFEFEF;
 }
-body .p01 .review p.regular {
+body .p01 .review p.content {
   color: #B2B2B2;
 }
 body .p01-member {
@@ -12036,7 +12038,7 @@ body .p01-member .review h2, body .p01-member .review .h2 {
 body .p01-member .review p.highlight {
   color: #EFEFEF;
 }
-body .p01-member .review p.regular {
+body .p01-member .review p.content {
   color: #B2B2B2;
 }
 body .p02 {
@@ -12053,7 +12055,7 @@ body .p02 .review h2, body .p02 .review .h2 {
 body .p02 .review p.highlight {
   color: #EFEFEF;
 }
-body .p02 .review p.regular {
+body .p02 .review p.content {
   color: #B2B2B2;
 }
 body .other-project button.previous, body .other-project .next {
@@ -12071,6 +12073,19 @@ body .other-project button.previous h1, body .other-project button.previous .h1,
   color: #E5E5E5;
 }
 
+@media (max-width: 1160px) {
+  body .section .info .persona-item {
+    width: 320px;
+  }
+  body .section .info .persona-item p.content {
+    width: 100%;
+  }
+  body .section .info .user-target .target {
+    padding: 104px 32px;
+    width: 320px;
+    height: 320px;
+  }
+}
 @media (max-width: 992px) {
   body .title {
     margin-top: 96px;
@@ -12154,5 +12169,75 @@ body .other-project button.previous h1, body .other-project button.previous .h1,
   body .experience-mobile h3.experience-title, body .experience-mobile .experience-title.h3 {
     color: #FF512F;
     margin-bottom: 8px;
+  }
+  body .section {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  body .section .info {
+    gap: 40px;
+  }
+  body .section .info .pain-item {
+    padding: 16px 0 16px;
+  }
+  body .section .info .note {
+    gap: 72px;
+  }
+  body .section .info .note img.note-01 {
+    margin-top: 24px;
+  }
+  body .section .info .note .note-02 {
+    margin-top: 24px;
+  }
+  body .section .info .note .note-02 img.note-02-1 {
+    width: 80%;
+    right: 12px;
+  }
+  body .section .info .note .note-02 img.note-02-2 {
+    width: 80%;
+    left: 12px;
+  }
+  body .section .info .flow-pic {
+    margin-right: 0;
+  }
+  body .section .info .flow-pic img.master-flow {
+    width: 100%;
+    margin-top: 24px;
+  }
+  body .section .info .flow-pic img.member-flow {
+    width: 100%;
+    margin-top: 24px;
+  }
+  body .section .info .strategy-item {
+    gap: 32px;
+    margin: 0 0 48px 0;
+    align-items: center;
+    height: auto;
+  }
+  body .section .info .strategy-item .strategy-description {
+    gap: 16px;
+  }
+  body .section .info .strategy-item .strategy-description .goals {
+    gap: 6px;
+  }
+  body .section .info .strategy-item img {
+    height: auto;
+    flex-grow: 1;
+  }
+  body .section .info .strategy-item img.mor-pic {
+    width: 30%;
+  }
+  body .section .info .persona-item {
+    width: 100%;
+    height: auto;
+  }
+  body .section .info .user-target {
+    gap: 16px;
+  }
+  body .ui-kit {
+    margin-bottom: -24px;
+  }
+  body img.demo {
+    margin-bottom: 32px;
   }
 }/*# sourceMappingURL=style.css.map */

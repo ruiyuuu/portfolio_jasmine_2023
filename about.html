@@ -405,5 +405,21 @@
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      function copyText() {
+        const copyTarget = document.getElementById("copyTarget");
+        const copyArea = document.createElement("textarea");
+        copyArea.value = copyTarget.innerText;
+        document.body.appendChild(copyArea);
+        copyArea.select();
+        const copied = document.execCommand("copy");
+        document.body.removeChild(copyArea);
+        if (copied) {
+          alert("文字已成功複製！");
+        } else {
+          alert("文字複製失敗！");
+        }
+      }
+      </script>
 </body>
 </html>
