@@ -1,9 +1,45 @@
 @import '_variables.scss';
 
-nav.navbar{
-    background: transparent;
+
+nav.default{
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
     z-index: 1;
-    .collapse{
+    .menu-item{
+        background-color: $white;
+        ul{
+            gap: 48px;
+            li{
+                .nav-link{
+                    color: $g-900;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    padding-right:0;
+                    padding-left:0;
+                    &:hover{
+                        color: $main;
+                    }
+                }
+                .nav-link.active{
+                    color: $main;
+                }
+            }
+        }
+    }
+}
+nav.home{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
+    z-index: 1;
+    .menu-item{
         ul{
             gap: 48px;
             li{
@@ -28,87 +64,74 @@ nav.navbar{
         }
     }
 }
-
-nav.default{
-    background-color: $white;
-    position: fixed;
-    top: 0;
-    height: 56px;
-    width: 100%;
-    .collapse{
-        ul{
-            li{
-                .nav-link{
-                    color: $g-900;
-                    opacity: 1;
+@media (max-width:992px) {
+    nav.default,nav.home{
+        .menu{
+            background: $white;
+            .menu-item{
+                ul{
+                    gap: 0;
+                    li{
+                        margin-left: 72px;
+                        .nav-link{
+                            height: 56px;
+                            padding-left: 8px;
+                            color: $g-900;
+                            font-weight: 500;
+                        }
+                        .nav-link{
+                            p.medium{
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: $g-900;
+                            }
+                            p{
+                                color: $g-800;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    li.home{
+                        list-style-image: url(../images/home.png);
+                        list-style-position: top 20px;
+                    }
+                    li.project{
+                        list-style-image: url(../images/project.png);
+                        ul.project{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 150%;
+                            letter-spacing: 0.02em;
+                            color: $g-900;
+                            li.project-item{
+                                margin-left: 0;
+                                list-style-image: none;
+                                list-style-type: none;
+                                border-bottom: 1px solid $g-300;
+                                a.project-item{
+                                    height: 64px;
+                                }
+                                a.nav-link{
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                    li.about{
+                        list-style-image: url(../images/about.png);
+                    }
+                    li.cv{
+                        list-style-image: url(../images/cv.png);
+                    }
+                    .line{
+                        border-top: 1px solid $g-300;
+                        opacity: 1;
+                    }
                 }
             }
         }
-    }
-}
-@media (max-width:992px) {
-    nav.navbar{
-        background: $white;
-        .collapse{
-            ul{
-                gap: 0;
-                li{
-                    margin-left: 72px;
-                    .nav-link{
-                        height: 56px;
-                        padding-left: 8px;
-                        color: $g-900;
-                        font-weight: 500;
-                    }
-                    .nav-link{
-                        p.medium{
-                            font-size: 16px;
-                            font-weight: 500;
-                            color: $g-900;
-                        }
-                        p{
-                            color: $g-800;
-                            font-weight: 400;
-                        }
-                    }
-                }
-                li.home{
-                    list-style-image: url(../images/home.png);
-                    list-style-position: top 20px;
-                }
-                li.project{
-                    list-style-image: url(../images/project.png);
-                    ul.project{
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 150%;
-                        letter-spacing: 0.02em;
-                        color: $g-900;
-                        li.project-item{
-                            margin-left: 0;
-                            list-style-image: none;
-                            list-style-type: none;
-                            border-bottom: 1px solid $g-300;
-                            a.project-item{
-                                height: 64px;
-                            }
-                            a.nav-link{
-                                padding: 0;
-                            }
-                        }
-                    }
-                }
-                li.about{
-                    list-style-image: url(../images/about.png);
-                }
-                li.cv{
-                    list-style-image: url(../images/cv.png);
-                }
-                .line{
-                    border-top: 1px solid $g-300;
-                    opacity: 1;
-                }
-            }
+        button.menu-contact{
+            width: 100%;
         }
     }
 }

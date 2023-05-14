@@ -11203,14 +11203,48 @@ small.highlight, .highlight.small {
     font-size: 26px;
   }
 }
-nav.navbar {
-  background: transparent;
+nav.default {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 100%;
   z-index: 1;
 }
-nav.navbar .collapse ul {
+nav.default .menu-item {
+  background-color: #FFFFFF;
+}
+nav.default .menu-item ul {
   gap: 48px;
 }
-nav.navbar .collapse ul li .nav-link {
+nav.default .menu-item ul li .nav-link {
+  color: #111111;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  padding-right: 0;
+  padding-left: 0;
+}
+nav.default .menu-item ul li .nav-link:hover {
+  color: #FF512F;
+}
+nav.default .menu-item ul li .nav-link.active {
+  color: #FF512F;
+}
+
+nav.home {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  height: 56px;
+  width: 100%;
+  z-index: 1;
+}
+nav.home .menu-item ul {
+  gap: 48px;
+}
+nav.home .menu-item ul li .nav-link {
   color: #E5E5E5;
   font-weight: 400;
   font-size: 14px;
@@ -11220,86 +11254,77 @@ nav.navbar .collapse ul li .nav-link {
   padding-left: 0;
   opacity: 0.7;
 }
-nav.navbar .collapse ul li .nav-link:hover {
+nav.home .menu-item ul li .nav-link:hover {
   color: #FF512F;
   opacity: 1;
 }
-nav.navbar .collapse ul li .nav-link.active {
+nav.home .menu-item ul li .nav-link.active {
   color: #FF512F;
-}
-
-nav.default {
-  background-color: #FFFFFF;
-  position: fixed;
-  top: 0;
-  height: 56px;
-  width: 100%;
-}
-nav.default .collapse ul li .nav-link {
-  color: #111111;
-  opacity: 1;
 }
 
 @media (max-width: 992px) {
-  nav.navbar {
+  nav.default .menu, nav.home .menu {
     background: #FFFFFF;
   }
-  nav.navbar .collapse ul {
+  nav.default .menu .menu-item ul, nav.home .menu .menu-item ul {
     gap: 0;
   }
-  nav.navbar .collapse ul li {
+  nav.default .menu .menu-item ul li, nav.home .menu .menu-item ul li {
     margin-left: 72px;
   }
-  nav.navbar .collapse ul li .nav-link {
+  nav.default .menu .menu-item ul li .nav-link, nav.home .menu .menu-item ul li .nav-link {
     height: 56px;
     padding-left: 8px;
     color: #111111;
     font-weight: 500;
   }
-  nav.navbar .collapse ul li .nav-link p.medium {
+  nav.default .menu .menu-item ul li .nav-link p.medium, nav.home .menu .menu-item ul li .nav-link p.medium {
     font-size: 16px;
     font-weight: 500;
     color: #111111;
   }
-  nav.navbar .collapse ul li .nav-link p {
+  nav.default .menu .menu-item ul li .nav-link p, nav.home .menu .menu-item ul li .nav-link p {
     color: #333333;
     font-weight: 400;
   }
-  nav.navbar .collapse ul li.home {
+  nav.default .menu .menu-item ul li.home, nav.home .menu .menu-item ul li.home {
     list-style-image: url(../images/home.png);
     list-style-position: top 20px;
   }
-  nav.navbar .collapse ul li.project {
+  nav.default .menu .menu-item ul li.project, nav.home .menu .menu-item ul li.project {
     list-style-image: url(../images/project.png);
   }
-  nav.navbar .collapse ul li.project ul.project {
+  nav.default .menu .menu-item ul li.project ul.project, nav.home .menu .menu-item ul li.project ul.project {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #111111;
   }
-  nav.navbar .collapse ul li.project ul.project li.project-item {
+  nav.default .menu .menu-item ul li.project ul.project li.project-item, nav.home .menu .menu-item ul li.project ul.project li.project-item {
     margin-left: 0;
     list-style-image: none;
     list-style-type: none;
     border-bottom: 1px solid #E5E5E5;
   }
-  nav.navbar .collapse ul li.project ul.project li.project-item a.project-item {
+  nav.default .menu .menu-item ul li.project ul.project li.project-item a.project-item, nav.home .menu .menu-item ul li.project ul.project li.project-item a.project-item {
     height: 64px;
   }
-  nav.navbar .collapse ul li.project ul.project li.project-item a.nav-link {
+  nav.default .menu .menu-item ul li.project ul.project li.project-item a.nav-link, nav.home .menu .menu-item ul li.project ul.project li.project-item a.nav-link {
     padding: 0;
   }
-  nav.navbar .collapse ul li.about {
+  nav.default .menu .menu-item ul li.about, nav.home .menu .menu-item ul li.about {
     list-style-image: url(../images/about.png);
   }
-  nav.navbar .collapse ul li.cv {
+  nav.default .menu .menu-item ul li.cv, nav.home .menu .menu-item ul li.cv {
     list-style-image: url(../images/cv.png);
   }
-  nav.navbar .collapse ul .line {
+  nav.default .menu .menu-item ul .line, nav.home .menu .menu-item ul .line {
     border-top: 1px solid #E5E5E5;
     opacity: 1;
+  }
+  nav.default button.menu-contact, nav.home button.menu-contact {
+    width: 100%;
   }
 }
 footer {

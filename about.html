@@ -17,18 +17,18 @@
 </head>
 <body>
     <!-- header -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg default">
+      <div class="container-fluid menu">
         <a class="navbar-brand" href="index.html">
           <img src="./images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse menu-item" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item d-lg-none home">
-              <a class="nav-link active d-flex align-items-center" aria-current="page" href="index.html">首頁</a>
+            <li class="nav-item home">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="index.html">首頁</a>
             </li>
             <hr class="my-0 line d-lg-none">
             <li class="nav-item d-lg-none project">
@@ -68,15 +68,83 @@
                 </li>
               </ul>
             </li>
+            <li class="nav-item d-none d-lg-block dropdown dropdown-mega position-static">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                工作專案
+              </a>
+              <ul class="dropdown-menu">
+                <div class="container">
+                    <div class="mega-title d-flex gap-4">
+                        <h3>UI / UX</h3>
+                        <a class="d-flex align-items-center" href="uiux.html">專案總覽
+                          <img src="./images/icon-chevron-right.png" alt="chevron-right">
+                        </a>
+                    </div>
+                    <div class="project d-flex">
+                        <li class="col-lg-4 d-flex">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="uiux-project01.html">
+                                <div class="d-flex flex-column">
+                                    <h4>跨部門協作能力</h4>
+                                    <p class="content">仁仁團購平台</p>
+                                </div>
+                                <img src="./images/icon-chevron-right-orange.png" alt="">
+                            </a>
+                        </li>
+                        <li class="col-lg-4 d-flex">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="uiux-project02.html">
+                                <div class="d-flex flex-column">
+                                    <h4>操作體驗升級</h4>
+                                    <p class="content">臺灣銀行官網改版</p>
+                                </div>
+                                <img src="./images/icon-chevron-right-orange.png" alt="">
+                            </a>
+                        </li><li class="col-lg-4 d-flex">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="uiux-project03.html">
+                                <div class="d-flex flex-column">
+                                    <h4>優化資訊架構</h4>
+                                    <p class="content">國泰人壽團險</p>
+                                </div>
+                                <img src="./images/icon-chevron-right-orange.png" alt="">
+                            </a>
+                        </li>
+                    </div>
+                    <div class="mega-title d-flex gap-4">
+                        <h3>Code</h3>
+                        <a class="d-flex align-items-center" href="code.html">專案總覽
+                            <img src="./images/icon-chevron-right.png" alt="chevron-right">
+                        </a>
+                    </div>
+                    <div class="project d-flex">
+                        <li class="col-lg-4 d-flex">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <div class="d-flex flex-column">
+                                    <h4>設計 + 切版</h4>
+                                    <p class="content">安達人壽 KYC 問卷</p>
+                                </div>
+                                <img src="./images/icon-chevron-right-orange.png" alt="">
+                            </a>
+                        </li><li class="col-lg-4 d-flex">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <div class="d-flex flex-column">
+                                    <h4>設計 + 切版</h4>
+                                    <p class="content">作品集全站</p>
+                                </div>
+                                <img src="./images/icon-chevron-right-orange.png" alt="">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+              </ul>
+            </li>
             <hr class="my-0 line d-lg-none">
             <li class="nav-item about">
-              <a class="nav-link d-flex align-items-center" href="about.html">個人介紹</a>
+              <a class="nav-link active d-flex align-items-center" href="about.html">個人介紹</a>
             </li>
             <hr class="my-0 line d-lg-none">
             <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
-            <button class="primary">點擊複製信箱，與我聯繫</button>
+            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫</button>
           </ul>
         </div>
       </div>
@@ -360,8 +428,10 @@
         </svg>
           
         <div class="link flex-column flex-lg-row flex-xl-row flex-xxl-row align-items-center">
-          <button class="secondary px-4">
-            jasmine59699@gmail.com
+          <button class="secondary px-4" id="copy">
+            <p class="content" id="email">
+              jasmine59699@gmail.com
+            </p>
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.1667 7.5H9.66667C8.74619 7.5 8 8.24619 8 9.16667V16.6667C8 17.5871 8.74619 18.3333 9.66667 18.3333H17.1667C18.0871 18.3333 18.8333 17.5871 18.8333 16.6667V9.16667C18.8333 8.24619 18.0871 7.5 17.1667 7.5Z" stroke="#999999" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M4.66675 12.5001H3.83341C3.39139 12.5001 2.96746 12.3245 2.6549 12.0119C2.34234 11.6994 2.16675 11.2754 2.16675 10.8334V3.33341C2.16675 2.89139 2.34234 2.46746 2.6549 2.1549C2.96746 1.84234 3.39139 1.66675 3.83341 1.66675H11.3334C11.7754 1.66675 12.1994 1.84234 12.5119 2.1549C12.8245 2.46746 13.0001 2.89139 13.0001 3.33341V4.16675" stroke="#999999" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -397,20 +467,20 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <noscript>提醒您，您裝置目前不支援 javascript 哦！可能會產生較差的使用體驗</noscript>
     <script>
-      function copyText() {
-        const copyTarget = document.getElementById("copyTarget");
-        const copyArea = document.createElement("textarea");
-        copyArea.value = copyTarget.innerText;
-        document.body.appendChild(copyArea);
-        copyArea.select();
-        const copied = document.execCommand("copy");
-        document.body.removeChild(copyArea);
-        if (copied) {
-          alert("文字已成功複製！");
-        } else {
-          alert("文字複製失敗！");
-        }
-      }
-      </script>
+      const select = (DOM) => document.querySelector(DOM);
+
+      select('#copy').addEventListener('click', (e) => {
+        // 建立 Range 物件
+        const range = document.createRange();
+        const texts = select('#email');
+        range.selectNode(texts);
+        // 取得 Selection 物件
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand("copy");
+        selection.removeAllRanges();
+      })
+    </script>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <title>Jasmine' s Portfolio</title>
     <link rel="shortcut icon" href="./a3zxu-85196-001.ico">
     <link rel="bookmark" href="./a3zxu-85196-001.ico">
-    <link rel="apple-touch-icon" href="images/a3zxu-85196-001.ico" sizes="57x57">
+    <link rel="apple-touch-icon" href="a3zxu-85196-001.ico" sizes="57x57">
     <base target="_self">
     <meta name="description" content="哈囉～我是芮瑜，我是一位有 3 年工作經驗的 UI / UX 設計師，擅長簡化複雜問題，呈現美觀又直覺的解決方案，並將元件組件化，撰寫設計規範文件進行落地，具備商業與行銷知識，理解產品目標，熟悉切版技術，了解前端知識，與開發溝通無障礙，對網頁程式設計有濃厚興趣，且具有強大的自學能力。">
     <meta property="og:description" content="哈囉～我是芮瑜，我是一位有 3 年工作經驗的 UI / UX 設計師，擅長簡化複雜問題，呈現美觀又直覺的解決方案，並將元件組件化，撰寫設計規範文件進行落地，具備商業與行銷知識，理解產品目標，熟悉切版技術，了解前端知識，與開發溝通無障礙，對網頁程式設計有濃厚興趣，且具有強大的自學能力。">
@@ -21,18 +21,18 @@
 </head>
 <body>
     <!-- header -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg home">
+      <div class="container-fluid menu">
+        <a class="navbar-brand" href="index.html">
           <img src="./images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse menu-item" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item d-lg-none home">
-              <a class="nav-link active d-flex align-items-center" aria-current="page" href="#">首頁</a>
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="index.html">首頁</a>
             </li>
             <hr class="my-0 line d-lg-none">
             <li class="nav-item d-lg-none project">
@@ -40,19 +40,19 @@
               <ul class="d-lg-none project">
                 UI / UX
                 <li class="project-item">
-                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="uiux-project01.html">
                       <p class="medium mb-0">跨部門協作能力</p>
                       <p class="mb-0">仁仁團購平台</p>
                   </a>
                 </li>
                 <li class="project-item">
-                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="uiux-project02.html">
                     <p class="medium mb-0">操作體驗升級</p>
                     <p class="mb-0">臺灣銀行官網改版</p>
                   </a>
                 </li>
                 <li class="project-item border border-0 mb-2">
-                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="uiux-project03.html">
                     <p class="medium mb-0">優化資訊架構</p>
                     <p class="mb-0">國泰人壽團險</p>
                   </a>
@@ -65,7 +65,7 @@
                   </a>
                 </li>
                 <li class="project-item border border-0 mb-2">
-                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="#">
+                  <a class="nav-link d-flex flex-column gap-1 project-item justify-content-center" href="index.html">
                     <p class="medium mb-0">設計 + 切版</p>
                     <p class="mb-0">作品集</p>
                   </a>
@@ -80,7 +80,7 @@
             <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
-            <button class="primary">點擊複製信箱，與我聯繫</button>
+            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫</button>
           </ul>
         </div>
       </div>
@@ -135,6 +135,22 @@
         buttonB.style.opacity = '1';
       });
 
+    </script>
+    <script>
+      const select = (DOM) => document.querySelector(DOM);
+
+      select('#copy').addEventListener('click', (e) => {
+        // 建立 Range 物件
+        const range = document.createRange();
+        const texts = select('#email');
+        range.selectNode(texts);
+        // 取得 Selection 物件
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand("copy");
+        selection.removeAllRanges();
+      })
     </script>
 </body>
 </html>
