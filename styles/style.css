@@ -11575,6 +11575,14 @@ footer small.content, footer .content.small {
   color: #FFFFFF;
 }
 
+@media (max-width: 992px) {
+  .design-progress a.active p.content {
+    padding: 4px 8px;
+  }
+  .design-progress a.active .detail {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
