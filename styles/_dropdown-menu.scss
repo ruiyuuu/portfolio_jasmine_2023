@@ -42,4 +42,7 @@
             margin-top: 0;
         }
     }
+    .dropdown-menu.show{
+        z-index: 2;
+    }
 }
