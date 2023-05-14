@@ -11327,6 +11327,9 @@ nav.home .menu-item ul button.primary .show {
 }
 
 @media (max-width: 992px) {
+  nav.default, nav.home {
+    background: #FFFFFF;
+  }
   nav.default .menu, nav.home .menu {
     background: #FFFFFF;
   }

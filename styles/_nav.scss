@@ -118,6 +118,7 @@ nav.home{
 }
 @media (max-width:992px) {
     nav.default,nav.home{
+        background: $white;
         .menu{
             background: $white;
             .menu-item{
