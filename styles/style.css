@@ -11299,6 +11299,32 @@ nav.home .menu-item ul li .nav-link:hover {
 nav.home .menu-item ul li .nav-link.active {
   color: #FF512F;
 }
+nav.home .menu-item ul button.primary {
+  position: relative;
+}
+nav.home .menu-item ul button.primary .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  border-radius: 24px;
+}
+nav.home .menu-item ul button.primary .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav.home .menu-item ul button.primary .show {
+  display: block;
+}
 
 @media (max-width: 992px) {
   nav.default .menu, nav.home .menu {
@@ -11383,6 +11409,32 @@ footer .link {
 }
 footer .link .media {
   gap: 24px;
+}
+footer .link button.secondary {
+  position: relative;
+}
+footer .link button.secondary .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  border-radius: 24px;
+}
+footer .link button.secondary .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #111;
+  font-size: 14px;
+  font-weight: bold;
+}
+footer .link button.secondary .show {
+  display: block;
 }
 footer small.content, footer .content.small {
   color: #666666;

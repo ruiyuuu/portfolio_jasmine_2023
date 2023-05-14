@@ -80,7 +80,11 @@
             <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
-            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫</button>
+            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫
+              <div id="overlay" class="overlay">
+                <div class="text">已複製！</div>
+              </div>
+            </button>
           </ul>
         </div>
       </div>
@@ -135,34 +139,27 @@
         buttonB.style.opacity = '1';
       });
 
-    </script>
-    <script>
-      const select = (DOM) => document.querySelector(DOM);
 
-      select('#copy').addEventListener('click', (e) => {
-        // 建立 Range 物件
-        const range = document.createRange();
-        const texts = select('#email');
-        range.selectNode(texts);
-        // 取得 Selection 物件
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        document.execCommand("copy");
-        selection.removeAllRanges();
-      })
-      select('#menu-copy').addEventListener('click', (e) => {
-        // 建立 Range 物件
-        const range = document.createRange();
-        const texts = select('#email');
-        range.selectNode(texts);
-        // 取得 Selection 物件
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        document.execCommand("copy");
-        selection.removeAllRanges();
-      })
+      const copyButton = document.getElementById('menu-copy');
+      copyButton.addEventListener('click', () => {
+        // 選取要複製的文字
+        const textToCopy = 'jasmine59699@gmail.com';
+        
+        // 複製文字到剪貼簿
+        navigator.clipboard.writeText(textToCopy);
+
+        const btnA = document.querySelector('#menu-copy');
+      const overlay = document.querySelector('#overlay');
+
+      btnA.addEventListener('click', () => {
+        overlay.classList.add('show');
+        setTimeout(() => {
+          overlay.classList.remove('show');
+        }, 1000);
+      });
+
+      });
+
     </script>
 </body>
 </html>
