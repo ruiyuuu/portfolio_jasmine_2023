@@ -113,19 +113,19 @@
     <!-- content -->
     <div class="container-fluid">
         <div class="row">
-            <img class="container-fluid p-0" src="./images/uiux-project-03.png" alt="uiux-project-03">
+            <img class="container-fluid p-0 uiux-project" src="./images/uiux-project-03.png" alt="uiux-project-03">
         </div>
     </div>
     <div class="bg-w">
         <div class="container section">
             <div class="row">
                 <div class="col-12">
-                    <div class="d-flex justify-content-between">
-                        <div class="project-title col-lg-4">
+                    <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                        <div class="project-title col-lg-4 col-md-12">
                             <h1>優化資訊架構</h1>
                             <p class="content">國泰人壽團險</p>
                         </div>
-                        <div class="project-description col-lg-7 d-flex flex-column">
+                        <div class="project-description col-lg-7 col-md-12 d-flex flex-column">
                             <div class="description">
                                 <h4>專案價值</h4>
                                 <p class="content">
@@ -134,56 +134,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="basic-info d-flex flex-row">
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-role.png" alt="role">
-                            <div class="info-content d-flex flex-column">
-                                <h3>角色</h3>
-                                <div class="info-block">
-                                    <h4>角色</h4>
-                                    <p class="content">
-                                        用戶體驗 (UX) 設計師<br>
-                                        用戶界面 (UI) 設計師
-                                    </p>
+                    <div class="basic-info d-flex flex-column flex-lg-row">
+                        <div class="d-flex col-lg-6">
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-role.png" alt="role">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>角色</h3>
+                                    <div class="info-block">
+                                        <h4>角色</h4>
+                                        <p class="content">
+                                            用戶體驗 (UX) 設計師<br>
+                                            用戶界面 (UI) 設計師
+                                        </p>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>團隊共 3 人</h4>
+                                        <p class="content">
+                                            設計師<br>
+                                            工程師<br>
+                                            PM
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="info-block">
-                                    <h4>團隊共 3 人</h4>
-                                    <p class="content">
-                                        設計師<br>
-                                        工程師<br>
-                                        PM
-                                    </p>
+                            </div>
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-file.png" alt="file">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>專案需求</h3>
+                                    <div class="info-block">
+                                        <p class="content">
+                                            RWD 網頁設計
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-file.png" alt="file">
-                            <div class="info-content d-flex flex-column">
-                                <h3>專案需求</h3>
-                                <div class="info-block">
-                                    <p class="content">
-                                        RWD 網頁設計
-                                    </p>
+                        <div class="d-flex col-lg-6">
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-clock.png" alt="clock">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>工作總時程</h3>
+                                    <div class="info-block">
+                                        <h4>2 個月</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-clock.png" alt="clock">
-                            <div class="info-content d-flex flex-column">
-                                <h3>工作總時程</h3>
-                                <div class="info-block">
-                                    <h4>2 個月</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-goal.png" alt="goal">
-                            <div class="info-content d-flex flex-column">
-                                <h3>目的</h3>
-                                <div class="info-block">
-                                    <p class="content">
-                                        將團險業務流程數位化
-                                    </p>
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-goal.png" alt="goal">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>目的</h3>
+                                    <div class="info-block">
+                                        <p class="content">
+                                            將團險業務流程數位化
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -193,40 +197,44 @@
         </div>
     </div>
     <div class="bg-b">
-        <div class="container section ">
+        <div class="container section">
             <div class="row">
                 <div class="col-12">
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">市場現況痛點</h2>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="d-flex">
-                                <div class="pain-item d-flex flex-column align-items-center col-lg-3">
-                                    <img src="./images/master-pain-01.png" alt="master-pain-01">
-                                    <p class="highlight text-center">
-                                        耗時透過人工<br>
-                                        線下進行表單申請
-                                    </p>
+                            <div class="d-flex flex-column flex-lg-row">
+                                <div class="d-flex col-lg-6 col-12">
+                                    <div class="pain-item d-flex flex-column align-items-center col-lg-6 col-6">
+                                        <img src="./images/master-pain-01.png" alt="master-pain-01">
+                                        <p class="highlight text-center">
+                                            耗時透過人工<br>
+                                            線下進行表單申請
+                                        </p>
+                                    </div>
+                                    <div class="pain-item d-flex flex-column align-items-center col-lg-6 col-6">
+                                        <img src="./images/master-pain-02.png" alt="master-pain-02">
+                                        <p class="highlight text-center">
+                                            冗長的加退保程序<br>
+                                            增加人資的作業時間
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="pain-item d-flex flex-column align-items-center col-lg-3">
-                                    <img src="./images/master-pain-02.png" alt="master-pain-02">
-                                    <p class="highlight text-center">
-                                        冗長的加退保程序<br>
-                                        增加人資的作業時間
-                                    </p>
-                                </div>
-                                <div class="pain-item d-flex flex-column align-items-center col-lg-3">
-                                    <img src="./images/master-pain-03.png" alt="master-pain-03">
-                                    <p class="highlight text-center">
-                                        沒有數位化平台<br>
-                                        無法輕易獲取保險資訊
-                                    </p>
-                                </div>
-                                <div class="pain-item d-flex flex-column align-items-center col-lg-3">
-                                    <img src="./images/master-pain-04.png" alt="master-pain-04">
-                                    <p class="highlight text-center">
-                                        資訊不透明<br>
-                                        可能影響選擇
-                                    </p>
+                                <div class="d-flex col-lg-6 col-12">
+                                    <div class="pain-item d-flex flex-column align-items-center col-lg-6 col-6">
+                                        <img src="./images/master-pain-03.png" alt="master-pain-03">
+                                        <p class="highlight text-center">
+                                            沒有數位化平台<br>
+                                            無法輕易獲取保險資訊
+                                        </p>
+                                    </div>
+                                    <div class="pain-item d-flex flex-column align-items-center col-lg-6 col-6">
+                                        <img src="./images/master-pain-04.png" alt="master-pain-04">
+                                        <p class="highlight text-center">
+                                            資訊不透明<br>
+                                            可能影響選擇
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -242,8 +250,8 @@
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">用戶模型分析與使用者定位</h2>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="d-flex px-4 justify-content-between">
-                                <div class="persona-item d-flex flex-column col-lg-4">
+                            <div class="d-flex flex-column flex-lg-row px-lg-4 gap-2 align-items-center justify-content-center">
+                                <div class="persona-item d-flex flex-column">
                                     <h3>崇右</h3>
                                     <div class="flex">
                                         <ul class="persona-list d-flex flex-column">
@@ -367,7 +375,7 @@
                                     <path d="M19 107L12 114L5 107" stroke="#FF512F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                             </div>
-                            <div class="user-target d-flex justify-content-between">
+                            <div class="user-target d-flex flex-column flex-lg-row justify-content-between align-items-center">
                                 <div class="target d-flex flex-column">
                                     <h3>熟悉網路操作</h3>
                                     <p class="content">
@@ -399,17 +407,17 @@
                 <div class="col-12">
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">設計佈局</h2>
-                        <div class="d-flex gap-4 justify-content-center">
-                            <img src="./images/p03-layout.png" alt="layout">
-                            <div class="layout d-flex flex-column gap-4 py-4">
-                                <div class="layout-01 d-flex flex-column gap-4">
+                        <div class="d-flex gap-2 gap-lg-4 justify-content-center">
+                            <img class="layout-pic" src="./images/p03-layout.png" alt="layout">
+                            <div class="layout d-flex flex-column gap-2 gap-lg-4 py-lg-4">
+                                <div class="layout-01 d-flex flex-column gap-2 gap-lg-4">
                                     <h3>明確目標型</h3>
                                     <p class="highlight">
                                         若用戶有深厚的團保知識，<br>
                                         方便使用者快速前往目的，完成主要任務
                                     </p>
                                 </div>
-                                <div class="layout-02 d-flex flex-column gap-4">
+                                <div class="layout-02 d-flex flex-column gap-2 gap-lg-4">
                                     <h3>新用戶型</h3>
                                     <p class="highlight">
                                         提供新手團保用戶的入門磚，<br>
@@ -433,8 +441,8 @@
                 <div class="col-12">
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">設計目標及策略</h2>
-                        <div class="d-flex flex-column px-4 justify-content-between">
-                            <div class="strategy-item d-flex col-lg-12">
+                        <div class="d-flex flex-column px-lg-4 justify-content-between">
+                            <div class="strategy-item d-flex flex-column flex-lg-row">
                                 <div class="strategy-description d-flex flex-column">
                                     <div class="goals d-flex flex-column">
                                         <h3>目標：提供多元職業多樣化的保險組合</h3>
@@ -446,7 +454,7 @@
                                 </div>
                                 <img class="border border-0 rounded-0" src="./images/p03-strategy-01.png" alt="strategy-01">
                             </div>
-                            <div class="strategy-item d-flex col-lg-12">
+                            <div class="strategy-item d-flex flex-column-reverse flex-lg-row">
                                 <div class="d-flex gap-4">
                                     <img class="border border-0 rounded-0" src="./images/p03-strategy-02.png" alt="strategy-02-1">
                                 </div>
@@ -460,7 +468,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="strategy-item d-flex col-lg-12">
+                            <div class="strategy-item d-flex flex-column flex-lg-row">
                                 <div class="strategy-description d-flex flex-column">
                                     <div class="goals d-flex flex-column">
                                         <h3>目標：讓使用者可以在任何場景進行業務處理</h3>
@@ -474,7 +482,7 @@
                                     <img class="border border-0 rounded-0" src="./images/p03-strategy-03.png" alt="strategy-03-1">
                                 </div>
                             </div>
-                            <div class="strategy-item d-flex col-lg-12">
+                            <div class="strategy-item d-flex flex-column-reverse flex-lg-row">
                                 <div class="d-flex gap-4 share-mobile">
                                     <img class="border border-0 rounded-0" class="share-mobile" src="./images/p03-strategy-04.png" alt="strategy-04-1">
                                 </div>
@@ -510,10 +518,11 @@
         
         <div class="tab-pane fade show active" id="pills-master-display" role="tabpanel" aria-labelledby="pills-master-display-tab" tabindex="0">
             <div class="container-fluid ui-kit">
-                <img src="./images/p03-display-01.png" alt="display-01">
+                <img class="d-none d-lg-block w-100" src="./images/p03-display-01.png" alt="display-01">
+                <img class="d-lg-none w-100" src="./images/p03-display-01-m.png" alt="display-01">
             </div>
             <div class="container">
-                <div class="demo d-flex justify-content-between">
+                <div class="demo d-flex flex-column flex-lg-row justify-content-between">
                     <div class="d-flex flex-column align-items-center gap-3">
                         <h4>套餐介紹</h4>
                         <img class="demo" src="./images/p03-display-02.png" alt="display-02">
@@ -526,14 +535,15 @@
                         <h4>購物清單</h4>
                         <img class="demo" src="./images/p03-display-04.png" alt="display-04">
                     </div>
-                    <div class="d-flex flex-column align-items-center gap-3">
+                    <div class="d-flex flex-column align-items-center gap-3 mb-4">
                         <h4>要保書</h4>
                         <img class="demo" src="./images/p03-display-05.png" alt="display-05">
                     </div>
                 </div>
                 
-                <div class="d-flex align-items-center justify-content-center gap-4">
-                    <img src="./images/p03-display-06.png" alt="">
+                <div class="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-4 mt-4">
+                    <img class="d-none d-lg-block d-xl-block" src="./images/p03-display-06.png" alt="">
+                    <img class="d-lg-none" src="./images/p03-display-06-m.png" alt="">
                     <button class="primary" onclick="window.open('https://patron.cathaylife.com.tw/groupins/', '_blank')">
                         前往國泰團險
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -546,7 +556,7 @@
             </div>
         </div>
     </div>
-    <div class="other-project d-flex">
+    <div class="other-project d-flex flex-column flex-lg-row">
         <button class="previous d-flex flex-column align-items-center justify-content-center" onclick="location.href='uiux-project02.html'">
             <div class="d-flex flex-column align-items-left justify-content-center gap-2">
                 <div class="previous-title d-flex flex-row align-items-center justify-content-start gap-4">
@@ -594,7 +604,7 @@
           </svg>
             
           <div class="link flex-column flex-lg-row flex-xl-row flex-xxl-row align-items-center">
-            <button class="secondary">
+            <button class="secondary px-4">
               jasmine59699@gmail.com
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.1667 7.5H9.66667C8.74619 7.5 8 8.24619 8 9.16667V16.6667C8 17.5871 8.74619 18.3333 9.66667 18.3333H17.1667C18.0871 18.3333 18.8333 17.5871 18.8333 16.6667V9.16667C18.8333 8.24619 18.0871 7.5 17.1667 7.5Z" stroke="#999999" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>

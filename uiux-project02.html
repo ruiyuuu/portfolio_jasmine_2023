@@ -113,14 +113,14 @@
     <!-- content -->
     <div class="container-fluid">
         <div class="row">
-            <img class="container-fluid p-0" src="./images/uiux-project-02.png" alt="uiux-project-02">
+            <img class="container-fluid p-0 uiux-project" src="./images/uiux-project-02.png" alt="uiux-project-02">
         </div>
     </div>
     <div class="bg-w">
         <div class="container section">
             <div class="row">
                 <div class="col-12">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
                         <div class="project-title col-lg-4">
                             <h1>操作體驗升級</h1>
                             <p class="content">臺灣銀行官網改版</p>
@@ -140,56 +140,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="basic-info d-flex flex-row">
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-role.png" alt="role">
-                            <div class="info-content d-flex flex-column">
-                                <h3>角色</h3>
-                                <div class="info-block">
-                                    <h4>角色</h4>
-                                    <p class="content">
-                                        用戶體驗 (UX) 設計師<br>
-                                        用戶界面 (UI) 設計師
-                                    </p>
+                    <div class="basic-info d-flex flex-column flex-lg-row">
+                        <div class="d-flex col-lg-6">
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-role.png" alt="role">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>角色</h3>
+                                    <div class="info-block">
+                                        <h4>角色</h4>
+                                        <p class="content">
+                                            用戶體驗 (UX) 設計師<br>
+                                            用戶界面 (UI) 設計師
+                                        </p>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>團隊共 3 人</h4>
+                                        <p class="content">
+                                            設計師<br>
+                                            工程師<br>
+                                            PM
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="info-block">
-                                    <h4>團隊共 3 人</h4>
-                                    <p class="content">
-                                        設計師<br>
-                                        工程師<br>
-                                        PM
-                                    </p>
+                            </div>
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-file.png" alt="file">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>專案需求</h3>
+                                    <div class="info-block">
+                                        <p class="content">
+                                            RWD 網頁設計
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-file.png" alt="file">
-                            <div class="info-content d-flex flex-column">
-                                <h3>專案需求</h3>
-                                <div class="info-block">
-                                    <p class="content">
-                                        RWD 網頁設計
-                                    </p>
+                        <div class="d-flex col-lg-6">
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-clock.png" alt="clock">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>工作總時程</h3>
+                                    <div class="info-block">
+                                        <h4>1 年</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-clock.png" alt="clock">
-                            <div class="info-content d-flex flex-column">
-                                <h3>工作總時程</h3>
-                                <div class="info-block">
-                                    <h4>1 年</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item d-flex flex-column col-lg-3">
-                            <img src="./images/icon-goal.png" alt="goal">
-                            <div class="info-content d-flex flex-column">
-                                <h3>目的</h3>
-                                <div class="info-block">
-                                    <p class="content">
-                                        建立多語系及無障礙的金融服務官網
-                                    </p>
+                            <div class="item d-flex flex-column col-lg-6 col-6">
+                                <img src="./images/icon-goal.png" alt="goal">
+                                <div class="info-content d-flex flex-column">
+                                    <h3>目的</h3>
+                                    <div class="info-block">
+                                        <p class="content">
+                                            建立多語系及無障礙的金融服務官網
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -204,8 +208,8 @@
                 <div class="col-12">
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">市場現況痛點</h2>
-                        <div class="d-flex flex-column px-4 justify-content-between">
-                            <div class="p02-pain-item d-flex col-lg-12 align-items-center">
+                        <div class="d-flex flex-column px-lg-4 justify-content-between">
+                            <div class="p02-pain-item d-flex flex-column flex-lg-row col-lg-12 align-items-lg-center">
                                 <div class="p02-pain-description d-flex flex-column">
                                     <h1>01</h1>
                                     <div class="goals d-flex flex-column">
@@ -216,14 +220,14 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p02-3">
-                                    <img class="p02" src="./images/p02-pain-01.png" alt="pain-01">
+                                <div class="p02-3 w-100">
+                                    <img class="p02-pain w-100" src="./images/p02-pain-01.png" alt="pain-01">
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column px-4 justify-content-between">
-                            <div class="p02-pain-item d-flex col-lg-12 align-items-center">
-                                <img class="p02" src="./images/p02-pain-02.png" alt="pain-02">
+                        <div class="d-flex flex-column px-lg-4 justify-content-between">
+                            <div class="p02-pain-item d-flex flex-column-reverse flex-lg-row col-lg-12 align-items-lg-center">
+                                <img class="p02-pain w-100" src="./images/p02-pain-02.png" alt="pain-02">
                                 <div class="p02-pain-description d-flex flex-column">
                                     <h1>02</h1>
                                     <div class="goals d-flex flex-column">
@@ -236,8 +240,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-column px-4 justify-content-between">
-                            <div class="p02-pain-item d-flex col-lg-12 align-items-center justify-content-center">
+                        <div class="d-flex flex-column px-lg-4 justify-content-between">
+                            <div class="p02-pain-item d-flex flex-column flex-lg-row col-lg-12 align-items-lg-center">
                                 <div class="p02-pain-description d-flex flex-column">
                                     <h1>03</h1>
                                     <div class="goals d-flex flex-column">
@@ -250,13 +254,13 @@
                                 </div>
                                 <div class="d-flex p02-3 gap-4">
                                     <div class="d-flex flex-column align-items-center gap-3">
-                                        <img class="p02" src="./images/p02-pain-03-1.png" alt="pain-03-1">
+                                        <img class="p02-pain mor-pic" src="./images/p02-pain-03-1.png" alt="pain-03-1">
                                         <small>
                                             常見問題示意
                                         </small>
                                     </div>
                                     <div class="d-flex flex-column align-items-center gap-3">
-                                        <img class="p02" src="./images/p02-pain-03-2.png" alt="pain-03-2">
+                                        <img class="p02-pain mor-pic" src="./images/p02-pain-03-2.png" alt="pain-03-2">
                                         <small>
                                             常見問題示意
                                         </small>
@@ -265,24 +269,26 @@
                                 
                             </div>
                         </div>
-                        <div class="d-flex flex-column px-4 justify-content-between">
-                            <div class="p02-pain-item d-flex col-lg-12 align-items-center">
+                        <div class="d-flex flex-column px-lg-4 justify-content-between">
+                            <div class="p02-pain-item d-flex flex-column-reverse flex-lg-row col-lg-12 align-items-lg-center">
                                 .<div class="d-flex p02-3 gap-4">
-                                    <div class="d-flex flex-column align-items-center gap-3">
-                                        <img class="p02" src="./images/p02-pain-04.png" alt="pain-04">
+                                    <div class="p02-pain-description d-flex flex-column align-items-center gap-3">
+                                        <img class="p02-pain mor-pic" src="./images/p02-pain-04.png" alt="pain-04">
                                         <small>
                                             首頁示意
                                         </small>
                                     </div>
                                 </div>
-                                <div class="p02-pain-description d-flex flex-column">
-                                    <h1>04</h1>
-                                    <div class="goals d-flex flex-column">
-                                        <h3>資訊架構不明確</h3>
-                                        <p class="content">
-                                            網站資訊架構不明確，<br>
-                                            使用者無法快速進行分流
-                                        </p>
+                                <div class="p02-pain-item d-flex flex-column flex-lg-row col-lg-12 align-item-lg-center">
+                                    <div class="p02-pain-description d-flex flex-column">
+                                        <h1>04</h1>
+                                        <div class="goals d-flex flex-column">
+                                            <h3>資訊架構不明確</h3>
+                                            <p class="content">
+                                                網站資訊架構不明確，<br>
+                                                使用者無法快速進行分流
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -296,8 +302,8 @@
         <div class="container section">
             <div class="row">
                 <div class="col-12">
-                    <div class="info d-flex justify-content-between">
-                        <div class="analysis d-flex flex-column justify-content-between">
+                    <div class="info d-flex flex-column flex-lg-row justify-content-between">
+                        <div class="analysis d-flex flex-column justify-content-lg-between">
                             <div class="analysis-title d-flex flex-column gap-4">
                                 <h2 class="text-start mb-0">同業競品分析</h2>
                                 <p class="content">
@@ -315,20 +321,20 @@
                                 <img src="./images/p02-bot.png" alt="bot">
                             </div>
                         </div>
-                        <div class="competitor d-flex flex-column me-4 gap-4">
-                            <div class="d-flex align-items-center gap-4">
+                        <div class="competitor d-flex flex-row flex-lg-column me-lg-4 gap-lg-4 gap-2">
+                            <div class="d-flex flex-column-reverse flex-lg-row align-items-center gap-2 gap-lg-4">
                                 <p class="content">
                                     玉山
                                 </p>
                                 <img src="./images/p02-esun.png" alt="esun">
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div class="d-flex flex-column-reverse flex-lg-row align-items-center gap-2 gap-lg-4">
                                 <p class="content">
                                     中信
                                 </p>
                                 <img src="./images/p02-ctbc.png" alt="ctbc">
                             </div>
-                            <div class="d-flex align-items-center gap-4">
+                            <div class="d-flex flex-column-reverse flex-lg-row align-items-center gap-2 gap-lg-4">
                                 <p class="content">
                                     合庫
                                 </p>
@@ -347,7 +353,8 @@
                 <div class="col-12">
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">設計目標</h2>
-                        <img src="./images/p02-target.png" alt="target">
+                        <img class="d-none d-lg-block d-xl-block" src="./images/p02-target.png" alt="target">
+                        <img class="d-lg-none" src="./images/p02-target-m.png" alt="target">
                     </div>
                 </div>
             </div>
@@ -360,8 +367,8 @@
                     <div class="info d-flex flex-column">
                         <h2 class="text-start mb-0">設計策略</h2>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="d-flex flex-column px-4 justify-content-between">
-                                <div class="strategy-item d-flex col-lg-12">
+                            <div class="d-flex flex-column px-lg-4 justify-content-between">
+                                <div class="strategy-item d-flex flex-column flex-lg-row col-lg-12">
                                     <div class="strategy-description d-flex flex-column">
                                         <div class="goals d-flex flex-column">
                                             <h3>符合 3 次點擊法則</h3>
@@ -372,7 +379,7 @@
                                     </div>
                                     <img class="border border-0 rounded-0" src="./images/p02-strategy-01.png" alt="strategy-01">
                                 </div>
-                                <div class="strategy-item d-flex col-lg-12">
+                                <div class="strategy-item d-flex flex-column-reverse flex-lg-row col-lg-12">
                                     <div class="p02-02 d-flex gap-4">
                                         <img class="p02-02-1" src="./images/p02-strategy-02-1.png" alt="strategy-02-1">
                                         <img class="p02-02-2" src="./images/p02-strategy-02-2.png" alt="strategy-02-2">
@@ -386,7 +393,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="strategy-item d-flex col-lg-12">
+                                <div class="strategy-item d-flex flex-column flex-lg-row col-lg-12">
                                     <div class="strategy-description d-flex flex-column">
                                         <div class="goals d-flex flex-column">
                                             <h3>雅各布定律</h3>
@@ -397,17 +404,21 @@
                                     </div>
                                     <div class="p02-03 d-flex flex-column gap-4 align-items-center">
                                         <img class="p02-03-1" src="./images/p02-strategy-03-1.png" alt="strategy-03-1">
-                                        <div class="d-flex gap-4">
+                                        <div class="d-flex gap-2 gap-lg-4">
                                             <img class="p02-03-2" src="./images/p02-strategy-03-2.png" alt="strategy-03-2">
                                             <img class="p02-03-3" src="./images/p02-strategy-03-3.png" alt="strategy-03-2">
                                             <img class="p02-03-4" src="./images/p02-strategy-03-4.png" alt="strategy-03-2">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="strategy-item d-flex col-lg-12">
-                                    <div class="p02-04 d-flex gap-4">
+                                <div class="strategy-item d-flex flex-column-reverse flex-lg-row col-lg-12">
+                                    <div class="p02-04 d-flex gap-4 d-none d-lg-block d-xl-block">
                                         <img class="p02-04-1" src="./images/p02-strategy-04-1.png" alt="strategy-04-1">
                                         <img class="p02-04-2" src="./images/p02-strategy-04-2.png" alt="strategy-04-2">
+                                    </div>
+                                    <div class="d-flex d-lg-none flex-column gap-3">
+                                        <img src="./images/p02-strategy-04-1.png" alt="strategy-04-1">
+                                        <img src="./images/p02-strategy-04-2.png" alt="strategy-04-2">
                                     </div>
                                     <div class="strategy-description d-flex flex-column">
                                         <div class="goals d-flex flex-column">
@@ -431,40 +442,42 @@
                 <div class="col-12">
                     <div class="info d-flex flex-column">
                         <h2 class="text-start container mb-0">專案總結</h2>
-                        <div class="container-fluid ui-kit">
-                            <img src="./images/p02-display-01.png" alt="display-01">
-                        </div>
-                        <div class="container">
-                            <div class="d-flex flex-column px-4 gap-4">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex flex-column align-items-center gap-3">
-                                        <h4>首頁</h4>
-                                        <img class="demo mb-0 border border-0 rounded-0" src="./images/p02-display-02.png" alt="display-02">
-                                    </div>
-                                    <div class="d-flex flex-column align-items-center gap-3">
-                                        <h4>自訂常用服務</h4>
-                                        <img class="demo mb-0 border border-0 rounded-0" src="./images/p02-display-03.png" alt="display-03">
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex flex-column align-items-center gap-3">
-                                        <h4>服務據點</h4>
-                                        <img class="demo border border-0 rounded-0" src="./images/p02-display-04.png" alt="display-04">
-                                    </div>
-                                    <div class="d-flex flex-column align-items-center gap-3">
-                                        <h4>常見問題</h4>
-                                        <img class="demo border border-0 rounded-0" src="./images/p02-display-05.png" alt="display-05">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ui-kit  d-flex justify-content-center">
+            <img class="d-none d-lg-block d-xl-block w-100" src="./images/p02-display-01.png" alt="display-01">
+            <img class="d-lg-none w-100" src="./images/p02-display-01-m.png" alt="display-01">
+        </div>
+        <div class="container">
+            <div class="d-flex flex-column px-lg-4 gap-4">
+                <div class="d-flex flex-column flex-lg-row gap-4 align-item-lg-center">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <h4>首頁</h4>
+                        <img class="demo w-100 mb-0 border border-0 rounded-0" src="./images/p02-display-02.png" alt="display-02">
+                    </div>
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <h4>自訂常用服務</h4>
+                        <img class="demo w-100 mb-0 border border-0 rounded-0" src="./images/p02-display-03.png" alt="display-03">
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-lg-row gap-4 align-item-lg-center">
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <h4>服務據點</h4>
+                        <img class="demo w-100 border border-0 rounded-0" src="./images/p02-display-04.png" alt="display-04">
+                    </div>
+                    <div class="d-flex flex-column align-items-center gap-3">
+                        <h4>常見問題</h4>
+                        <img class="demo w-100 border border-0 rounded-0" src="./images/p02-display-05.png" alt="display-05">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="d-flex align-items-center justify-content-center gap-4">
-        <img src="./images/p02-display-06.png" alt="">
+    <div class="d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center gap-4 mt-4">
+        <img class="d-none d-lg-block" src="./images/p02-display-06.png" alt="">
+        <img class="d-lg-none" src="./images/p02-display-06-m.png" alt="">
         <button class="primary" onclick="window.open('https://www.bot.com.tw/tw/personal-banking', '_blank')">
             前往台灣銀行
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -496,7 +509,7 @@
             </div>
         </div>
     </div>
-    <div class="other-project d-flex">
+    <div class="other-project d-flex flex-column flex-lg-row">
         <button class="previous d-flex flex-column align-items-center justify-content-center" onclick="location.href='uiux-project01.html'">
             <div class="d-flex flex-column align-items-left justify-content-center gap-2">
                 <div class="previous-title d-flex flex-row align-items-center justify-content-start gap-4">
@@ -544,7 +557,7 @@
           </svg>
             
           <div class="link flex-column flex-lg-row flex-xl-row flex-xxl-row align-items-center">
-            <button class="secondary">
+            <button class="secondary px-4">
               jasmine59699@gmail.com
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.1667 7.5H9.66667C8.74619 7.5 8 8.24619 8 9.16667V16.6667C8 17.5871 8.74619 18.3333 9.66667 18.3333H17.1667C18.0871 18.3333 18.8333 17.5871 18.8333 16.6667V9.16667C18.8333 8.24619 18.0871 7.5 17.1667 7.5Z" stroke="#999999" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
