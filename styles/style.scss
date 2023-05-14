@@ -1093,6 +1093,10 @@ body{
             }
         }
     }
+    #ability,#search,#persona,#user-flow,#notes,#strategy,#ui-display,#analysis,#goal,
+    #layout{
+        background-size: 30vh;
+    }
 }
 @media (max-width:320px){
     body{

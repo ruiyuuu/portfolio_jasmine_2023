@@ -12473,6 +12473,10 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   body .other-project button.next {
     padding-bottom: 40px;
   }
+  #ability, #search, #persona, #user-flow, #notes, #strategy, #ui-display, #analysis, #goal,
+  #layout {
+    background-size: 30vh;
+  }
 }
 @media (max-width: 320px) {
   body .section .info .user-target .target {
