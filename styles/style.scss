@@ -464,7 +464,7 @@ body{
                 .note-02{
                     margin-top: 64px;
                     position: relative;
-                    height: 456px;
+                    // height: 456px;
                     img.note-02-1{
                         position: absolute;
                         top: 0;
@@ -551,7 +551,9 @@ body{
                 }
             }
             img{
-                height: 456px;
+                // height: 456px;
+                height: 50vh;
+                margin: auto 0;
                 filter: $default-shadow;
             }
             .share-mobile{
@@ -630,7 +632,7 @@ body{
         }
     }
     .ui-kit{
-        margin-bottom: 200px;
+        margin-bottom: -80px;
         object-fit: cover;
     }
     img.demo{
@@ -695,6 +697,8 @@ body{
             border: 0;
             background-color: $g-900;
             border-bottom: 1px solid $g-700;
+            transition: all 0.3s ease;
+            position: relative;
             .previous-title,.next-title{
                 h4{
                     color: $g-600;
@@ -704,8 +708,106 @@ body{
             h1{
                 color: $g-300;
             }
+            .uiux-01{
+                width: 185px;
+                height: 141px;
+                z-index: 1;
+                background-image: url(../images/p01-master-display-06-m.png);
+                position: absolute;
+                bottom: 0;
+                opacity: 0;
+                transition: all 0.5s ease;
+                overflow: hidden;
+            }
+            .uiux-02{
+                width: 185px;
+                height: 141px;
+                z-index: 1;
+                background-image: url(../images/p02-display-06-m.png);
+                position: absolute;
+                bottom: 0;
+                opacity: 0;
+                transition: all 0.5s ease;
+                overflow: hidden;
+            }
+            .uiux-03{
+                width: 185px;
+                height: 141px;
+                z-index: 1;
+                background-image: url(../images/p03-display-06-m.png);
+                position: absolute;
+                bottom: 0;
+                opacity: 0;
+                transition: all 0.5s ease;
+                overflow: hidden;
+            }
+            &:hover{
+                opacity: 0.9;
+                .uiux-01{
+                    bottom: 0;
+                    opacity: 0.1;
+                }
+                .uiux-02{
+                    bottom: 0;
+                    opacity: 0.1;
+                }
+                .uiux-03{
+                    bottom: 0;
+                    opacity: 0.1;
+                }
+            }
         }
     }
+}
+#ability{
+    background-image: url(../images/ability.svg);
+    background-repeat: no-repeat;
+    background-position: top 12px left 0;
+}
+#search{
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
+}
+#persona{
+    background-image: url(../images/persona.svg);
+    background-repeat: no-repeat;
+    background-position: top 20px left 0;
+}
+#user-flow{
+    background-image: url(../images/userflow.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
+}
+#notes{
+    background-image: url(../images/notes.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
+}
+#strategy{
+    background-image: url(../images/strategy.svg);
+    background-repeat: no-repeat;
+    background-position: top 12px left 0;
+}
+#ui-display{
+    background-image: url(../images/uidisplay.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
+}
+#analysis{
+    background-image: url(../images/analysis.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
+}
+#goal{
+    background-image: url(../images/goal.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
+}
+#layout{
+    background-image: url(../images/layout.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px left 0;
 }
 @media (max-width:1160px){
     body{

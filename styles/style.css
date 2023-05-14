@@ -10990,6 +10990,10 @@ button.primary {
   letter-spacing: 0.08em;
   border-radius: 20px;
   border: 0;
+  transition: all 0.3s ease;
+}
+button.primary:hover {
+  opacity: 0.7;
 }
 
 button.secondary {
@@ -11006,6 +11010,10 @@ button.secondary {
   border-radius: 24px;
   color: #999999;
   border: 0;
+  transition: all 0.3s ease;
+}
+button.secondary:hover {
+  opacity: 0.7;
 }
 
 button.tertiary {
@@ -11019,6 +11027,10 @@ button.tertiary {
   background: #EFEFEF;
   border-radius: 8px;
   border: 0;
+  transition: all 0.3s ease;
+}
+button.tertiary:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 992px) {
@@ -11870,7 +11882,6 @@ body .section .info .note img.note-01 {
 body .section .info .note .note-02 {
   margin-top: 64px;
   position: relative;
-  height: 456px;
 }
 body .section .info .note .note-02 img.note-02-1 {
   position: absolute;
@@ -11948,7 +11959,8 @@ body .section .strategy-item .strategy-description p.content {
   color: #666666;
 }
 body .section .strategy-item img {
-  height: 456px;
+  height: 50vh;
+  margin: auto 0;
   filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
 }
 body .section .strategy-item .share-mobile {
@@ -12021,7 +12033,7 @@ body .section .layout .layout-02 p.highlight {
   color: #CCCCCC;
 }
 body .ui-kit {
-  margin-bottom: 200px;
+  margin-bottom: -80px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12086,6 +12098,8 @@ body .other-project button.previous, body .other-project .next {
   border: 0;
   background-color: #111111;
   border-bottom: 1px solid #666666;
+  transition: all 0.3s ease;
+  position: relative;
 }
 body .other-project button.previous .previous-title h4, body .other-project button.previous .previous-title .h4, body .other-project button.previous .next-title h4, body .other-project button.previous .next-title .h4, body .other-project .next .previous-title h4, body .other-project .next .previous-title .h4, body .other-project .next .next-title h4, body .other-project .next .next-title .h4 {
   color: #999999;
@@ -12093,6 +12107,114 @@ body .other-project button.previous .previous-title h4, body .other-project butt
 }
 body .other-project button.previous h1, body .other-project button.previous .h1, body .other-project .next h1, body .other-project .next .h1 {
   color: #E5E5E5;
+}
+body .other-project button.previous .uiux-01, body .other-project .next .uiux-01 {
+  width: 185px;
+  height: 141px;
+  z-index: 1;
+  background-image: url(../images/p01-master-display-06-m.png);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+body .other-project button.previous .uiux-02, body .other-project .next .uiux-02 {
+  width: 185px;
+  height: 141px;
+  z-index: 1;
+  background-image: url(../images/p02-display-06-m.png);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+body .other-project button.previous .uiux-03, body .other-project .next .uiux-03 {
+  width: 185px;
+  height: 141px;
+  z-index: 1;
+  background-image: url(../images/p03-display-06-m.png);
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+body .other-project button.previous:hover, body .other-project .next:hover {
+  opacity: 0.9;
+}
+body .other-project button.previous:hover .uiux-01, body .other-project .next:hover .uiux-01 {
+  bottom: 0;
+  opacity: 0.1;
+}
+body .other-project button.previous:hover .uiux-02, body .other-project .next:hover .uiux-02 {
+  bottom: 0;
+  opacity: 0.1;
+}
+body .other-project button.previous:hover .uiux-03, body .other-project .next:hover .uiux-03 {
+  bottom: 0;
+  opacity: 0.1;
+}
+
+#ability {
+  background-image: url(../images/ability.svg);
+  background-repeat: no-repeat;
+  background-position: top 12px left 0;
+}
+
+#search {
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
+}
+
+#persona {
+  background-image: url(../images/persona.svg);
+  background-repeat: no-repeat;
+  background-position: top 20px left 0;
+}
+
+#user-flow {
+  background-image: url(../images/userflow.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
+}
+
+#notes {
+  background-image: url(../images/notes.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
+}
+
+#strategy {
+  background-image: url(../images/strategy.svg);
+  background-repeat: no-repeat;
+  background-position: top 12px left 0;
+}
+
+#ui-display {
+  background-image: url(../images/uidisplay.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
+}
+
+#analysis {
+  background-image: url(../images/analysis.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
+}
+
+#goal {
+  background-image: url(../images/goal.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
+}
+
+#layout {
+  background-image: url(../images/layout.svg);
+  background-repeat: no-repeat;
+  background-position: top 4px left 0;
 }
 
 @media (max-width: 1160px) {

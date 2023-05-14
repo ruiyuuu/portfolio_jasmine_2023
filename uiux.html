@@ -80,7 +80,7 @@
                           <img src="./images/icon-chevron-right.png" alt="chevron-right">
                         </a>
                     </div>
-                    <div class="project d-flex">
+                    <div class="project row gx-4">
                         <li class="col-lg-4 d-flex">
                             <a class="dropdown-item d-flex align-items-center justify-content-between" href="uiux-project01.html">
                                 <div class="d-flex flex-column">
@@ -114,7 +114,7 @@
                             <img src="./images/icon-chevron-right.png" alt="chevron-right">
                         </a>
                     </div>
-                    <div class="project d-flex">
+                    <div class="project row gx-4">
                         <li class="col-lg-4 d-flex">
                             <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
                                 <div class="d-flex flex-column">
@@ -256,6 +256,18 @@
           document.execCommand("copy");
           selection.removeAllRanges();
         })
+        select('#menu-copy').addEventListener('click', (e) => {
+        // 建立 Range 物件
+        const range = document.createRange();
+        const texts = select('#email');
+        range.selectNode(texts);
+        // 取得 Selection 物件
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand("copy");
+        selection.removeAllRanges();
+      })
       </script>
   </body>
   </html>

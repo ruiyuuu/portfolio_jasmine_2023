@@ -183,6 +183,10 @@ button.primary{
     letter-spacing: 0.08em;
     border-radius: 20px;
     border: 0;
+    transition: all 0.3s ease;
+    &:hover{
+        opacity: 0.7;
+    }
 }
 button.secondary{
     display: flex;
@@ -198,6 +202,10 @@ button.secondary{
     border-radius: 24px;
     color: $g-600;
     border: 0;
+    transition: all 0.3s ease;
+    &:hover{
+        opacity: 0.7;
+    }
 }
 button.tertiary{
     display: flex;
@@ -210,6 +218,10 @@ button.tertiary{
     background: $g-200;
     border-radius: 8px;
     border: 0;
+    transition: all 0.3s ease;
+    &:hover{
+        opacity: 0.7;
+    }
 }
 
 @media (max-width:992px) {
