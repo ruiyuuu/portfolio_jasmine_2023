@@ -146,7 +146,12 @@
             <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
-            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫</button>
+            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫
+              <div id="overlay" class="overlay">
+                <div class="text">已複製！</div>
+              </div>
+            </button>
+            
           </ul>
         </div>
       </div>
@@ -179,6 +184,9 @@
           </div>
           <div class="contact">
             <button class="tertiary" id="info-copy">
+              <div id="overlayB" class="overlay">
+                  <div class="text">已複製！</div>
+                </div>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.66671 2.66663H13.3334C14.0667 2.66663 14.6667 3.26663 14.6667 3.99996V12C14.6667 12.7333 14.0667 13.3333 13.3334 13.3333H2.66671C1.93337 13.3333 1.33337 12.7333 1.33337 12V3.99996C1.33337 3.26663 1.93337 2.66663 2.66671 2.66663Z" stroke="#999999" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M14.6667 4L8.00004 8.66667L1.33337 4" stroke="#999999" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -198,8 +206,8 @@
                     </clipPath>
                     </defs>
                     </svg>
-                    
                 </div>
+                
             </button>
             <button class="tertiary">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -509,6 +517,27 @@
       })
 
 
+      const btnA = document.querySelector('#menu-copy');
+      const overlay = document.querySelector('#overlay');
+
+      btnA.addEventListener('click', () => {
+        overlay.classList.add('show');
+        setTimeout(() => {
+          overlay.classList.remove('show');
+        }, 1000);
+      });
+
+
+
+      const btnB = document.querySelector('#info-copy');
+      const overlayB = document.querySelector('#overlayB');
+
+      btnB.addEventListener('click', () => {
+        overlayB.classList.add('show');
+        setTimeout(() => {
+          overlayB.classList.remove('show');
+        }, 1000);
+      });
 
       
     </script>

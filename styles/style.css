@@ -11244,6 +11244,32 @@ nav.default .menu-item ul li .nav-link:hover {
 nav.default .menu-item ul li .nav-link.active {
   color: #FF512F;
 }
+nav.default .menu-item ul button.primary {
+  position: relative;
+}
+nav.default .menu-item ul button.primary .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  border-radius: 24px;
+}
+nav.default .menu-item ul button.primary .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav.default .menu-item ul button.primary .show {
+  display: block;
+}
 
 nav.home {
   background-color: transparent;
@@ -11513,9 +11539,35 @@ body .introduce .basic-info .my-info .contact {
   flex-direction: column;
   gap: 8px;
 }
+body .introduce .basic-info .my-info .contact button.tertiary {
+  position: relative;
+}
 body .introduce .basic-info .my-info .contact button.tertiary .content {
   gap: 4px;
   align-items: center;
+}
+body .introduce .basic-info .my-info .contact button.tertiary .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  border-radius: 8px;
+}
+body .introduce .basic-info .my-info .contact button.tertiary .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+body .introduce .basic-info .my-info .contact button.tertiary .show {
+  display: block;
 }
 body .introduce .text p.content {
   color: #333333;
