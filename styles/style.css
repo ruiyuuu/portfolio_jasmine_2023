@@ -12002,8 +12002,6 @@ body .ui-kit {
 }
 body img.demo {
   filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
-  border: 2px solid #666666;
-  border-radius: 24px;
   margin-bottom: 180px;
 }
 body .p01 {
@@ -12246,6 +12244,9 @@ body .other-project button.previous h1, body .other-project button.previous .h1,
   body .section .info .p02-pain-item {
     gap: 24px;
     padding: 24px 0;
+  }
+  body .section .info .p02-pain-item .p02-3 img.p02-pain {
+    border-radius: 8px;
   }
   body .section .info .p02-pain-item .p02-pain-description {
     gap: 24px;
