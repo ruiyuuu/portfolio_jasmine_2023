@@ -146,7 +146,7 @@
             <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
-            <button class="primary menu-contact" onclick="downloadFile()">下載簡歷及作品集</button>
+            <button class="primary menu-contact" onclick="downloadFile()">下載我的CV</button>
           </ul>
         </div>
       </div>
@@ -520,7 +520,7 @@
       function downloadFile() {
         // 創建一個<a>元素
         var link = document.createElement('a');
-        link.href = '../陳芮瑜的簡歷_0953959699.pdf.zip'; // 替換為你要下載的檔案的URL
+        link.href = '../陳芮瑜的簡歷_0953959699.pdf'; // 替換為你要下載的檔案的URL
         link.download = 'Jasmine的簡歷'; // 替換為你想要保存的檔案名稱
 
         // 將<a>元素添加到文檔中
