@@ -141,14 +141,10 @@
                 <a class="nav-link d-flex align-items-center" href="about.html">個人介紹</a>
               </li>
               <hr class="my-0 line d-lg-none">
-              <li class="nav-item cv">
+              <!-- <li class="nav-item cv">
                 <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
-              </li>
-              <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫
-                <div id="overlay" class="overlay">
-                    <div class="text">已複製！</div>
-                  </div>
-              </button>
+              </li> -->
+              <button class="primary menu-contact" onclick="downloadFile()">下載我的CV</button>
             </ul>
           </div>
         </div>
@@ -830,6 +826,20 @@
                 }
             })
         })
+
+
+
+        function downloadFile() {
+        var link = document.createElement('a');
+        link.href = 'https://drive.google.com/file/d/12KmjAvTByrPmsPxhUNI0IxuY0JQvR8uD/view?usp=share_link';
+        link.download = 'Jasmine的簡歷'; 
+
+        document.body.appendChild(link);
+
+        link.click();
+        
+        document.body.removeChild(link);
+      }
 
       </script>
 </body>
