@@ -488,18 +488,19 @@ body{
                 .note-02{
                     margin-top: 64px;
                     position: relative;
-                    // height: 456px;
+                    width: 644px;
+                    height: 500px;
                     img.note-02-1{
                         position: absolute;
                         top: 0;
                         right: 24px;
-                        filter:$default-shadow
+                        filter:$default-shadow;
                     }
                     img.note-02-2{
                         position: absolute;
                         top: 200px;
                         left: 24px;
-                        filter: $dark-shadow
+                        filter: $dark-shadow;
                     }
                 }
             }
@@ -968,6 +969,7 @@ body{
                     }
                     .note-02{
                         margin-top: 24px;
+                        width: 100%;
                         img.note-02-1{
                             width: 80%;
                             right: 12px;

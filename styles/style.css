@@ -12043,6 +12043,8 @@ body .section .info .note img.note-01 {
 body .section .info .note .note-02 {
   margin-top: 64px;
   position: relative;
+  width: 644px;
+  height: 500px;
 }
 body .section .info .note .note-02 img.note-02-1 {
   position: absolute;
@@ -12503,6 +12505,7 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   }
   body .section .info .note .note-02 {
     margin-top: 24px;
+    width: 100%;
   }
   body .section .info .note .note-02 img.note-02-1 {
     width: 80%;

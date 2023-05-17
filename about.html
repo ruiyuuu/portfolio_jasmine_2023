@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasmine' s Portfolio</title>
-    <link rel="shortcut icon" href="./a3zxu-85196-001.ico">
-    <link rel="bookmark" href="./a3zxu-85196-001.ico">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="bookmark" href="./favicon.ico">
     <base target="_self">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -146,11 +146,7 @@
             <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li>
-            <button class="primary menu-contact" id="menu-copy">點此複製信箱，與我聯繫
-              <div id="overlay" class="overlay">
-                <div class="text">已複製！</div>
-              </div>
-            </button>
+            <button class="primary menu-contact" onclick="downloadFile()">下載簡歷及作品集</button>
           </ul>
         </div>
       </div>
@@ -509,32 +505,6 @@
       })
 
 
-      select('#menu-copy').addEventListener('click', (e) => {
-        // 建立 Range 物件
-        const range = document.createRange();
-        const texts = select('#email');
-        range.selectNode(texts);
-        // 取得 Selection 物件
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        document.execCommand("copy");
-        selection.removeAllRanges();
-      })
-
-
-      const btnA = document.querySelector('#menu-copy');
-      const overlay = document.querySelector('#overlay');
-
-      btnA.addEventListener('click', () => {
-        overlay.classList.add('show');
-        setTimeout(() => {
-          overlay.classList.remove('show');
-        }, 1000);
-      });
-
-
-
       const btnB = document.querySelector('#info-copy');
       const overlayB = document.querySelector('#overlayB');
 
@@ -546,18 +516,22 @@
       });
 
 
-      const btnC = document.querySelector('#copy');
-      const overlayC = document.querySelector('#overlayC');
 
-      btnC.addEventListener('click', () => {
-        overlayC.classList.add('show');
-        setTimeout(() => {
-          overlayC.classList.remove('show');
-        }, 1000);
-      });
+      function downloadFile() {
+        // 創建一個<a>元素
+        var link = document.createElement('a');
+        link.href = '../陳芮瑜的簡歷_0953959699.pdf.zip'; // 替換為你要下載的檔案的URL
+        link.download = 'Jasmine的簡歷'; // 替換為你想要保存的檔案名稱
 
+        // 將<a>元素添加到文檔中
+        document.body.appendChild(link);
 
-      
+        // 觸發點擊事件
+        link.click();
+
+        // 從文檔中移除<a>元素
+        document.body.removeChild(link);
+      }
 
 
     </script>
