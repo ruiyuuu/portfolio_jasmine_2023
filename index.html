@@ -138,21 +138,18 @@
 
       const copyButton = document.getElementById('menu-copy');
       copyButton.addEventListener('click', () => {
-        // 選取要複製的文字
         const textToCopy = 'jasmine59699@gmail.com';
-        
-        // 複製文字到剪貼簿
         navigator.clipboard.writeText(textToCopy);
 
         const btnA = document.querySelector('#menu-copy');
-      const overlay = document.querySelector('#overlay');
+        const overlay = document.querySelector('#overlay');
 
-      btnA.addEventListener('click', () => {
-        overlay.classList.add('show');
-        setTimeout(() => {
-          overlay.classList.remove('show');
-        }, 1000);
-      });
+        btnA.addEventListener('click', () => {
+          overlay.classList.add('show');
+          setTimeout(() => {
+            overlay.classList.remove('show');
+          }, 1000);
+        });
 
       });
 

@@ -754,44 +754,14 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <noscript>提醒您，您裝置目前不支援 javascript 哦！可能會產生較差的使用體驗</noscript>
     <script>
-        const select = (DOM) => document.querySelector(DOM);
-  
-        select('#copy').addEventListener('click', (e) => {
-          // 建立 Range 物件
-          const range = document.createRange();
-          const texts = select('#email');
-          range.selectNode(texts);
-          // 取得 Selection 物件
-          const selection = window.getSelection();
-          selection.removeAllRanges();
-          selection.addRange(range);
-          document.execCommand("copy");
-          selection.removeAllRanges();
-        })
-        select('#menu-copy').addEventListener('click', (e) => {
-        // 建立 Range 物件
-        const range = document.createRange();
-        const texts = select('#email');
-        range.selectNode(texts);
-        // 取得 Selection 物件
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        document.execCommand("copy");
-        selection.removeAllRanges();
-      })
+        const copyButton = document.getElementById('copy');
+        copyButton.addEventListener('click', () => {
+          const textToCopy = 'jasmine59699@gmail.com';
+          navigator.clipboard.writeText(textToCopy);
+        });
 
 
 
-      const btnA = document.querySelector('#menu-copy');
-      const overlay = document.querySelector('#overlay');
-
-      btnA.addEventListener('click', () => {
-        overlay.classList.add('show');
-        setTimeout(() => {
-          overlay.classList.remove('show');
-        }, 1000);
-      });
 
 
       const btnC = document.querySelector('#copy');
