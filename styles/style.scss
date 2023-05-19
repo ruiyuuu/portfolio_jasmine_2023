@@ -483,7 +483,7 @@ body{
                 img.note-01{
                     margin-top: 120px;
                     width: 328px;
-                    filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
+                    // filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
                 }
                 .note-02{
                     margin-top: 64px;
@@ -494,13 +494,13 @@ body{
                         position: absolute;
                         top: 0;
                         right: 24px;
-                        filter:$default-shadow;
+                        // filter:$default-shadow;
                     }
                     img.note-02-2{
                         position: absolute;
                         top: 200px;
                         left: 24px;
-                        filter: $dark-shadow;
+                        // filter: $dark-shadow;
                     }
                 }
             }
@@ -526,7 +526,7 @@ body{
                         }
                     }
                     img{
-                        filter: $default-shadow;
+                        // filter: $default-shadow;
                     }
                 }
             }
@@ -535,7 +535,7 @@ body{
                     color: $g-700;
                 }
                 img{
-                    filter: $default-shadow;
+                    // filter: $default-shadow;
                 }
             }
         }
@@ -579,7 +579,7 @@ body{
                 // height: 456px;
                 height: 50vh;
                 margin: auto 0;
-                filter: $default-shadow;
+                // filter: $default-shadow;
             }
             .share-mobile{
                 position: relative;
@@ -589,7 +589,7 @@ body{
                     left: -31.5px;
                     height: 89px;
                     border: 0;
-                    filter: $dark-shadow;
+                    // filter: $dark-shadow;
                 }
             }
             .p02-02{
@@ -600,7 +600,7 @@ body{
                     left: -83px;
                     height: 110px;
                     border: 0;
-                    filter: $dark-shadow;
+                    // filter: $dark-shadow;
                 }
             }
             .p02-03{
@@ -661,7 +661,7 @@ body{
         object-fit: cover;
     }
     img.demo{
-        filter: $default-shadow;
+        // filter: $default-shadow;
         margin-bottom: 180px;
     }
     .p01{

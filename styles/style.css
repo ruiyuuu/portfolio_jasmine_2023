@@ -12038,7 +12038,6 @@ body .section .info .user-target .target p {
 body .section .info .note img.note-01 {
   margin-top: 120px;
   width: 328px;
-  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
 }
 body .section .info .note .note-02 {
   margin-top: 64px;
@@ -12050,13 +12049,11 @@ body .section .info .note .note-02 img.note-02-1 {
   position: absolute;
   top: 0;
   right: 24px;
-  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
 }
 body .section .info .note .note-02 img.note-02-2 {
   position: absolute;
   top: 200px;
   left: 24px;
-  filter: drop-shadow(0px 99px 40px rgba(0, 0, 0, 0.02)) drop-shadow(0px 56px 34px rgba(0, 0, 0, 0.08)) drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.14)) drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.16));
 }
 body .section .info .analysis .analysis-title h2, body .section .info .analysis .analysis-title .h2 {
   color: #111111;
@@ -12075,14 +12072,8 @@ body .section .info .analysis .analysis-content ul li {
   letter-spacing: 0.06em;
   color: #333333;
 }
-body .section .info .analysis .analysis-content img {
-  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
-}
 body .section .info .competitor p.content {
   color: #666666;
-}
-body .section .info .competitor img {
-  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
 }
 body .section .flow-content {
   gap: 56px;
@@ -12124,7 +12115,6 @@ body .section .strategy-item .strategy-description p.content {
 body .section .strategy-item img {
   height: 50vh;
   margin: auto 0;
-  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
 }
 body .section .strategy-item .share-mobile {
   position: relative;
@@ -12135,7 +12125,6 @@ body .section .strategy-item .share-mobile img.share {
   left: -31.5px;
   height: 89px;
   border: 0;
-  filter: drop-shadow(0px 99px 40px rgba(0, 0, 0, 0.02)) drop-shadow(0px 56px 34px rgba(0, 0, 0, 0.08)) drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.14)) drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.16));
 }
 body .section .strategy-item .p02-02 {
   position: relative;
@@ -12146,7 +12135,6 @@ body .section .strategy-item .p02-02 img.p02-02-2 {
   left: -83px;
   height: 110px;
   border: 0;
-  filter: drop-shadow(0px 99px 40px rgba(0, 0, 0, 0.02)) drop-shadow(0px 56px 34px rgba(0, 0, 0, 0.08)) drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.14)) drop-shadow(0px 6px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.16));
 }
 body .section .strategy-item .p02-03 img.p02-03-1 {
   width: 434px;
@@ -12201,7 +12189,6 @@ body .ui-kit {
      object-fit: cover;
 }
 body img.demo {
-  filter: drop-shadow(0px 319px 127px rgba(27, 39, 57, 0.01)) drop-shadow(0px 179px 108px rgba(27, 39, 57, 0.05)) drop-shadow(0px 80px 80px rgba(27, 39, 57, 0.09)) drop-shadow(0px 20px 44px rgba(27, 39, 57, 0.1)) drop-shadow(0px 0px 0px rgba(27, 39, 57, 0.1));
   margin-bottom: 180px;
 }
 body .p01 {
