@@ -10850,7 +10850,7 @@ div.cards button.design_btn div.face div.left-eye {
   left: 56px;
   width: 55px;
   height: 55px;
-  background-image: url(../images/d-left-eye.png);
+  background-image: url(../images/d-left-eye.svg);
   background-repeat: no-repeat;
   margin-top: 16px;
 }
@@ -10860,7 +10860,7 @@ div.cards button.design_btn div.face div.nose {
   left: 136px;
   width: 177px;
   height: 230px;
-  background-image: url(../images/d-nose.png);
+  background-image: url(../images/d-nose.svg);
   background-repeat: no-repeat;
   margin-right: 72px;
 }
@@ -10870,7 +10870,7 @@ div.cards button.design_btn div.face div.right-eye {
   right: 24px;
   width: 55px;
   height: 55px;
-  background-image: url(../images/d-right-eye.png);
+  background-image: url(../images/d-right-eye.svg);
   background-repeat: no-repeat;
   margin-top: 16px;
 }
@@ -10880,7 +10880,7 @@ div.cards button.design_btn div.face div.mouse {
   left: 24px;
   width: 153px;
   height: 115px;
-  background-image: url(../images/d-mouse-hover.png);
+  background-image: url(../images/d-mouse-hover.svg);
   background-repeat: no-repeat;
   margin-top: 16px;
   opacity: 0;
@@ -10888,16 +10888,16 @@ div.cards button.design_btn div.face div.mouse {
 div.cards button.design_btn:hover, div.cards button.design_btn:active {
   transition: all 0.3s ease;
   color: #FF512F;
-  cursor: url("../images/d-cursor.png"), pointer;
+  cursor: url("../images/d-cursor.svg"), pointer;
 }
 div.cards button.design_btn:hover div.face div.left-eye, div.cards button.design_btn:active div.face div.left-eye {
-  background-image: url(../images/d-left-eye-hover.png);
+  background-image: url(../images/d-left-eye-hover.svg);
 }
 div.cards button.design_btn:hover div.face div.nose, div.cards button.design_btn:active div.face div.nose {
-  background-image: url(../images/d-nose-hover.png);
+  background-image: url(../images/d-nose-hover.svg);
 }
 div.cards button.design_btn:hover div.face div.right-eye, div.cards button.design_btn:active div.face div.right-eye {
-  background-image: url(../images/d-right-eye-hover.png);
+  background-image: url(../images/d-right-eye-hover.svg);
 }
 div.cards button.design_btn:hover div.face div.mouse, div.cards button.design_btn:active div.face div.mouse {
   opacity: 1;
@@ -10930,7 +10930,7 @@ div.cards button.code_btn div.face div.left-eye {
   left: 56px;
   width: 55px;
   height: 55px;
-  background-image: url(../images/c-left-eye.png);
+  background-image: url(../images/c-left-eye.svg);
   background-repeat: no-repeat;
   margin-top: 16px;
 }
@@ -10940,7 +10940,7 @@ div.cards button.code_btn div.face div.nose {
   left: 136px;
   width: 127px;
   height: 208px;
-  background-image: url(../images/c-nose.png);
+  background-image: url(../images/c-nose.svg);
   background-repeat: no-repeat;
   margin-right: 72px;
 }
@@ -10950,7 +10950,7 @@ div.cards button.code_btn div.face div.right-eye {
   right: 24px;
   width: 55px;
   height: 55px;
-  background-image: url(../images/c-right-eye.png);
+  background-image: url(../images/c-right-eye.svg);
   background-repeat: no-repeat;
   margin-top: 16px;
 }
@@ -10961,7 +10961,7 @@ div.cards button.code_btn:hover, div.cards button.code_btn:active {
   background-image: url(../images/code-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  cursor: url("../images/c-cursor.png"), pointer;
+  cursor: url("../images/c-cursor.svg"), pointer;
 }
 div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
   background-image: url(../images/code-face.png);
@@ -11036,7 +11036,7 @@ button.tertiary:hover {
 @media (max-width: 992px) {
   div.cards button.design_btn {
     width: 100vw;
-    height: 50vh;
+    height: 55vh;
   }
   div.cards button.design_btn div.face {
     width: 193.5px;
@@ -11044,28 +11044,28 @@ button.tertiary:hover {
     margin-top: 5%;
   }
   div.cards button.design_btn div.face div.left-eye {
-    background-image: url(../images/d-left-eye-m.png);
+    background-image: url(../images/d-left-eye-m.svg);
     top: 4px;
     left: 32px;
     width: 27px;
     height: 27px;
   }
   div.cards button.design_btn div.face div.nose {
-    background-image: url(../images/d-nose-m.png);
+    background-image: url(../images/d-nose-m.svg);
     top: 17px;
     left: 67px;
     width: 87px;
     height: 115px;
   }
   div.cards button.design_btn div.face div.right-eye {
-    background-image: url(../images/d-right-eye-m.png);
+    background-image: url(../images/d-right-eye-m.svg);
     top: 4px;
     right: 10px;
     width: 27px;
     height: 27px;
   }
   div.cards button.design_btn div.face div.mouse {
-    background-image: url(../images/d-mouse-hover-m.png);
+    background-image: url(../images/d-mouse-hover-m.svg);
     width: 71px;
     height: 51px;
     bottom: 3px;
@@ -11073,17 +11073,17 @@ button.tertiary:hover {
     margin-top: 0;
   }
   div.cards button.design_btn:hover div.face div.left-eye, div.cards button.design_btn:active div.face div.left-eye {
-    background-image: url(../images/d-left-eye-hover-m.png);
+    background-image: url(../images/d-left-eye-hover-m.svg);
   }
   div.cards button.design_btn:hover div.face div.nose, div.cards button.design_btn:active div.face div.nose {
-    background-image: url(../images/d-nose-hover-m.png);
+    background-image: url(../images/d-nose-hover-m.svg);
   }
   div.cards button.design_btn:hover div.face div.right-eye, div.cards button.design_btn:active div.face div.right-eye {
-    background-image: url(../images/d-right-eye-hover-m.png);
+    background-image: url(../images/d-right-eye-hover-m.svg);
   }
   div.cards button.code_btn {
     width: 100vw;
-    height: 50vh;
+    height: 45vh;
   }
   div.cards button.code_btn div.face {
     width: 193.5px;
@@ -11091,21 +11091,21 @@ button.tertiary:hover {
     margin-top: 5%;
   }
   div.cards button.code_btn div.face div.left-eye {
-    background-image: url(../images/c-left-eye-m.png);
+    background-image: url(../images/c-left-eye-m.svg);
     top: 4px;
     left: 32px;
     width: 27px;
     height: 27px;
   }
   div.cards button.code_btn div.face div.nose {
-    background-image: url(../images/c-nose-m.png);
+    background-image: url(../images/c-nose-m.svg);
     top: 17px;
     left: 67px;
     width: 87px;
     height: 115px;
   }
   div.cards button.code_btn div.face div.right-eye {
-    background-image: url(../images/c-right-eye-m.png);
+    background-image: url(../images/c-right-eye-m.svg);
     top: 4px;
     right: 10px;
     width: 27px;
@@ -11355,7 +11355,7 @@ nav.home .menu-item ul button.primary .show {
     font-weight: 400;
   }
   nav.default .menu .menu-item ul li.home, nav.home .menu .menu-item ul li.home {
-    list-style-image: url(../images/home.png);
+    list-style-image: url(../images/home.svg);
     list-style-position: top 20px;
   }
   nav.default .menu .menu-item ul li.project, nav.home .menu .menu-item ul li.project {
@@ -11381,10 +11381,7 @@ nav.home .menu-item ul button.primary .show {
     padding: 0;
   }
   nav.default .menu .menu-item ul li.about, nav.home .menu .menu-item ul li.about {
-    list-style-image: url(../images/about.png);
-  }
-  nav.default .menu .menu-item ul li.cv, nav.home .menu .menu-item ul li.cv {
-    list-style-image: url(../images/cv.png);
+    list-style-image: url(../images/about.svg);
   }
   nav.default .menu .menu-item ul .line, nav.home .menu .menu-item ul .line {
     border-top: 1px solid #E5E5E5;
@@ -11392,11 +11389,12 @@ nav.home .menu-item ul button.primary .show {
   }
   nav.default button.menu-contact, nav.home button.menu-contact {
     width: 100%;
+    margin-top: 24px;
   }
 }
 footer {
   background-color: #111111;
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/footer-bg.svg);
   background-position: top 90% left 90%;
   background-repeat: no-repeat;
   height: 512px;
@@ -11445,7 +11443,7 @@ footer small.content, footer .content.small {
 
 @media (max-width: 992px) {
   footer {
-    background-image: url(../images/footer-bg-m.png);
+    background-image: url(../images/footer-bg-m.svg);
   }
 }
 .projects {
@@ -11982,7 +11980,7 @@ body .section .info .persona-item ul.persona-list {
   gap: 8px;
 }
 body .section .info .persona-item ul.persona-list li {
-  list-style-image: url(../images/icon-check.png);
+  list-style-image: url(../images/icon-check.svg);
 }
 body .section .info .persona-item ul.persona-list li p {
   display: inline;
@@ -12054,6 +12052,7 @@ body .section .info .note .note-02 img.note-02-2 {
   position: absolute;
   top: 200px;
   left: 24px;
+  filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
 }
 body .section .info .analysis .analysis-title h2, body .section .info .analysis .analysis-title .h2 {
   color: #111111;
@@ -12062,7 +12061,7 @@ body .section .info .analysis .analysis-title p.content {
   color: #666666;
 }
 body .section .info .analysis .analysis-content {
-  list-style-image: url(../images/icon-check.png);
+  list-style-image: url(../images/icon-check.svg);
   gap: 80px;
 }
 body .section .info .analysis .analysis-content ul li {
@@ -12125,6 +12124,7 @@ body .section .strategy-item .share-mobile img.share {
   left: -31.5px;
   height: 89px;
   border: 0;
+  filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
 }
 body .section .strategy-item .p02-02 {
   position: relative;
@@ -12135,6 +12135,7 @@ body .section .strategy-item .p02-02 img.p02-02-2 {
   left: -83px;
   height: 110px;
   border: 0;
+  filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
 }
 body .section .strategy-item .p02-03 img.p02-03-1 {
   width: 434px;

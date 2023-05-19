@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg home">
       <div class="container-fluid menu">
         <a class="navbar-brand" href="index.html">
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/logo.svg" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -76,11 +76,11 @@
             <li class="nav-item about">
               <a class="nav-link d-flex align-items-center" href="about.html">個人介紹</a>
             </li>
-            <hr class="my-0 line d-lg-none">
+            <!-- <hr class="my-0 line d-lg-none"> -->
             <!-- <li class="nav-item cv">
               <a class="nav-link d-flex align-items-center" href="#">簡歷</a>
             </li> -->
-            <button class="primary menu-contact" onclick="downloadFile()">下載我的CV</button>
+            <button class="primary menu-contact" onclick="downloadFile()">下載我的 CV</button>
           </ul>
         </div>
       </div>
@@ -136,22 +136,7 @@
       });
 
 
-      const copyButton = document.getElementById('menu-copy');
-      copyButton.addEventListener('click', () => {
-        const textToCopy = 'jasmine59699@gmail.com';
-        navigator.clipboard.writeText(textToCopy);
-
-        const btnA = document.querySelector('#menu-copy');
-        const overlay = document.querySelector('#overlay');
-
-        btnA.addEventListener('click', () => {
-          overlay.classList.add('show');
-          setTimeout(() => {
-            overlay.classList.remove('show');
-          }, 1000);
-        });
-
-      });
+      
 
 
       function downloadFile() {
