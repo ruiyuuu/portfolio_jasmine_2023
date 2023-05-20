@@ -149,7 +149,8 @@ div.cards{
 
         &:hover,&:active{
             background-image: url(../images/code-bg.png);
-            background-position:center;
+            background-size: cover;
+            background-position:top 56px center;
             background-repeat: no-repeat;
             cursor: url('../images/c-cursor.svg'),pointer;
 
@@ -158,8 +159,9 @@ div.cards{
                     opacity: 0;
                 }
                 background-image: url(../images/code-face.png);
+                background-size: cover;
                 background-repeat: no-repeat;
-                background-position: top 16px left 24px;
+                background-position: top 8px left 0px;
             }
         }
     }

@@ -10959,14 +10959,16 @@ div.cards button.code_btn div span {
 }
 div.cards button.code_btn:hover, div.cards button.code_btn:active {
   background-image: url(../images/code-bg.png);
-  background-position: center;
+  background-size: cover;
+  background-position: top 56px center;
   background-repeat: no-repeat;
   cursor: url("../images/c-cursor.svg"), pointer;
 }
 div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
   background-image: url(../images/code-face.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top 16px left 24px;
+  background-position: top 8px left 0px;
 }
 div.cards button.code_btn:hover div.face div.left-eye, div.cards button.code_btn:hover div.face div.nose, div.cards button.code_btn:hover div.face div.right-eye, div.cards button.code_btn:active div.face div.left-eye, div.cards button.code_btn:active div.face div.nose, div.cards button.code_btn:active div.face div.right-eye {
   opacity: 0;
@@ -11359,7 +11361,7 @@ nav.home .menu-item ul button.primary .show {
     list-style-position: top 20px;
   }
   nav.default .menu .menu-item ul li.project, nav.home .menu .menu-item ul li.project {
-    list-style-image: url(../images/project.png);
+    list-style-image: url(../images/project.svg);
   }
   nav.default .menu .menu-item ul li.project ul.project, nav.home .menu .menu-item ul li.project ul.project {
     font-weight: 700;
@@ -11690,6 +11692,7 @@ body .skill .figma {
   width: 48px;
   height: 48px;
   background-image: url(../images/figma-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .figma:hover {
@@ -11700,6 +11703,7 @@ body .skill .ai {
   width: 48px;
   height: 48px;
   background-image: url(../images/ai-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .ai:hover {
@@ -11710,6 +11714,7 @@ body .skill .ps {
   width: 48px;
   height: 48px;
   background-image: url(../images/ps-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .ps:hover {
@@ -11720,6 +11725,7 @@ body .skill .h5 {
   width: 48px;
   height: 48px;
   background-image: url(../images/h5-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .h5:hover {
@@ -11730,6 +11736,7 @@ body .skill .sass {
   width: 48px;
   height: 48px;
   background-image: url(../images/sass-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .sass:hover {
@@ -11740,6 +11747,7 @@ body .skill .bs {
   width: 48px;
   height: 48px;
   background-image: url(../images/bs-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .bs:hover {
@@ -11750,6 +11758,7 @@ body .skill .js {
   width: 48px;
   height: 48px;
   background-image: url(../images/js-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .js:hover {
@@ -11760,6 +11769,7 @@ body .skill .git {
   width: 48px;
   height: 48px;
   background-image: url(../images/git-default.png);
+  background-size: cover;
   transition: all 0.3s ease;
 }
 body .skill .git:hover {
@@ -12047,12 +12057,14 @@ body .section .info .note .note-02 img.note-02-1 {
   position: absolute;
   top: 0;
   right: 24px;
+  width: 422px;
 }
 body .section .info .note .note-02 img.note-02-2 {
   position: absolute;
   top: 200px;
   left: 24px;
   filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
+  width: 534px;
 }
 body .section .info .analysis .analysis-title h2, body .section .info .analysis .analysis-title .h2 {
   color: #111111;
@@ -12112,6 +12124,7 @@ body .section .strategy-item .strategy-description p.content {
   color: #666666;
 }
 body .section .strategy-item img {
+  min-height: 456px;
   height: 50vh;
   margin: auto 0;
 }
@@ -12120,9 +12133,11 @@ body .section .strategy-item .share-mobile {
 }
 body .section .strategy-item .share-mobile img.share {
   position: absolute;
-  top: 149px;
+  width: 275px;
+  top: 190px;
   left: -31.5px;
   height: 89px;
+  min-height: 89px;
   border: 0;
   filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
 }
@@ -12191,6 +12206,10 @@ body .ui-kit {
 }
 body img.demo {
   margin-bottom: 180px;
+  width: 236px;
+}
+body img.website {
+  width: 403px;
 }
 body .p01 {
   padding: 88px 0 104px;
