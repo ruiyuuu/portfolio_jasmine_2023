@@ -11527,19 +11527,33 @@ footer small.content, footer .content.small {
   margin-bottom: 120px;
 }
 .projects .card {
-  padding: 0px 12px;
   border: 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.projects .card .cover {
-  width: 100%;
-  height: 100%;
+.projects .card .cover-l {
+  width: 730px;
+  height: 698px;
   overflow: hidden;
   border-radius: 8px;
 }
-.projects .card .cover img {
+.projects .card .cover-l img {
   transition: all 0.8s ease;
+  width: 730px;
+  height: 698px;
+  border-radius: 8px;
+}
+.projects .card .cover-m {
+  width: 350px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.projects .card .cover-m img {
+  transition: all 0.8s ease;
+  width: 350px;
+  height: 300px;
+  border-radius: 8px;
 }
 .projects .card .card-body {
   padding: 16px 0 32px 0;
@@ -11553,7 +11567,10 @@ footer small.content, footer .content.small {
 .projects .card:hover {
   color: #FF512F;
 }
-.projects .card:hover .cover img {
+.projects .card:hover .cover-l img {
+  transform: scale(1.2);
+}
+.projects .card:hover .cover-m img {
   transform: scale(1.2);
 }
 
