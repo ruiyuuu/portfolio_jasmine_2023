@@ -11952,6 +11952,7 @@ body .section .info .p02-pain-item .p02-3 small, body .section .info .p02-pain-i
 body .section .info .p02-pain-item .p02-3 img.p02-pain {
   opacity: 0.96;
   border-radius: 16px;
+  max-height: 452px;
 }
 body .section .info .persona-item {
   width: 344px;
@@ -12051,7 +12052,7 @@ body .section .info .note .note-02 {
   margin-top: 64px;
   position: relative;
   width: 644px;
-  height: 500px;
+  height: 450px;
 }
 body .section .info .note .note-02 img.note-02-1 {
   position: absolute;
@@ -12083,8 +12084,14 @@ body .section .info .analysis .analysis-content ul li {
   letter-spacing: 0.06em;
   color: #333333;
 }
+body .section .info .analysis .analysis-content img.analysis-pic {
+  max-width: 328px;
+}
 body .section .info .competitor p.content {
   color: #666666;
+}
+body .section .info .competitor img.analysis-pic {
+  max-width: 328px;
 }
 body .section .flow-content {
   gap: 56px;
@@ -12146,20 +12153,24 @@ body .section .strategy-item .p02-02 {
 }
 body .section .strategy-item .p02-02 img.p02-02-2 {
   position: absolute;
-  top: -12px;
-  left: -83px;
+  top: 32px;
+  left: -64px;
+  width: 679px;
   height: 110px;
+  min-height: 110px;
   border: 0;
   filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
 }
 body .section .strategy-item .p02-03 img.p02-03-1 {
   width: 434px;
   height: auto;
+  min-height: 297px;
   border: 0;
   border-radius: 0;
 }
 body .section .strategy-item .p02-03 img.p02-03-2, body .section .strategy-item .p02-03 .p02-03-3, body .section .strategy-item .p02-03 .p02-03-4 {
   height: 127px;
+  min-height: 127px;
   border: 0;
   border-radius: 0;
 }
@@ -12169,11 +12180,15 @@ body .section .strategy-item .p02-04 {
 body .section .strategy-item .p02-04 img.p02-04-2 {
   width: 334px;
   height: 233px;
+  min-height: 233px;
   border: 0;
   border-radius: 0;
   position: absolute;
   right: -24px;
   bottom: 80px;
+}
+body .section img.layout-pic {
+  max-width: 474px;
 }
 body .section .layout .layout-01 {
   height: 20%;
@@ -12508,7 +12523,7 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   }
   body .section .info .note img.note-01 {
     margin-top: 24px;
-    width: 308px;
+    width: 80%;
   }
   body .section .info .note .note-02 {
     margin-top: 24px;
@@ -12551,6 +12566,11 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   }
   body .section .info .strategy-item img.mor-pic {
     width: 30%;
+    min-height: 300px;
+    max-height: 456px;
+  }
+  body .section .info .strategy-item .share-mobile img.share {
+    top: 165px;
   }
   body .section .info .persona-item {
     width: 100%;
@@ -12593,8 +12613,13 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   body .section .info .competitor img {
     width: 100%;
   }
-  body .section .info .strategy-item img {
+  body .section .info .strategy-item img.mobile {
+    width: 80%;
+    max-height: 456px;
+  }
+  body .section .info .strategy-item img.pc {
     width: 100%;
+    min-height: 150px;
   }
   body .section .info .strategy-item img.p02-02-1 {
     width: 80vw;
@@ -12602,18 +12627,26 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   body .section .info .strategy-item img.p02-02-2 {
     width: 80vw;
     height: auto;
+    min-height: 40px;
     left: -16px;
+    top: -12px;
   }
   body .section .info .strategy-item .p02-03 img.p02-03-1 {
-    width: 100%;
+    width: 345px;
+    min-height: 200px;
   }
   body .section .info .strategy-item .p02-03 img.p02-03-2, body .section .info .strategy-item .p02-03 img.p02-03-3, body .section .info .strategy-item .p02-03 img.p02-03-4 {
     width: 30%;
     height: auto;
+    min-height: 50px;
   }
   body .section .info .strategy-item .p02-04 img.p02-04-1 {
     width: 80vw;
     height: auto;
+  }
+  body .section .info .strategy-item img.aida {
+    width: 100%;
+    min-height: 250px;
   }
   body .section .info .layout-pic {
     width: 30vw;
@@ -12626,10 +12659,17 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
     padding-left: 8px;
   }
   body .ui-kit {
-    margin-bottom: -24px;
+    margin-bottom: 80px;
+    align-items: center;
+  }
+  body .ui-kit img {
+    max-width: 345px;
   }
   body img.demo {
     margin-bottom: 32px;
+  }
+  body img.website {
+    max-width: 185px;
   }
   body .other-project button.previous, body .other-project .next {
     width: 100%;
