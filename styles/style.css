@@ -10885,21 +10885,60 @@ div.cards button.design_btn div.face div.mouse {
   margin-top: 16px;
   opacity: 0;
 }
+div.cards button.design_btn div.face div.left-eye-hover {
+  position: absolute;
+  top: 3px;
+  left: 56px;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-image: url(../images/d-left-eye-hover.svg);
+  opacity: 0;
+}
+div.cards button.design_btn div.face div.nose-hover {
+  position: absolute;
+  top: 1px;
+  left: 136px;
+  width: 177px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-image: url(../images/d-nose-hover.svg);
+  opacity: 0;
+}
+div.cards button.design_btn div.face div.right-eye-hover {
+  position: absolute;
+  top: 3px;
+  right: 24px;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-image: url(../images/d-right-eye-hover.svg);
+  opacity: 0;
+}
 div.cards button.design_btn:hover, div.cards button.design_btn:active {
   transition: all 0.3s ease;
   color: #FF512F;
   cursor: url("../images/d-cursor.svg"), pointer;
 }
 div.cards button.design_btn:hover div.face div.left-eye, div.cards button.design_btn:active div.face div.left-eye {
-  background-image: url(../images/d-left-eye-hover.svg);
+  opacity: 0;
 }
 div.cards button.design_btn:hover div.face div.nose, div.cards button.design_btn:active div.face div.nose {
-  background-image: url(../images/d-nose-hover.svg);
+  opacity: 0;
 }
 div.cards button.design_btn:hover div.face div.right-eye, div.cards button.design_btn:active div.face div.right-eye {
-  background-image: url(../images/d-right-eye-hover.svg);
+  opacity: 0;
 }
 div.cards button.design_btn:hover div.face div.mouse, div.cards button.design_btn:active div.face div.mouse {
+  opacity: 1;
+}
+div.cards button.design_btn:hover div.face div.left-eye-hover, div.cards button.design_btn:active div.face div.left-eye-hover {
+  opacity: 1;
+}
+div.cards button.design_btn:hover div.face div.nose-hover, div.cards button.design_btn:active div.face div.nose-hover {
+  opacity: 1;
+}
+div.cards button.design_btn:hover div.face div.right-eye-hover, div.cards button.design_btn:active div.face div.right-eye-hover {
   opacity: 1;
 }
 div.cards button.code_btn {
