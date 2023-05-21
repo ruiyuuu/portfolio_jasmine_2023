@@ -18,6 +18,7 @@
 }
 
 body{
+    padding-top: 56px;
     .title{
         display: flex;
         flex-direction: column;
@@ -279,9 +280,6 @@ body{
         h2{
             color: $g-200;
         }
-    }
-    img.uiux-project{
-        margin-top: 56px;
     }
     .section{
         padding-top: 72px;

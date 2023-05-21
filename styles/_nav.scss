@@ -8,6 +8,7 @@ nav.default{
     height: 56px;
     width: 100%;
     z-index: 2;
+    transition: top 0.3s ease-out;
     .menu-item{
         background-color: $white;
         ul{
