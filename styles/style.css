@@ -11929,6 +11929,10 @@ body .section .project-description {
 body .section .description h4, body .section .description .h4 {
   margin-bottom: 4px;
 }
+body .section .description p.content {
+  color: #666666;
+  text-align: justify;
+}
 body .section .basic-info {
   margin-top: 88px;
 }
@@ -11945,6 +11949,10 @@ body .section .basic-info .item .info-content {
 }
 body .section .basic-info .item .info-content .info-block h4, body .section .basic-info .item .info-content .info-block .h4 {
   margin-bottom: 4px;
+}
+body .section .basic-info .item .info-content .info-block p.content {
+  color: #666666;
+  text-align: justify;
 }
 body .section .info {
   gap: 56px;
@@ -12114,6 +12122,10 @@ body .section .info .user-target .target p {
   color: #666666;
   text-align: center;
 }
+body .section .info .note p.content {
+  color: #666666;
+  text-align: justify;
+}
 body .section .info .note img.note-01 {
   margin-top: 120px;
   width: 328px;
@@ -12134,7 +12146,6 @@ body .section .info .note .note-02 img.note-02-2 {
   position: absolute;
   top: 200px;
   left: 24px;
-  filter: drop-shadow(0px 16px 20px rgba(34, 7, 2, 0.3));
   width: 534px;
 }
 body .section .info .analysis .analysis-title h2, body .section .info .analysis .analysis-title .h2 {
@@ -12199,11 +12210,11 @@ body .section .strategy-item .strategy-description .goals h3:nth-child(2), body 
 }
 body .section .strategy-item .strategy-description p.content {
   color: #666666;
+  text-align: justify;
 }
 body .section .strategy-item img {
   min-height: 456px;
   height: 50vh;
-  margin: auto 0;
 }
 body .section .strategy-item .share-mobile {
   position: relative;
@@ -12312,6 +12323,7 @@ body .p01 .review p.highlight {
 }
 body .p01 .review p.content {
   color: #B2B2B2;
+  text-align: justify;
 }
 body .p01-member {
   padding: 88px 0 104px;
@@ -12368,6 +12380,7 @@ body .other-project button.previous .uiux-01, body .other-project .next .uiux-01
   height: 141px;
   z-index: 1;
   background-image: url(../images/p01-master-display-06-m.png);
+  background-size: cover;
   position: absolute;
   bottom: 0;
   opacity: 0;
@@ -12379,6 +12392,7 @@ body .other-project button.previous .uiux-02, body .other-project .next .uiux-02
   height: 141px;
   z-index: 1;
   background-image: url(../images/p02-display-06-m.png);
+  background-size: cover;
   position: absolute;
   bottom: 0;
   opacity: 0;
@@ -12390,6 +12404,7 @@ body .other-project button.previous .uiux-03, body .other-project .next .uiux-03
   height: 141px;
   z-index: 1;
   background-image: url(../images/p03-display-06-m.png);
+  background-size: cover;
   position: absolute;
   bottom: 0;
   opacity: 0;
