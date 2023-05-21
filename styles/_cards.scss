@@ -19,6 +19,14 @@
             }
         }
         .cover-m{
+            overflow: hidden;
+            border-radius: 8px;
+            img{
+                transition: all 0.8s ease;
+                border-radius: 8px;
+            }
+        }
+        .cover-s{
             // width: 350px;
             // height: 300px;
             overflow: hidden;
@@ -45,11 +53,19 @@
         &:hover .cover-l{
             img{
                 transform: scale(1.2);
+                border-radius: 8px;
             }
         }
         &:hover .cover-m{
             img{
                 transform: scale(1.2);
+                border-radius: 8px;
+            }
+        }
+        &:hover .cover-s{
+            img{
+                transform: scale(1.2);
+                border-radius: 8px;
             }
         }
     }

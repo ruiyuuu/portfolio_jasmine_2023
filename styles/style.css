@@ -11547,6 +11547,14 @@ footer small.content, footer .content.small {
   transition: all 0.8s ease;
   border-radius: 8px;
 }
+.projects .card .cover-s {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.projects .card .cover-s img {
+  transition: all 0.8s ease;
+  border-radius: 8px;
+}
 .projects .card .card-body {
   padding: 16px 0 32px 0;
 }
@@ -11561,9 +11569,15 @@ footer small.content, footer .content.small {
 }
 .projects .card:hover .cover-l img {
   transform: scale(1.2);
+  border-radius: 8px;
 }
 .projects .card:hover .cover-m img {
   transform: scale(1.2);
+  border-radius: 8px;
+}
+.projects .card:hover .cover-s img {
+  transform: scale(1.2);
+  border-radius: 8px;
 }
 
 @media (max-width: 992px) {
