@@ -11364,12 +11364,13 @@ nav.home .menu-item ul button.primary .show {
   nav.default .menu .menu-item ul li.project, nav.home .menu .menu-item ul li.project {
     list-style-image: url(../images/project.svg);
   }
-  nav.default .menu .menu-item ul li.project ul.project, nav.home .menu .menu-item ul li.project ul.project {
+  nav.default .menu .menu-item ul li.project ul.project a, nav.home .menu .menu-item ul li.project ul.project a {
     font-weight: 700;
     font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: #111111;
+    line-height: 120%;
+    letter-spacing: 0.08em;
+    color: #FF512F;
+    text-decoration: none;
   }
   nav.default .menu .menu-item ul li.project ul.project li.project-item, nav.home .menu .menu-item ul li.project ul.project li.project-item {
     margin-left: 0;
