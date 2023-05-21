@@ -9,12 +9,40 @@
 @import '_dropdown-menu.scss';
 @import '_shadow.scss';
 @import '_submenu.scss';
+@font-face {
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../font/Noto_Sans_TC/noto-sans-tc-v26-chinese-traditional-700.woff2) format('woff2'),
+		 url(../font/Noto_Sans_TC/noto-sans-tc-v26-chinese-traditional-700.woff) format('woff'),
+		 url(../font/Noto_Sans_TC/NotoSansTC-Bold.otf) format('opentype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../font/Noto_Sans_TC/noto-sans-tc-v26-chinese-traditional-500.woff2) format('woff2'),
+		 url(../font/Noto_Sans_TC/noto-sans-tc-v26-chinese-traditional-500.woff) format('woff'),
+		 url(../font/Noto_Sans_TC/NotoSansTC-Medium.otf) format('opentype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Noto Sans TC';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/Noto_Sans_TC/noto-sans-tc-v26-chinese-traditional-regular.woff2) format('woff2'),
+		 url(../font/Noto_Sans_TC/noto-sans-tc-v26-chinese-traditional-regular.woff) format('woff'),
+		 url(../font/Noto_Sans_TC/NotoSansTC-Regular.otf) format('opentype');
+	font-display: swap;
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Maven Pro', 'Noto Sans TC', sans-serif;
+    font-family: "Maven Pro", "Noto Sans TC" ,-apple-system, BlinkMacSystemFont, Arial, PingFang SC,"Segoe UI", "Microsoft JhengHei", "Noto Sans", sans-serif;
 }
 
 body{
