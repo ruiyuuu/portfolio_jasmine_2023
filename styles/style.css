@@ -10915,6 +10915,9 @@ div.cards button.design_btn div.face div.right-eye-hover {
   background-image: url(../images/d-right-eye-hover.svg);
   opacity: 0;
 }
+div.cards button.design_btn h4, div.cards button.design_btn .h4 {
+  color: #FF512F;
+}
 div.cards button.design_btn:hover, div.cards button.design_btn:active {
   transition: all 0.3s ease;
   color: #FF512F;
@@ -10993,6 +10996,9 @@ div.cards button.code_btn div.face div.right-eye {
   margin-top: 16px;
 }
 div.cards button.code_btn div span {
+  color: #E1606B;
+}
+div.cards button.code_btn h4, div.cards button.code_btn .h4 {
   color: #E1606B;
 }
 div.cards button.code_btn:hover, div.cards button.code_btn:active {
@@ -11547,7 +11553,7 @@ footer small.content, footer .content.small {
 .projects .card:hover {
   color: #FF512F;
 }
-.projects .card:hover img {
+.projects .card:hover .cover img {
   transform: scale(1.2);
 }
 

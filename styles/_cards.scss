@@ -28,8 +28,10 @@
         &:hover{
             color: $main;
         }
-        &:hover img{
-            transform: scale(1.2);
+        &:hover .cover{
+            img{
+                transform: scale(1.2);
+            }
         }
     }
 }

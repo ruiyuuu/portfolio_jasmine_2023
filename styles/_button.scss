@@ -97,6 +97,9 @@ div.cards{
                 opacity: 0;
             }
         }
+        h4{
+            color: $main;
+        }
 
         &:hover,&:active{
             transition: all 0.3s ease;
@@ -183,6 +186,9 @@ div.cards{
             span{
                 color: $code-tag;
             }
+        }
+        h4{
+            color: $code-tag;
         }
 
         &:hover,&:active{
