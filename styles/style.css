@@ -11533,7 +11533,7 @@ footer small.content, footer .content.small {
   z-index: 2;
 }
 
-div.design-progress {
+.design-progress {
   position: fixed;
   top: 0px;
   background-color: #111111;
@@ -11541,23 +11541,23 @@ div.design-progress {
   z-index: 1;
   transition: all 0.3s ease;
 }
-div.design-progress a {
+.design-progress a {
   display: flex;
   gap: 24px;
   text-decoration: none;
   align-items: center;
 }
-div.design-progress a p.content {
+.design-progress a p.content {
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #B2B2B2;
 }
-div.design-progress a .detail {
+.design-progress a .detail {
   display: none;
 }
-div.design-progress a.active p.content {
+.design-progress a.active p.content {
   height: 28px;
   background-color: #FFFFFF;
   display: flex;
@@ -11566,10 +11566,10 @@ div.design-progress a.active p.content {
   border-radius: 24px;
   color: #FF512F;
 }
-div.design-progress a.active .detail {
+.design-progress a.active .detail {
   display: inline-block;
 }
-div.design-progress a.active .detail small, div.design-progress a.active .detail .small {
+.design-progress a.active .detail small, .design-progress a.active .detail .small {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
