@@ -299,9 +299,30 @@ button.tertiary{
                     background-image: url(../images/d-mouse-hover-m.svg);
                     width: 71px;
                     height: 51px;
-                    bottom:3px;
+                    bottom:12px;
                     left: 14px;
                     margin-top: 0;
+                }
+                div.left-eye-hover{
+                    top: 4px;
+                    left: 32px;
+                    width: 27px;
+                    height: 27px;
+                    background-size: cover;
+                }
+                div.nose-hover{
+                    width: 87px;
+                    height: 115px;
+                    background-size: 90%;
+                    top:12px;
+                    left: 75px;
+                }
+                div.right-eye-hover{
+                    top:4px;
+                    right: 10px;
+                    width: 27px;
+                    height: 27px;
+                    background-size: cover;
                 }
             }
             &:hover,&:active{
