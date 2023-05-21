@@ -11532,27 +11532,19 @@ footer small.content, footer .content.small {
   transition: all 0.3s ease;
 }
 .projects .card .cover-l {
-  width: 730px;
-  height: 698px;
   overflow: hidden;
   border-radius: 8px;
 }
 .projects .card .cover-l img {
   transition: all 0.8s ease;
-  width: 730px;
-  height: 698px;
   border-radius: 8px;
 }
 .projects .card .cover-m {
-  width: 350px;
-  height: 300px;
   overflow: hidden;
   border-radius: 8px;
 }
 .projects .card .cover-m img {
   transition: all 0.8s ease;
-  width: 350px;
-  height: 300px;
   border-radius: 8px;
 }
 .projects .card .card-body {
