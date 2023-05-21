@@ -10949,7 +10949,6 @@ div.cards button.code_btn {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  font-family: "Maven Pro", "Noto Sans TC", sans-serif;
   color: #A0A9B7;
   display: flex;
   gap: 16px;
@@ -10998,7 +10997,7 @@ div.cards button.code_btn div span {
 }
 div.cards button.code_btn:hover, div.cards button.code_btn:active {
   background-image: url(../images/code-bg.png);
-  background-size: cover;
+  background-size: 90%;
   background-position: top 56px center;
   background-repeat: no-repeat;
   cursor: url("../images/c-cursor.svg"), pointer;
@@ -11146,6 +11145,10 @@ button.tertiary:hover {
   div.cards button.code_btn {
     width: 100vw;
     height: 45vh;
+    background-image: url(../images/code-bg-m.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
   }
   div.cards button.code_btn div.face {
     width: 193.5px;
@@ -11173,13 +11176,17 @@ button.tertiary:hover {
     width: 27px;
     height: 27px;
   }
-  div.cards button.code_btn:hover, div.cards button.code_btn:active {
-    background-image: url(../images/code-bg-m.png);
-    background-position: left;
-  }
-  div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
+  div.cards button.code_btn .face-hover {
     background-image: url(../images/code-face-m.png);
     background-position: top left;
+    opacity: 0;
+  }
+  div.cards button.code_btn:hover, div.cards button.code_btn:active {
+    background-position: left;
+    background-size: contain;
+  }
+  div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
+    background-size: 80%;
   }
 }
 h1, .h1 {
