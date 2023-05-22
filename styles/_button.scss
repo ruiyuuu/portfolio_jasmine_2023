@@ -349,6 +349,7 @@ button.tertiary{
             width: 100vw;
             height: 45vh;
             position: relative;
+            gap: 0;
             div.face{
                 width: 193.5px;
                 height: 151px;
@@ -374,6 +375,16 @@ button.tertiary{
                     width: 27px;
                     height: 27px;
                 }
+                .face-hover{
+                    background-image: url(../images/code-face-m.png);
+                    background-position:top left;
+                    background-repeat: no-repeat;
+                    background-size: 80%;
+                    opacity: 0;
+                    width: 193.5px;
+                    height: 151px;
+                    margin-top: 5%;
+                }
             }
             .code-bg{
                 background-image: url(../images/code-bg.png);
@@ -387,23 +398,19 @@ button.tertiary{
                 top:0;
                 left: 0;
             }
-            .face-hover{
-                background-image: url(../images/code-face-m.png);
-                background-position:top left;
-                opacity: 0;
-            }
             &:hover,&:active{
                 background-image: none;
                 background-size: 50%;
                 div.face{
                     background-size: 80%;
+                    .face-hover{
+                        opacity: 1;
+                    }
                 }
                 .code-bg{
                     opacity: 1;
                 }
-                .face-hover{
-                    opacity: 1;
-                }
+                
             }
         }
     }
