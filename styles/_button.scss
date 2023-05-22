@@ -203,7 +203,7 @@ div.cards{
                     opacity: 0;
                 }
                 background-image: url(../images/code-face.png);
-                background-size: cover;
+                background-size: 80%;
                 background-repeat: no-repeat;
                 background-position: top 8px left 0px;
             }
@@ -350,7 +350,7 @@ button.tertiary{
             background-image: url(../images/code-bg-m.png);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 200%;
             div.face{
                 width: 193.5px;
                 height: 151px;
@@ -384,7 +384,7 @@ button.tertiary{
             }
             &:hover,&:active{
                 background-position: left;
-                background-size: contain;
+                background-size: 80%;
                 div.face{
                     background-size: 80%;
                 }
