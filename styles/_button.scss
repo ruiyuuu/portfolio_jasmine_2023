@@ -350,7 +350,7 @@ button.tertiary{
             background-image: url(../images/code-bg-m.png);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 200%;
+            background-size: cover;
             div.face{
                 width: 193.5px;
                 height: 151px;
@@ -387,6 +387,9 @@ button.tertiary{
                 background-size: contain;
                 div.face{
                     background-size: 80%;
+                }
+                .face-hover{
+                    opacity: 1;
                 }
             }
         }

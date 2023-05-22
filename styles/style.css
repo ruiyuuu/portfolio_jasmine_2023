@@ -11154,7 +11154,7 @@ button.tertiary:hover {
     background-image: url(../images/code-bg-m.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: cover;
   }
   div.cards button.code_btn div.face {
     width: 193.5px;
@@ -11193,6 +11193,9 @@ button.tertiary:hover {
   }
   div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
     background-size: 80%;
+  }
+  div.cards button.code_btn:hover .face-hover, div.cards button.code_btn:active .face-hover {
+    opacity: 1;
   }
 }
 h1, .h1 {
