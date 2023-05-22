@@ -10822,6 +10822,7 @@ div.cards {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
 }
 div.cards button.design_btn {
   background-color: #FFFFFF;
