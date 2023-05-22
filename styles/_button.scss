@@ -348,10 +348,7 @@ button.tertiary{
         button.code_btn{
             width: 100vw;
             height: 45vh;
-            background-image: url(../images/code-bg-m.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 200%;
+            position: relative;
             div.face{
                 width: 193.5px;
                 height: 151px;
@@ -378,16 +375,31 @@ button.tertiary{
                     height: 27px;
                 }
             }
+            .code-bg{
+                background-image: url(../images/code-bg.png);
+                background-position: left -40px;
+                background-repeat: no-repeat;
+                background-size: 80%;
+                opacity: 0;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top:0;
+                left: 0;
+            }
             .face-hover{
                 background-image: url(../images/code-face-m.png);
                 background-position:top left;
                 opacity: 0;
             }
             &:hover,&:active{
-                background-position: left;
-                background-size: 80%;
+                background-image: none;
+                background-size: 50%;
                 div.face{
                     background-size: 80%;
+                }
+                .code-bg{
+                    opacity: 1;
                 }
                 .face-hover{
                     opacity: 1;

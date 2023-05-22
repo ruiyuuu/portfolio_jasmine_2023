@@ -11152,10 +11152,7 @@ button.tertiary:hover {
   div.cards button.code_btn {
     width: 100vw;
     height: 45vh;
-    background-image: url(../images/code-bg-m.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200%;
+    position: relative;
   }
   div.cards button.code_btn div.face {
     width: 193.5px;
@@ -11183,17 +11180,32 @@ button.tertiary:hover {
     width: 27px;
     height: 27px;
   }
+  div.cards button.code_btn .code-bg {
+    background-image: url(../images/code-bg.png);
+    background-position: left -40px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   div.cards button.code_btn .face-hover {
     background-image: url(../images/code-face-m.png);
     background-position: top left;
     opacity: 0;
   }
   div.cards button.code_btn:hover, div.cards button.code_btn:active {
-    background-position: left;
-    background-size: 80%;
+    background-image: none;
+    background-size: 50%;
   }
   div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.face {
     background-size: 80%;
+  }
+  div.cards button.code_btn:hover .code-bg, div.cards button.code_btn:active .code-bg {
+    opacity: 1;
   }
   div.cards button.code_btn:hover .face-hover, div.cards button.code_btn:active .face-hover {
     opacity: 1;
