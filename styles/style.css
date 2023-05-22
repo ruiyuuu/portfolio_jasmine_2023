@@ -11971,9 +11971,18 @@ body .experience .company .work .job p.content span {
 body .experience .company .work .job ol {
   padding-left: 1.5rem;
 }
+body .experience .company .work .job ol li {
+  text-align: justify;
+}
 body .experience .company .work .job ol li span {
   color: #111111;
   font-weight: 900;
+}
+body .experience .company .work img.education-pic {
+  width: 350px;
+  height: auto;
+  margin-bottom: 24px;
+  border-radius: 12px;
 }
 body .word {
   display: flex;
@@ -12640,6 +12649,9 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   body .experience .company h3, body .experience .company .h3 {
     width: auto;
   }
+  body .experience .company .job ol li {
+    text-align: justify;
+  }
   body .experience-mobile {
     position: relative;
   }
@@ -12655,6 +12667,12 @@ body .other-project button.previous:hover .uiux-03, body .other-project .next:ho
   body .experience-mobile h3.experience-title, body .experience-mobile .experience-title.h3 {
     color: #FF512F;
     margin-bottom: 8px;
+  }
+  body .experience-mobile img.education-pic {
+    width: 270px;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 12px;
   }
   body .project-title {
     margin-bottom: 32px;

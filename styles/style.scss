@@ -282,12 +282,19 @@ body{
                     ol{
                         padding-left: 1.5rem;
                         li{
+                            text-align: justify;
                             span{
                                 color: $g-900;
                                 font-weight: 900;
                             }
                         }
                     }
+                }
+                img.education-pic{
+                    width: 350px;
+                    height: auto;
+                    margin-bottom: 24px;
+                    border-radius: 12px;
                 }
             }
         }
@@ -988,6 +995,13 @@ body{
                 h3{
                     width: auto;
                 }
+                .job{
+                    ol{
+                        li{
+                            text-align: justify;
+                        }
+                    }
+                }
             }
         }
         .experience-mobile{
@@ -1004,6 +1018,12 @@ body{
             h3.experience-title{
                 color: $main;
                 margin-bottom: 8px;
+            }
+            img.education-pic{
+                width: 270px;
+                height: auto;
+                margin-bottom: 24px;
+                border-radius: 12px;
             }
         }
         .project-title{
