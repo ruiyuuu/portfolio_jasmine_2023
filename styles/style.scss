@@ -299,6 +299,17 @@ body{
             }
         }
     }
+    .bio{
+        margin-top: 80px;
+        h3.highlight{
+            color: $g-800;
+            margin-bottom: 16px;
+        }
+        p.content{
+            color: $g-700;
+            text-align: justify;
+        }
+    }
     .word{
         display: flex;
         flex-direction: column;
@@ -1026,6 +1037,7 @@ body{
                 border-radius: 12px;
             }
         }
+        
         .project-title{
             margin-bottom: 32px;
         }

@@ -11984,6 +11984,17 @@ body .experience .company .work img.education-pic {
   margin-bottom: 24px;
   border-radius: 12px;
 }
+body .bio {
+  margin-top: 80px;
+}
+body .bio h3.highlight, body .bio .highlight.h3 {
+  color: #333333;
+  margin-bottom: 16px;
+}
+body .bio p.content {
+  color: #666666;
+  text-align: justify;
+}
 body .word {
   display: flex;
   flex-direction: column;
