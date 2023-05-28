@@ -10918,6 +10918,14 @@ div.cards button.design_btn div.face div.right-eye-hover {
 }
 div.cards button.design_btn h4, div.cards button.design_btn .h4 {
   color: #FF512F;
+  height: 48px;
+  border-radius: 40px;
+  padding: 0 16px 0 24px;
+  transition: all 0.3s ease;
+}
+div.cards button.design_btn h4:after, div.cards button.design_btn .h4:after {
+  content: url(../images/icon-chevron-right-orange.svg);
+  margin: 6px 0 0 4px;
 }
 div.cards button.design_btn:hover, div.cards button.design_btn:active {
   transition: all 0.3s ease;
@@ -10944,6 +10952,16 @@ div.cards button.design_btn:hover div.face div.nose-hover, div.cards button.desi
 }
 div.cards button.design_btn:hover div.face div.right-eye-hover, div.cards button.design_btn:active div.face div.right-eye-hover {
   opacity: 1;
+}
+div.cards button.design_btn:hover h4, div.cards button.design_btn:hover .h4, div.cards button.design_btn:active h4, div.cards button.design_btn:active .h4 {
+  background-color: #FF512F;
+  border-radius: 40px;
+  padding: 0 16px 0 24px;
+  color: #FFFFFF;
+}
+div.cards button.design_btn:hover h4:after, div.cards button.design_btn:hover .h4:after, div.cards button.design_btn:active h4:after, div.cards button.design_btn:active .h4:after {
+  content: url(../images/icon-chevron-right-white.svg);
+  margin-top: 6px;
 }
 div.cards button.code_btn {
   background-color: #23272E;
@@ -11001,6 +11019,14 @@ div.cards button.code_btn div span {
 }
 div.cards button.code_btn h4, div.cards button.code_btn .h4 {
   color: #E1606B;
+  height: 48px;
+  border-radius: 40px;
+  padding: 0 16px 0 24px;
+  transition: all 0.3s ease;
+}
+div.cards button.code_btn h4:after, div.cards button.code_btn .h4:after {
+  content: url(../images/icon-chevron-right-code.svg);
+  margin: 6px 0 0 4px;
 }
 div.cards button.code_btn:hover, div.cards button.code_btn:active {
   background-image: url(../images/code-bg.png);
@@ -11017,6 +11043,16 @@ div.cards button.code_btn:hover div.face, div.cards button.code_btn:active div.f
 }
 div.cards button.code_btn:hover div.face div.left-eye, div.cards button.code_btn:hover div.face div.nose, div.cards button.code_btn:hover div.face div.right-eye, div.cards button.code_btn:active div.face div.left-eye, div.cards button.code_btn:active div.face div.nose, div.cards button.code_btn:active div.face div.right-eye {
   opacity: 0;
+}
+div.cards button.code_btn:hover h4, div.cards button.code_btn:hover .h4, div.cards button.code_btn:active h4, div.cards button.code_btn:active .h4 {
+  background-color: #E1606B;
+  border-radius: 40px;
+  padding: 0 16px 0 24px;
+  color: #FFFFFF;
+}
+div.cards button.code_btn:hover h4:after, div.cards button.code_btn:hover .h4:after, div.cards button.code_btn:active h4:after, div.cards button.code_btn:active .h4:after {
+  content: url(../images/icon-chevron-right-white.svg);
+  margin-top: 6px;
 }
 
 button.primary {
